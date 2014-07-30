@@ -109,12 +109,32 @@ text-shadow: 0 -1px 0 #8f8159;
 font-size: 20px;
 }
 
-.nav_list li.active {
+li.active {
 background-color: #a79867;
--moz-text-shadow: 0 -1px 0 #8f8159;
--webkit-text-shadow: 0 -1px 0 #8f8159;
-text-shadow: 0 -1px 0 #8f8159;
+-moz-text-shadow: 0 -2px 0 #8f8159;
+-webkit-text-shadow: 0 -2px 0 #8f8159;
+text-shadow: 0 -2px 0 #8f8159;
+-webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1);
+-moz-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1);
+box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1);
+list-style: none;
+border: none!important;
+padding: 7px 20px;
+margin-bottom: 10px;
 }
+
+ul.list-unstyled.nav_list li:first-child {
+border-top:none;
+-webkit-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
+-moz-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
+box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
+}
+
+.nav_list li:hover {
+background-color: #d5d6d2;
+}
+
+li.active a {color:#FFF; text-decoration:none;}
 
 .nav_list li {
 padding: 8px 20px;
