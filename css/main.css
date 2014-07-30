@@ -1,9 +1,29 @@
 /* ==========================================================================
-   Base
+   Base & Layout
    ========================================================================== */
 
 body {
   background: repeating-linear-gradient(-45deg, #f2f2f1, #f2f2f1 1px, #e4e4e2 1px, #e4e4e2 4px);
+}
+
+.float-right {float:right;}
+.float-left {float:left;}
+.center {text-align:center;margin:0 auto;}
+
+.left_column {
+  width: 250px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom:0;
+  box-sizing: border-box;
+  -webkit-box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
+  -moz-box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
+  box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
+}
+
+.right_column {
+  background: #E4E4E2;
 }
 
 /* ==========================================================================
@@ -130,15 +150,27 @@ border-top:none;
 box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 }
 
+ul.list-unstyled.nav_list li:last-child {
+border-top: none;
+-webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1);
+-moz-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1);
+box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1);
+}
+
 .nav_list li:hover {
 background-color: #d5d6d2;
+-webkit-box-shadow: inset -6px 0px 5px -2px rgba(000,000,000,.2)!important;
+-moz-box-shadow: inset -6px 0px 5px -2px rgba(000,000,000,.2)!important;
+box-shadow: inset -6px 0px 5px -2px rgba(000,000,000,.2)!important;
 }
+
+.nav_list li:hover a {text-decoration: none;}
 
 li.active a {color:#FFF; text-decoration:none;}
 
-.nav_list li {
-padding: 8px 20px;
-}
+.nav_list li {padding: 8px 20px;}
+
+.nav_list li a {text-shadow: 0 1px 0 #FFF;}
 
 .nav_list li {
 border-top: 1px solid #d4d5d1;
@@ -154,20 +186,18 @@ text-decoration: none;
   width: 245px;
 }
 
-.left_column {
-  width: 250px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  box-sizing: border-box;
-  -webkit-box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
-  -moz-box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
-  box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
+a.nav_calendar {
+display: block;
+padding: 7px 20px;
+border-top: 1px solid #d4d5d1;
+border-bottom: 1px solid rgba(255,2555,255,.5);
+border-top: none;
+-webkit-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
+-moz-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
+box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 }
 
-.right_column {
-  background: #E4E4E2;
-}
+
 
 .video_feature {
   position: relative;
