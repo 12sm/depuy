@@ -1,5 +1,5 @@
 /* ==========================================================================
-   Base & Layout
+   $Base & Layout
    ========================================================================== */
 
 body {
@@ -27,12 +27,21 @@ body {
   background: #E4E4E2;
 }
 
+p, h1, h2, h3, h4, h5, h6 {letter-spacing: .01em;}
+
+hr {
+margin-top: 10px;
+margin-bottom: 10px;
+border: 0;
+border-top: 1px solid #eeeeee;
+}
+
 /* ==========================================================================
-   Navigation
+   $Navigation
    ========================================================================== */
 
 /* ==============================
-   Top Nav
+   $Top Nav
    ============================== */
 
 .top_nav {
@@ -200,6 +209,104 @@ box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 .nav_calendar span.float-right {
 color: #a89968;
 }
+
+/* ==========================================================================
+   $Content
+   ========================================================================== */
+
+/* ==============================
+   $Home Page
+   ============================== */
+
+.content {
+padding: 20px;
+}
+
+/* -- $Hero -- */
+
+.hero_title h2 {
+color: #FFF;
+font-size: 18px;
+font-weight: 100;
+padding: 10px 20px 0px 20px;
+margin: 0;
+height: 35px;
+}
+
+.hero_description h3 {
+font-size: 14px;
+color: #a6a7a9;
+font-weight: 100;
+margin-top: 0px;
+}
+
+.hero_image {position: relative;}
+
+.hero_text {position: absolute;bottom: 0;}
+
+.hero_description {
+padding: 10px 20px;
+background-color: #003c60;
+border-bottom: 2px solid #002D48;
+}
+
+.hero_title {
+background: url(../img/hero-gradient-tile.png) repeat-x left top;
+}
+
+.hero_description a {color: #d4caa0;}
+.hero_description a:hover {color: #FFFFFF;text-decoration:none;}
+
+
+/* -- $Content Boxes -- */
+
+.box-text-content {padding: 0px 10px 10px 10px;}
+
+.box-text-content h4 {
+font-size: 12px;
+text-transform: uppercase;
+font-weight: 100;
+margin-bottom: 0;
+}
+
+.box-text-content h3 {
+font-size: 16px;
+font-weight: bold;
+color: #003c60;
+padding: 0px;
+margin-top: 5px;
+}
+
+.box-text-content h5 {
+color: #4d4f53;
+font-size: 16px;
+font-weight: 100;
+margin: 3px 0px 0px 0px;
+}
+
+.text-max-height {
+height: 79px;
+}
+
+.pull-left.share,
+.pull-right.views {
+color: #003c60;
+font-size:12px;
+line-height: 1;
+}
+
+.col-sm-2.divider {
+border-left: 1px solid #ccc;
+margin-left: 10px;
+padding: 0;
+width: 1px;
+}
+
+
+
+
+
+
 
 
 
