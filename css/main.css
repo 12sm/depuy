@@ -1,15 +1,36 @@
 body {
   background: repeating-linear-gradient(-45deg, #f2f2f1, #f2f2f1 1px, #e4e4e2 1px, #e4e4e2 4px);
 }
+
+
 .top_nav {
   background: #003c60;
+  padding: 3px 20px;
+  -webkit-box-shadow: 0 3px 5px 1px #BDBDBD;
+  box-shadow: 0 3px 5px 1px #BDBDBD;
+  -moz-box-shadow: 0 3px 5px 1px #BDBDBD;
 }
+
+li.top-nav-dividers {
+border-right: 1px solid #265978;
+color: #003c60;
+width: 1px;
+padding: 0px;
+margin: 3px 3px;
+}
+
+.top_nav ul.list-inline {
+margin-bottom: 0;
+}
+
 .top_nav ul a {
   color: #fff;
 }
+
 .mobile_header {
   padding: 0 15px;
 }
+
 .logo {
   width: 168px;
   height: 60px;
@@ -20,9 +41,11 @@ body {
   background-color: transparent;
   border: 0;
 }
+
 .mobile_nav_button {
   width: 245px;
 }
+
 .left_column {
   width: 250px;
   position: absolute;
@@ -30,16 +53,20 @@ body {
   top: 0;
   box-sizing: border-box;
 }
+
 .right_column {
   background: #E4E4E2;
 }
+
 .video_feature {
   position: relative;
   background: #fff;
 }
+
 .video_feature .flag {
   right: 5px;
 }
+
 .flag {
   position: absolute;
   top: 0;
@@ -49,6 +76,7 @@ body {
   border-right: 20px solid #003c60;
   border-bottom: 10px solid transparent;
 }
+
 .flag:after {
   content: "\e006";
   font-family: 'Glyphicons Halflings';
@@ -60,38 +88,47 @@ body {
   left: -9px;
   text-align: center;
 }
+
 .flag.opaque {
   border-left-color: #fff;
   border-right-color: #fff;
   opacity: 0.7;
 }
+
 .flag.opaque:after {
   content: "\e007";
   color: #eee;
 }
+
 .video_likes {
   color: #003c60;
 }
+
 .video_likes.unliked span {
   color: #E5EBEF;
 }
+
 .video_share {
   color: #003c60;
 }
+
 .course {
   border-top: 1px solid rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid #ccc;
   padding: 0 50px 0 10px;
 }
+
 .course .flag {
   right: 10px;
 }
+
 .calendar {
   background: #fff;
   text-align: center;
   width: 45px;
   margin-right: 10px;
 }
+
 .calendar_month {
   font-weight: bold;
   text-transform: uppercase;
@@ -100,9 +137,11 @@ body {
   background: #a89968;
   margin-bottom: 0;
 }
+
 .calendar_date {
   font-size: 20px;
 }
+
 @media only screen and (min-width: 768px) {
   h2 {
     font-size: 18px;
@@ -112,6 +151,7 @@ body {
     padding-left: 250px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   h2 {
     font-size: 24px;
