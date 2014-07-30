@@ -16,6 +16,7 @@ body {
   left: 0;
   top: 0;
   bottom:0;
+  background: url(../img/logo.jpg) no-repeat left top;
   box-sizing: border-box;
   -webkit-box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
   -moz-box-shadow:inset 0 0 15px 0 rgba(000,000,000,.4);
@@ -67,15 +68,14 @@ margin-bottom: 0;
 }
 
 .logo {
-  width: 168px;
-  height: 60px;
-  background: url(http://placehold.it/168x60) no-repeat left top;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  background-color: transparent;
-  border: 0;
-  margin: 10px auto;
+width: 100%;
+height: 90px;
+font: 0/0 a;
+color: transparent;
+text-shadow: none;
+background-color: transparent;
+border: 0;
+margin: 10px auto;
 }
 
 .column_header {
@@ -195,6 +195,10 @@ border-top: none;
 -webkit-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 -moz-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
+}
+
+.nav_calendar span.float-right {
+color: #a89968;
 }
 
 
