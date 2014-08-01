@@ -26,7 +26,7 @@ body {
 }
 
 a {color:#003c60;}
-a:hover, a:active, a:focus {text-decoration:none;}
+a:hover, a:active, a:focus {}
 
 p, h1, h2, h3, h4, h5, h6 {letter-spacing: .01em;}
 
@@ -342,6 +342,10 @@ width: 1px;
 padding: 20px;
 }
 
+.upcoming-courses h2 {
+margin-bottom: 10px;
+}
+
 .course_details {
 padding-top: 10px;
 }
@@ -404,9 +408,39 @@ padding: 5px;
 color: #4D4F53;
 font-size: 12px;
 border-radius: 0px;
+width: 230px;
 }
 
 .filter-btn:hover, .filter-btn:active, .filter-btn:focus {background:rgb(235, 235, 235);}
+.row.filters {padding: 10px 0px;}
+.filter-btn span.glyphicon {
+color: #A7A8AA;
+font-weight: bold;
+font-size: 20px;
+float: right;
+margin-top: -7px;
+}
+
+.view-btn {
+margin-top: 20px;
+border:1px solid #D5D6D2;
+border-radius:0px;
+background:#E5E5E2;
+color:#A7A8AA;
+}
+
+.view-btn:hover, .view-btn:active, .view-btn:focus,
+.view-btn.active:hover, .view-btn.active:focus, .view-btn.active:active {
+background-color:#FFF;
+color:#4D4F53;	
+}
+
+.view-btn.active {
+background-color: #D5D6D2;
+color: #4D4F53;
+box-shadow: none;
+}
+
 
 /* ==========================================================================
    $Footer
@@ -569,13 +603,20 @@ h3 {font-size: 14px;}
 
 
 @media only screen and (min-width: 768px) {
-  h2 {
+.right_column {
+  background: #E4E4E2;
+}
+
+h2 {
     font-size: 18px;
-  }
-  .main_wrapper {
+}
+.main_wrapper {
     position: relative;
     padding-left: 250px;
-  }
+}
+  
+.course: {
+border-bottom: 0px; }  
   
 /* Padding to 20px */
 li.active {padding: 7px 20px;}
@@ -616,9 +657,14 @@ footer.footer {padding: 30px;}
 }
 
 @media only screen and (min-width: 1280px) {
-  h2 {
+	
+.right_column {
+  background: #E4E4E2;
+}
+
+h2 {
     font-size: 24px;
-  }
+}
 
 .text-max-height {
 height: 80px;
