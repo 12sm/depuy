@@ -27,13 +27,40 @@ body {
   background: #E4E4E2;
 }
 
+a {color:#003c60;}
+a:hover, a:active, a:focus {text-decoration:none;}
+
 p, h1, h2, h3, h4, h5, h6 {letter-spacing: .01em;}
+
+h2 {
+font-size: 26px;
+font-weight: 100;
+text-shadow: 0 1px 0 #FFF;
+}
+
+h3 {
+font-size: 15px;
+font-weight: bold;
+color: #003c60;
+padding: 0px;	
+}
 
 hr {
 margin-top: 10px;
 margin-bottom: 10px;
 border: 0;
 border-top: 1px solid #eeeeee;
+}
+
+.container-fluid {
+margin-right: auto;
+margin-left: auto;
+padding: 0px 0px 0px 5px;
+}
+
+.flag.opaque:hover {
+border-left-color: #A5CFE9;
+border-right-color: #A5CFE9;
 }
 
 /* ==========================================================================
@@ -240,7 +267,9 @@ font-weight: 100;
 margin-top: 0px;
 }
 
-.hero_image {position: relative;}
+.hero_image {position: relative;
+min-height:420px;
+}
 
 .hero_text {position: absolute;bottom: 0;}
 
@@ -270,9 +299,6 @@ margin-bottom: 0;
 }
 
 .box-text-content h3 {
-font-size: 16px;
-font-weight: bold;
-color: #003c60;
 padding: 0px;
 margin-top: 5px;
 }
@@ -303,10 +329,68 @@ width: 1px;
 }
 
 
+/* -- $Upcoming Courses -- */
+
+.upcoming-courses {
+padding: 20px;
+}
+
+h3.course_description {
+text-shadow: 0 1px 0 #FFF;
+margin-bottom:0;	
+}
+
+p.course_location,
+p.course_length {
+color: #A7A8AA;
+font-size: 12px;
+margin: 0;
+padding: 0;
+}
+
+p.course_length {
+line-height: .7;
+margin-bottom: 20px;
+}
+
+.row.course_details {
+padding-top: 10px;
+}
+
+h3.course_description {
+text-shadow: 0 1px 0 #FFF;
+margin: 0;
+}
 
 
+/* ==========================================================================
+   $Footer
+   ========================================================================== */
 
+footer.footer {
+background-color: #D5D6D2;
+padding: 20px;
+margin: 0;
+}
 
+nav.footer_nav {font-size: 12px;}
+
+nav.footer_nav ul.list-inline li {
+border-right: 1px solid #9E9E9E;
+}
+
+nav.footer_nav ul.list-inline li:last-child {
+border-right: none!important;
+}
+
+footer.footer p {
+color: #4D4F53;
+font-size: 12px;
+}
+
+footer.footer p.updated {
+color: #9FA09E;
+}
 
 
 
@@ -388,11 +472,52 @@ width: 1px;
   color: #fff;
   background: #a89968;
   margin-bottom: 0;
+  text-shadow: 0 -1px 0 #8f8159;
+  
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
+background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
+background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
+background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
+background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
 }
 
 .calendar_date {
   font-size: 20px;
 }
+
+
+@media only screen and (min-width: 320px) {
+
+/* Padding to 15px */
+li.active {padding: 7px 15px;}
+.nav_list li {padding: 8px 15px;}
+.content {padding: 10px 15px;}
+.upcoming-courses {padding: 10px 15px;}
+.single-content-box {margin-bottom: 15px;}
+.single-upcoming-course:last-child {margin-bottom: 15px;}
+
+.container-fluid {padding: 0px;background-color: #E4E4E2;}
+
+.right_column {
+background: #E4E4E2;
+background: url(../img/logo.jpg) no-repeat top left;
+background-size: contain;
+}
+
+.mobile_header {text-align: center;}
+
+.hero_text {width: 100%;}
+.hero_title {width: 100%;}
+
+.hero_image {min-height: 180px;background-color: #FFF;}
+
+.box-text-content h5 {font-size: 12px;}
+.box-text-content h4 {font-size: 11px;}
+
+h3 {font-size: 14px;}
+
+}
+
 
 @media only screen and (min-width: 768px) {
   h2 {
@@ -402,6 +527,37 @@ width: 1px;
     position: relative;
     padding-left: 250px;
   }
+  
+/* Padding to 20px */
+li.active {padding: 7px 20px;}
+.nav_list li {padding: 8px 20px;}
+.content {padding: 10px 20px;}
+.upcoming-courses {padding: 10px 20px;}
+.single-content-box {margin-bottom: 20px;}
+.single-upcoming-course:last-child {margin-bottom: 20px;}
+
+/* Content boxes */
+.text-max-height {height: 100px;}
+
+/* Footer */
+footer.footer {padding: 30px;}
+  
+}
+
+@media only screen and (min-width: 1024px) {
+
+/* Padding to 30px */
+li.active {padding: 7px 30px;}
+.nav_list li {padding: 8px 30px;}
+.content {padding: 10px 30px;}
+.upcoming-courses {padding: 10px 30px;}
+
+/* Content boxes */
+.text-max-height {height: 100px;}
+
+/* Footer */
+footer.footer {padding: 30px;}
+
 }
 
 @media only screen and (min-width: 1280px) {
