@@ -330,7 +330,7 @@ width: 1px;
 }
 
 .flag:after {
-  content: "\e006";
+  content: "\e602";
   font-family: 'Glyphicons Halflings';
   color: #fff;
   font-size: 20px;
@@ -342,14 +342,13 @@ width: 1px;
 }
 
 .flag.opaque {
-  border-left-color: #fff;
-  border-right-color: #fff;
+  border-left-color: #ededed;
+  border-right-color: #ededed;
   opacity: 0.7;
 }
 
 .flag.opaque:after {
-  content: "\e007";
-  color: #eee;
+  color: #fff;
 }
 
 .video_likes {
