@@ -7,6 +7,7 @@ body {
 }
 
 .center {text-align:center;margin:0 auto;}
+.strong {font-weight:bold;}
 
 .left_column {
   width: 250px;
@@ -52,6 +53,11 @@ font-size: 12px;
 margin: 0;
 padding: 0;
 text-shadow: 0 1px 0 rgba(255,255,255,.8);
+}
+
+p.resource-type-grey {
+font-weight: bold;
+color: #4D4F53;
 }
 
 hr {
@@ -478,6 +484,57 @@ img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;}
 p.list-item-type {font-weight: bold;margin-bottom:3px;}
 
 
+/* ==============================
+   $Resource Detail Views
+   ============================== */
+   
+/* $Video Specific */
+   
+.row.resource-description {
+padding:20px 0px;
+}
+
+/* $Video Playlist Specific */
+
+.resource-detail-banner {position:relative;}
+
+.playlist-roll {
+position: absolute;
+bottom: 0;
+background-color: #4c4e52;
+width: 100%;
+padding: 7px;
+}
+
+p.video-thumb-title, p.time {
+color: #a6a7a9;
+text-shadow: 0 -1px 0 rgba(000,000,000,.7);
+margin:0px;
+line-height: 1;
+}
+
+.playlist-roll img.img-responsive {margin-right: 3px;border: 2px solid #a6a7a9;}
+
+.single-video-thumb {padding: 7px;}
+.single-video-thumb.active {background-color: #a79867;}
+.single-video-thumb.active p {color:#FFF;}
+.single-video-thumb:hover, .single-video-thumb:focus, .single-video-thumb:active {background-color: #a79867;}
+.single-video-thumb a:hover, .single-video-thumb a:focus, .single-video-thumb a:active {color:#FFFFFF;}
+
+/* $PDF and App Specific */
+
+img.img-responsive.thumb-hero {
+border: 2px solid #D5D6D2;
+margin-right: 30px;
+}
+
+.row.resource-description-two-col {
+padding:20px 0px;
+max-width:700px;
+}
+
+
+
 /* ==========================================================================
    $Footer
    ========================================================================== */
@@ -634,6 +691,7 @@ background-size: contain;
 .box-text-content h4 {font-size: 11px;}
 
 h3 {font-size: 14px;}
+h2 {font-size: 16px;}
 
 }
 
@@ -695,17 +753,11 @@ footer.footer {padding: 30px;}
 
 @media only screen and (min-width: 1280px) {
 	
-.right_column {
-  background: #E4E4E2;
-}
+.right_column {background: #E4E4E2;}
 
-h2 {
-    font-size: 24px;
-}
+h2 {font-size: 24px;}
 
-.text-max-height {
-height: 80px;
-}
+.text-max-height {height: 80px;}
 
 .col-xs-6.col-md-3.single-content-box {height: 296px;}
 
