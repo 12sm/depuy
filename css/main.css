@@ -331,7 +331,7 @@ padding: 20px;
 
 .hero_title h2 {
 color: #FFF;
-font-size: 18px;
+font-size: 14px;
 font-weight: 100;
 padding: 10px 20px 0px 20px;
 margin: 0;
@@ -838,6 +838,7 @@ background-size: contain;
 .collapse-nav {clear: both;}
 .hero_text {width: 100%;}
 .hero_title {width: 100%;}
+.hero_title h2 {font-size: 16px;}
 
 .hero_image {min-height: 180px;background-color: #FFF;}
 
@@ -860,6 +861,7 @@ h2 {font-size: 16px;}
 h2 {font-size: 18px;}
 .main_wrapper {position: relative;padding-left: 250px;}
 .course {border-bottom: 0px;}
+.hero_title h2 {font-size: 18px;}
 
 .filter-btn {min-width: 160px;}
 
