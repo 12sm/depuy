@@ -89,6 +89,9 @@ cursor: pointer;
 .padding-top {padding-bottom:10px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
+/* Form Styling */
+
+
 /* ==============================
    $Modals General Styling
    ============================== */
@@ -540,6 +543,14 @@ img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;}
 .list-item-content {padding-top:5px;padding-bottom:5px;}
 
 p.list-item-type {font-weight: bold;margin-bottom:3px;}
+
+/* Modal Specific */
+
+ul.filter-prodecure-sublist {list-style: none;padding:0;}
+ul.filter-prodecure-sublist li {padding:5px 0px;}
+.modal .panel-heading {8px 15px;}
+li.indent {margin-left: 20px;}
+.modal .glyphicon.icon-caret-down.pull-right {color: #D1D2D0;}
 
 
 /* ==============================
