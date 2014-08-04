@@ -4,6 +4,7 @@
 
 body {
   background: repeating-linear-gradient(-45deg, #f2f2f1, #f2f2f1 1px, #e4e4e2 1px, #e4e4e2 4px);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .left_column {
@@ -31,6 +32,12 @@ p {color: #4D4F53; font-size:14px;}
 .center {text-align:center;margin:0 auto;}
 .strong {font-weight:bold;}
 .tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
+
+h1 {
+font-size: 16px;
+font-weight: 100;
+color:#a89968;
+}
 
 h2 {
 font-size: 26px;
@@ -78,7 +85,9 @@ border-right-color: #A5CFE9;
 cursor: pointer;
 }
 
-.border-bottom: {padding-bottom:10px;}
+.padding-bottom {padding-bottom:10px;}
+.padding-top {padding-bottom:10px;}
+.border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
 /* ==========================================================================
    $Navigation
@@ -183,9 +192,10 @@ font-size: 20px;
 }
 
 li.active {background-color: #a79867;border: none;}
-li.active a {color:#FFF; text-decoration:none;}
+li.active a {color:#FFF; text-decoration:none;text-shadow:none!important;}
 .nav_list li.active a {text-shadow: none}
 li.active:hover {background-color: #91845a!important;}
+.column_nav li a {text-shadow: 0 1px #FFF;}
 
 ul.list-unstyled.nav_list li:first-child {
 border-top:none;
@@ -280,10 +290,7 @@ font-weight: 100;
 margin-top: 0px;
 }
 
-.hero_image {position: relative;
-min-height:420px;
-}
-
+.hero_image {position: relative;max-height:420px;}
 .hero_text {position: absolute;bottom: 0;}
 
 .hero_description {
@@ -334,11 +341,12 @@ font-size:12px;
 line-height: 1;
 }
 
-.col-sm-2.divider {
+li.divider {
 border-left: 1px solid #ccc;
-margin-left: 10px;
-padding: 0;
-width: 1px;
+margin: 0;
+padding: 0!important;
+width: 0px;
+text-align: center;
 }
 
 
@@ -386,7 +394,7 @@ margin: 0;
 
 ul.share-like-list {list-style:none;padding:0;}
 ul.share-like-list li:last-child {border:none;}
-ul.share-like-list li {display:inline;padding:0px 10px;border-right: 1px solid #CCC;}
+ul.share-like-list li {display:inline;padding:0px 10px;}
 ul.share-like-list li:last-child {padding-left: 10px;}
 .row.interaction.calendar-share {border-bottom: 1px solid #CCC;box-shadow:0 1px rgba(255,255,255,.5);}
 
@@ -725,6 +733,8 @@ background-size: contain;
 .box-text-content h5 {font-size: 12px;}
 .box-text-content h4 {font-size: 11px;}
 
+.course {border-bottom: 0px;} 
+
 h3 {font-size: 14px;}
 h2 {font-size: 16px;}
 
@@ -732,21 +742,11 @@ h2 {font-size: 16px;}
 
 
 @media only screen and (min-width: 768px) {
-.right_column {
-  background: #E4E4E2;
-}
 
-h2 {
-    font-size: 18px;
-}
-.main_wrapper {
-    position: relative;
-    padding-left: 250px;
-}
-  
-.course: {
-border-bottom: 0px; 
-}  
+.right_column {background: #E4E4E2;}
+h2 {font-size: 18px;}
+.main_wrapper {position: relative;padding-left: 250px;}
+.course {border-bottom: 0px;}  
   
 /* Padding to 20px */
 li.active {padding: 7px 20px;}
