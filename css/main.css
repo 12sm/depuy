@@ -291,7 +291,9 @@ text-decoration: none;
 .mobile_nav_button {
   width: 245px;
 }
-
+.visible-xs-block .mobile_nav_button {
+width: 100%;
+}
 .nav_calendar span.float-right {
 color: #a89968;
 }
