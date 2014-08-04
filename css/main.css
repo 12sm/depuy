@@ -555,7 +555,26 @@ max-width:700px;
    ============================== */
    
 p.profile-label {color:#CCC;font-weight:bold;text-transform:uppercase;margin-bottom:0;} 
-p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}   
+p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;} 
+
+
+/* ==============================
+   $About
+   ============================== */
+
+.about-location {
+  position: relative;
+  background: #fff;
+} 
+
+.about-location h4 {
+font-size: 14px!important;
+font-weight: bold;
+} 
+
+.single-content-box > .about-location {
+border: 1px solid #D5D6D2;
+}
 
 /* ==========================================================================
    $Footer
