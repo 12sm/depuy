@@ -69,11 +69,21 @@
                 <div class="mobile_nav_button pull-left">
                     <button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target=".collapse-nav">Home <span class="glyphicon icon-caret-down" ></span></button>
                 </div>
-                <div class="mobile_search_button pull-right">
-                    <button class="btn btn-info"><span class="glyphicon icon-search"></span></button>
+            <div class="collapse-nav">
+                <div class="column_header">
+                <div class="search">
+                    <form class="form-inline">
+                        <div class="form-group mobile-search">
+                            <label for="search" class="sr-only">Search criteria</label>
+                            <input id="search" name="search" type="text" class="form-control" placeholder="search">
+                        </div>
+                        <button type="submit" class="btn btn-info"><span class="glyphicon icon-search"></span></button>
+                    </form>
                 </div>
-                <div class="column_nav collapse collapse-nav">
+            </div>
+            <div class="column_nav">
                 <nav class="main_nav">
+                <li class="nav-home active"><a href="#" class="nav_home">Home<span class="float-right glyphicon icon-home"></span></a></li>
                     <ul class="list-unstyled nav_list">
                         <li><a href="#">Craniomaxillofacial</a></li>
                         <li><a href="#">Chest Wall</a></li>
@@ -89,6 +99,7 @@
                     <li class="nav-calendar"><a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a></li>
                 </nav>
             </div>
+        </div>
             </header>
             <div class="hero hero-landing">
                 <div class="hero_image">
@@ -814,26 +825,11 @@
     <div id="collapseEight" class="panel-collapse collapse">
       <div class="panel-body">
         <ul class="filter-prodecure-sublist">
-<<<<<<< HEAD
-			<li><input type="checkbox" name="one" value="one"> One <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="two" value="two"> Two <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="three" value="three"> Three <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="four" value="four"> Four <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="five" value="five"> Five <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="six" value="six"> Six <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="seven" value="seven"> Seven <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="eight" value="eight"> Eight <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="nine" value="nine"> Nine <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="ten" value="ten"> Ten <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="eleven" value="eleven"> Eleven <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="twelve" value="twelve"> Twelve <span class="filter_amount">1</span></li>
-=======
 			<li><input type="checkbox" name="one" value="one"> Clavical Fracture <span class="filter_amount">1</span></li>
 			<li><input type="checkbox" name="two" value="two"> Humeral Shaft Fracture <span class="filter_amount">1</span></li>
 			<li><input type="checkbox" name="three" value="three"> Distal Humerus Fracture <span class="filter_amount">1</span></li>
 			<li><input type="checkbox" name="four" value="four"> Ulnar Shaft Fracture <span class="filter_amount">1</span></li>
 			<li><input type="checkbox" name="five" value="five"> Radial Shaft Fracture <span class="filter_amount">1</span></li>
->>>>>>> origin/master
 		</ul>
       </div>
     </div>
@@ -854,7 +850,7 @@
 			<h2 class="modal-title">Content Types</h2>
 		  </div>
 		  <div class="modal-body">
-			
+
 			<div class="panel-group" id="accordion">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -1002,7 +998,7 @@
     </div>
   </div>
 </div>
-			
+
 		  </div>
 		</div>
 	  </div>
