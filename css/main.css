@@ -293,12 +293,19 @@ text-decoration: none;
 .mobile_nav_button {
   width: 245px;
 }
-input.form-hide {
+ .nav-search{
 position: absolute;
 left: 15px;
 width: 77%;
 z-index: 5;
-top: 150px;
+top: 110px;
+opacity: 1;
+transition: opacity .5s ease;
+-webkit-transition: opacity .5s ease;
+-moz-transition: opacity .5s ease;
+}
+input.form-hide{
+display: none;
 }
 .nav_calendar span.float-right {
 color: #a89968;
