@@ -44,7 +44,7 @@ h3 {
 font-size: 15px;
 font-weight: bold;
 color: #003c60;
-padding: 0px;	
+padding: 0px;
 }
 
 .small-grey {
@@ -181,7 +181,7 @@ text-shadow: 0 -1px 0 #8f8159;
 font-size: 20px;
 }
 
-li.active {
+.nav_list li.active {
 background-color: #a79867;
 -moz-text-shadow: 0 -2px 0 #8f8159;
 -webkit-text-shadow: 0 -2px 0 #8f8159;
@@ -218,7 +218,7 @@ box-shadow: inset -6px 0px 5px -2px rgba(000,000,000,.2)!important;
 
 .nav_list li:hover a {text-decoration: none;}
 
-li.active a {color:#FFF; text-decoration:none;}
+.nav_list li.active a {color:#FFF; text-decoration:none;}
 
 .nav_list li {padding: 8px 20px;}
 
@@ -361,7 +361,7 @@ padding-top: 10px;
 
 h3.course_description {
 text-shadow: 0 1px 0 #FFF;
-margin-bottom:0;	
+margin-bottom:0;
 }
 
 p.course_location,
