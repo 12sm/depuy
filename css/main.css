@@ -50,7 +50,7 @@ h3 {
 font-size: 15px;
 font-weight: bold;
 color: #003c60;
-padding: 0px;	
+padding: 0px;
 }
 
 .small-grey {
@@ -89,6 +89,7 @@ cursor: pointer;
 .padding-top {padding-bottom:10px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
+<<<<<<< HEAD
 /* ==============================
    $Modals General Styling
    ============================== */
@@ -104,6 +105,8 @@ width: 30px;
 height: 30px;
 border: 2px solid #FFF;
 
+=======
+>>>>>>> FETCH_HEAD
 
 /* ==========================================================================
    $Navigation
@@ -239,7 +242,7 @@ li.nav-calendar:hover {
 -webkit-box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 -moz-box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
-background-color: #d5d6d2;	
+background-color: #d5d6d2;
 }
 
 .nav_list li:hover a {text-decoration: none;}
@@ -389,7 +392,7 @@ padding-top: 10px;
 
 h3.course_description {
 text-shadow: 0 1px 0 #FFF;
-margin-bottom:0;	
+margin-bottom:0;
 }
 
 p.course_location,
@@ -470,7 +473,7 @@ color:#A7A8AA;
 .view-btn:hover, .view-btn:active, .view-btn:focus,
 .view-btn.active:hover, .view-btn.active:focus, .view-btn.active:active {
 background-color:#FFF;
-color:#4D4F53;	
+color:#4D4F53;
 }
 
 .view-btn.active {
@@ -515,9 +518,9 @@ p.list-item-type {font-weight: bold;margin-bottom:3px;}
 /* ==============================
    $Resource Detail Views
    ============================== */
-   
+
 /* $Video Specific */
-   
+
 .row.resource-description {
 padding:20px 0px;
 }
@@ -577,9 +580,9 @@ max-width:700px;
 /* ==============================
    $Profile
    ============================== */
-   
-p.profile-label {color:#CCC;font-weight:bold;text-transform:uppercase;margin-bottom:0;} 
-p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;} 
+
+p.profile-label {color:#CCC;font-weight:bold;text-transform:uppercase;margin-bottom:0;}
+p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}
 
 
 /* ==============================
@@ -589,17 +592,29 @@ p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}
 .about-location {
   position: relative;
   background: #fff;
-} 
+}
 
 .about-location h4 {
 font-size: 14px!important;
 font-weight: bold;
-} 
+}
 
 .single-content-box > .about-location {
 border: 1px solid #D5D6D2;
 }
-
+/*Collapse Panels*/
+.panel-default > div.panel-heading{
+  background: transparent;
+  border-bottom: 1px solid #dddddd;
+}
+.panel.panel-default {
+box-shadow: 0px 0px 0px 0px;
+border: transparent;
+background: transparent;
+}
+.panel-default > .panel-heading + .panel-collapse > div.panel-body{
+  border-top: 0px transparent;
+}
 /* ==========================================================================
    $Footer
    ========================================================================== */
@@ -714,7 +729,7 @@ margin-bottom: 10px;
   background: #a89968;
   margin-bottom: 0;
   text-shadow: 0 -1px 0 #8f8159;
-  
+
 background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
 background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
 background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
@@ -755,7 +770,7 @@ background-size: contain;
 .box-text-content h5 {font-size: 12px;}
 .box-text-content h4 {font-size: 11px;}
 
-.course {border-bottom: 0px;} 
+.course {border-bottom: 0px;}
 
 h3 {font-size: 14px;}
 h2 {font-size: 16px;}
@@ -768,8 +783,8 @@ h2 {font-size: 16px;}
 .right_column {background: #E4E4E2;}
 h2 {font-size: 18px;}
 .main_wrapper {position: relative;padding-left: 250px;}
-.course {border-bottom: 0px;}  
-  
+.course {border-bottom: 0px;}
+
 /* Padding to 20px */
 li.active {padding: 7px 20px;}
 .nav_list li {padding: 8px 20px;}
@@ -784,7 +799,7 @@ li.active {padding: 7px 20px;}
 
 /* Footer */
 footer.footer {padding: 30px;}
-  
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -809,7 +824,7 @@ footer.footer {padding: 30px;}
 }
 
 @media only screen and (min-width: 1280px) {
-	
+
 .right_column {background: #E4E4E2;}
 
 h2 {font-size: 24px;}
