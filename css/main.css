@@ -92,7 +92,7 @@ cursor: pointer;
 /* ==============================
    $Modals General Styling
    ============================== */
-   
+
 button.close {
 padding: 0;
 cursor: pointer;
@@ -612,7 +612,10 @@ p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}
 /* ==============================
    $About
    ============================== */
-
+h2 {
+font-size: 24px;
+margin-bottom: 15px;
+}
 .about-location {
   position: relative;
   background: #fff;
