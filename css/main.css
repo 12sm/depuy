@@ -172,7 +172,7 @@ margin-bottom: 0;
    ============================== */
 
 .mobile_header {
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 
 .logo {
@@ -631,6 +631,9 @@ font-weight: bold;
 
 .single-content-box > .about-location {
 border: 1px solid #D5D6D2;
+}
+.about-location img {
+width: 100%;
 }
 /*Collapse Panels*/
 .panel-default > div.panel-heading{
