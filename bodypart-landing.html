@@ -113,15 +113,9 @@
 						</ul>
 					</div>
 					<div class="row filters">
-						<button type="button" class="btn btn-lg filter-btn">
-  							All Procedures <span class="glyphicon glyphicon-plus"></span>
-						</button>
-						<button type="button" class="btn btn-lg filter-btn">
-  							All Content Types <span class="glyphicon glyphicon-plus"></span>
-						</button>
-						<button type="button" class="btn btn-lg filter-btn pull-right">
-  							Most Popular <span class="glyphicon glyphicon-chevron-down"></span>
-						</button>
+						<button type="button" class="btn btn-lg filter-btn" data-toggle="modal" data-target="#procedures">All Procedures <span class="glyphicon icon-plus"></span></button>
+						<button type="button" class="btn btn-lg filter-btn" data-toggle="modal" data-target="#contentTypes">All Content Types <span class="glyphicon icon-plus"></span></button>
+						<button type="button" class="btn btn-lg filter-btn pull-right">Most Popular <span class="glyphicon icon-caret-down"></span></button>
 					</div>
 					<div class="tab-content">
 						<div class="tab-pane fade" id="list">
@@ -417,7 +411,109 @@
             </footer>
         </div>
     </div>
-
+	<!-- Modal -->
+	<div class="modal fade" id="procedures" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title">Shoulder Procedures</h4>
+		  </div>
+		  <div class="modal-body">
+			<ul class="list-unstyled modal_filter_list">
+				<li>
+					<a href="#" class="deselected">View All <span class="filter_amount">30</span></a>
+				</li>
+				<li>
+					<a href="#">Shoulder Arthoplasty <span class="filter_amount">4</span></a>
+					<ul class="list-unstyled modal_filter_sublist">
+						<li>
+							<a href="#">Anatomic <span class="filter_amount">1</span></a>
+						</li>
+						<li>
+							<a href="#">Reverse <span class="filter_amount">1</span></a>
+						</li>
+						<li>
+							<a href="#">Revision <span class="filter_amount">1</span></a>
+						</li>
+						<li>
+							<a href="#">Fracture <span class="filter_amount">1</span></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">Rotator Cuff Repair <span class="filter_amount">4</span></a>
+				</li>
+				<li>
+					<a href="#">Biceps <span class="filter_amount">1</span></a>
+				</li>
+				<li>
+					<a href="#">Instability <span class="filter_amount">7</span></a>
+				</li>
+				<li>
+					<a href="#">Atraumatic Soft Tissue Liberator <span class="filter_amount">2</span></a>
+				</li>
+				<li>
+					<a href="#" class="deselected">Fracture Treatment <span class="filter_amount">2</span></a>
+				</li>
+				<li>
+					<a href="#">Pediatrics <span class="filter_amount">12</span></a>
+				</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<!-- Modal -->
+	<div class="modal fade" id="contentTypes" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h4 class="modal-title">Content Types</h4>
+		  </div>
+		  <div class="modal-body">
+			<ul class="list-unstyled modal_filter_list">
+				<li>
+					<a href="#" class="deselected">View All <span class="filter_amount">30</span></a>
+				</li>
+				<li>
+					<a href="#">Video <span class="filter_amount">12</span></a>
+				</li>
+				<li>
+					<a href="#">PDF <span class="filter_amount">8</span></a>
+					<ul class="list-unstyled modal_filter_sublist">
+						<li>
+							<a href="#">Surgical Technique Guide <span class="filter_amount">4</span></a>
+						</li>
+						<li>
+							<a href="#">White Paper <span class="filter_amount">2</span></a>
+						</li>
+						<li>
+							<a href="#" class="deselected">Case Study <span class="filter_amount">1</span></a>
+						</li>
+						<li>
+							<a href="#" class="deselected">Product Guide <span class="filter_amount">1</span></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">eLearning <span class="filter_amount">2</span></a>
+				</li>
+				<li>
+					<a href="#" class="deselected">Journal Article <span class="filter_amount">1</span></a>
+				</li>
+				<li>
+					<a href="#" class="deselected">Podcast <span class="filter_amount">2</span></a>
+				</li>
+				<li>
+					<a href="#" class="deselected">App <span class="filter_amount">2</span></a>
+				</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
