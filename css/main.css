@@ -307,6 +307,12 @@ background: url(../img/hero-gradient-tile.png) repeat-x left top;
 .hero_description a {color: #d4caa0;}
 .hero_description a:hover {color: #FFFFFF;text-decoration:none;}
 
+.play-button-center {
+position: absolute;
+left: 50%;
+top: 40%;
+}
+
 
 /* -- $Content Boxes -- */
 
