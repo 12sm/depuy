@@ -489,6 +489,20 @@ border-radius: 0px;
 width: 230px;
 }
 
+ul.dropdown-menu-filter {
+width: 230px;
+border-radius: 0;
+border: none;
+margin-top: -10px;
+background: #d5d6d2;
+color: #4D4F53;
+font-size: 12px;
+}
+
+.filters.dropdown.open button.dropdown-toggle {
+background: #d5d6d2;
+}
+
 .filter-btn:hover, .filter-btn:active, .filter-btn:focus {background:rgb(235, 235, 235);}
 .row.filters {padding: 10px 0px;}
 .filter-btn span.glyphicon {
