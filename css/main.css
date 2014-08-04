@@ -132,6 +132,9 @@ margin-top: -31px;
 margin-right: -28px;
 }
 
+.modal .panel-title {font-size: 13px;}
+.modal span.filter_amount {color:#AFB0B1;}
+
 /* ==========================================================================
    $Navigation
    ========================================================================== */
