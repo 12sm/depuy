@@ -175,14 +175,13 @@ margin-bottom: 0;
    ============================== */
 
 .mobile_header {
-  padding: 10px 15px;
-  background-color: #FFF;
-  background: url(../img/logo-mobile.png) no-repeat left top;
+padding: 10px 15px;
+background: url(../img/logo-mobile.png) no-repeat left top #FFF;
 }
 
 .logo {
 width: 100%;
-height: 90px;
+height: 50px;
 font: 0/0 a;
 color: transparent;
 text-shadow: none;
@@ -828,7 +827,7 @@ background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B
 /* Padding to 15px */
 li.active {padding: 7px 15px;}
 .nav_list li {padding: 8px 15px;}
-.content {padding: 10px 15px;}
+.content {padding: 10px 15px;background: #E4E4E2;}
 .upcoming-courses {padding: 0px;}
 .single-content-box {margin-bottom: 15px;}
 .single-upcoming-course:last-child {margin-bottom: 15px;}
