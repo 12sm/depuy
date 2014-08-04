@@ -176,6 +176,8 @@ margin-bottom: 0;
 
 .mobile_header {
   padding: 10px 15px;
+  background-color: #FFF;
+  background: url(../img/logo-mobile.png) no-repeat left top;
 }
 
 .logo {
@@ -359,6 +361,7 @@ background: url(../img/hero-gradient-tile.png) repeat-x left top;
 
 .hero_description a {color: #d4caa0;}
 .hero_description a:hover {color: #FFFFFF;text-decoration:none;}
+.hero_description li.dropdown-toggle a {color: #FFFFFF;}
 
 .play-button-center {
 position: absolute;
@@ -545,7 +548,7 @@ border-left: 0;
 border-right: 0px;
 border-width: 2px;
 padding: 0 50px 0 10px;
-margin-bottom: 10px;
+margin-bottom: 5px;
 }
 
 .procedure .flag {
@@ -557,7 +560,7 @@ margin-top: 1px;
 padding: 0px 20px;
 }
 
-img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;}
+img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;height: auto;width: 90px;}
 .list-item-content {padding-top:5px;padding-bottom:5px;}
 
 p.list-item-type {font-weight: bold;margin-bottom:3px;}
@@ -828,8 +831,8 @@ li.active {padding: 7px 15px;}
 
 .right_column {
 background: #E4E4E2;
-background: url(../img/logo.jpg) no-repeat top left;
 background-size: contain;
+background: url(../img/nav-tile.jpg) repeat left top;
 }
 
 .mobile_header {text-align: center;}
