@@ -5407,7 +5407,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #a89968;
+  border-bottom: 2px solid #a89968;
   min-height: 16.42857143px;
 }
 .modal-header .close {

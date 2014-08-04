@@ -89,6 +89,22 @@ cursor: pointer;
 .padding-top {padding-bottom:10px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
+/* ==============================
+   $Modals General Styling
+   ============================== */
+   
+button.close {
+padding: 0;
+cursor: pointer;
+/* background: transparent; */
+border: 0;
+-webkit-appearance: none;
+border-radius: 15px;
+width: 30px;
+height: 30px;
+border: 2px solid #FFF;
+
+
 /* ==========================================================================
    $Navigation
    ========================================================================== */
