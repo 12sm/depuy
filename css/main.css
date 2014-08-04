@@ -60,6 +60,8 @@ font-weight: bold;
 color: #4D4F53;
 }
 
+.tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
+
 hr {
 margin-top: 10px;
 margin-bottom: 10px;
