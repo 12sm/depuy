@@ -5319,16 +5319,16 @@ a.list-group-item-danger.active:focus {
 .close {
   float: right;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #ffffff;
+  text-shadow: 0 1px 0 #777777;
   opacity: 0.2;
   filter: alpha(opacity=20);
 }
 .close:hover,
 .close:focus {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
   opacity: 0.5;
@@ -5379,9 +5379,9 @@ button.close {
 }
 .modal-content {
   position: relative;
-  background-color: #ffffff;
+  background-color: #e4e4e2;
   border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solid #a89968;
   border-radius: 6px;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
@@ -5407,7 +5407,7 @@ button.close {
 }
 .modal-header {
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #a89968;
   min-height: 16.42857143px;
 }
 .modal-header .close {
@@ -5419,12 +5419,12 @@ button.close {
 }
 .modal-body {
   position: relative;
-  padding: 15px;
+  padding: 0;
 }
 .modal-footer {
-  padding: 15px;
+  padding: 0;
   text-align: right;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #a89968;
 }
 .modal-footer .btn + .btn {
   margin-left: 5px;
