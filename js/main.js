@@ -1,4 +1,3 @@
-
 $('.btn-search').click(function(){
 	if($('.nav-search').hasClass('form-hide')) {
        $('.nav-search').fadeTo(100, 1);
@@ -12,3 +11,8 @@ $('.btn-search').click(function(){
 	$('.nav-search').toggleClass('form-hide');
 });
 
+$('#mobileDropdown').on('show.bs.dropdown', function() {
+	$('#mobileNavIcon').removeClass('icon-caret-down').addClass('icon-caret-up');
+}).on('hide.bs.dropdown', function() {
+	$('#mobileNavIcon').removeClass('icon-caret-up').addClass('icon-caret-down');
+});
