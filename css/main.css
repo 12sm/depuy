@@ -143,7 +143,7 @@ margin-right: -28px;
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
 .modal-body {padding:10px;padding-bottom:10px;}
-.modal label {color:#A7A8AA;}
+.modal label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
 
 #signin .modal-dialog {width: 300px;}
 
@@ -201,6 +201,13 @@ font-weight: bold;
 font-size: 13px;
 padding: 10px;
 list-style: none;
+}
+
+ul.register-specialty-one li, 
+ul.register-specialty-two li, 
+ul.register-sub-one li, 
+ul.register-sub-two li {
+padding: 5px 0px;
 }
 
 /* ==========================================================================
