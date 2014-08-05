@@ -259,7 +259,7 @@ border-top:none;
 box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 }
 
-ul.list-unstyled.nav_list li:last-child {
+ul.list-unstyled.nav_list li:nth-last-child(2) {
 border-top: none;
 -webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2);
 -moz-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2);
@@ -320,11 +320,13 @@ display: inline-block;
 li.nav-home, li.nav-calendar {
 list-style: none;
 padding: 7px 30px;
-margin-bottom: 10px;
 -webkit-box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 -moz-box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 }
+
+li.nav-home {margin-bottom: 10px;}
+li.nav-calendar {margin-top: 10px;}
 
 a.nav_home, a.nav_calendar {position: relative;}
 a.nav_home .glyphicon.icon-home {position: absolute;right: -150px;}
