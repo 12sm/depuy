@@ -91,6 +91,8 @@ cursor: pointer;
 .padding-bottom {padding-bottom:10px;}
 .padding-top {padding-bottom:10px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
+.border-top-bottom {padding-top:10px;margin-top:10px;border-top: 1px solid #D5D6D2;
+border-bottom: 1px solid #D5D6D2;box-shadow:0px -1px rgba(255,255,255,.3), 0px 1px rgba(255,255,255,.3);}
 
 .play-icon {
 position: absolute;
@@ -98,7 +100,7 @@ left: 44%;
 top: 17%;
 border-radius: 40px;
 background-color: rgba(255,255,255,.8);
-opacity: .6;
+
 }
 
 span.glyphicon.icon-play {
@@ -787,11 +789,6 @@ line-height: 1;
 img.img-responsive.thumb-hero {
 border: 2px solid #D5D6D2;
 margin-right: 30px;
-}
-
-.row.resource-description-two-col {
-padding:20px 0px;
-max-width:700px;
 }
 
 
