@@ -16,6 +16,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript" src="http://p.jwpcdn.com/6/9/jwplayer.js"></script>
+	<script type="text/javascript">jwplayer.key="xKIzZ2DInrL7P36ro9RlteoUwoiehSXrItLZsDAebyA=";</script>
   </head>
   <body>
     <div class="top_nav">
@@ -102,8 +104,8 @@
             </div>
         </div>
             </header>
-            <div class="hero hero-landing">
-                <div class="hero_image">
+            <div id="videoPlayerWrapper" class="hero hero-landing">
+                <div id="videoPlayer" class="hero_image">
 					<div class="hero_text">
 						<div class="hero_title">
 							<h2>Case Insights: Proximal Ulna Monteggia Fracture</h2>
@@ -131,7 +133,7 @@
                             </div>
 						</div>
 					</div>
-					<div class="play-button-center">ICON</div>
+					<a href="#" id="playVideo" class="play-button-center"><span class="glyphicon icon-play"></span></a>
                     <img class="img-responsive" src="img/bodypart-landing-hero.jpg" />
                 </div>
             </div>
@@ -1162,5 +1164,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('#playVideo').click(function(e) {
+			e.preventDefault();
+			var height = $('#videoPlayerWrapper').outerHeight();
+			$('#videoPlayerWrapper').css('min-height', height);
+			jwplayer("videoPlayer").setup({
+				file: "//russelljanderson.com/video/test.mp4",
+				image: "img/bodypart-landing-hero.jpg",
+				width: "100%",
+				aspectratio: "16:9"
+			}).play();
+		})
+
+	</script>
   </body>
 </html>
