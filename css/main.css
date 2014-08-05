@@ -140,6 +140,12 @@ margin-right: -28px;
 
 .modal .panel-title {font-size: 13px;}
 .modal span.filter_amount {color:#AFB0B1;}
+.modal-header-left {}
+.modal-header-right {text-align:right;margin-top:5px;}
+.modal-body {padding:10px;}
+.modal label {color:#A7A8AA;}
+
+#signin .modal-dialog {width: 300px;}
 
 /* ==========================================================================
    $Navigation
