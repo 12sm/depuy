@@ -18,53 +18,7 @@
     <![endif]-->
   </head>
   <body>
-    <div class="top_nav">
-        <ul class="list-inline pull-right hidden-xs">
-            <li><a href="#">Sign In/Register</a></li>
-        </ul>
-        <div class="clearfix">
-            <ul class="list-inline">
-                <li><a href="#">Nursing</a></li>
-				<li class="top-nav-dividers">|</li>
-                <li><a href="#">Veterinary</a></li>
-				<li class="top-nav-dividers">|</li>
-                <li><a href="#">About</a></li>
-            </ul>
-        </div>
-    </div>
     <div class="main_wrapper container-fluid">
-        <div class="left_column hidden-xs">
-            <div class="column_header">
-				<img src="img/depuy-logo.png" class="hidden-xs" alt= "Depuy Synthes Institute - advancing education and research" />
-                <div class="search">
-                    <form class="form-inline">
-                        <div class="form-group">
-                            <label for="search" class="sr-only">Search criteria</label>
-                            <input id="search" name="search" type="text" class="form-control" placeholder="search">
-                        </div>
-                        <button type="submit" class="btn btn-info"><span class="glyphicon icon-search"></span></button>
-                    </form>
-                </div>
-            </div>
-            <div class="column_nav">
-                <nav class="main_nav">
-                    <ul class="list-unstyled nav_list">
-                    	<li class="nav-home active"><a href="#" class="nav_home">Home<span class="pull-right glyphicon icon-home"></span></a></li>
-                        <li><a href="#">Craniomaxillofacial</a></li>
-                        <li><a href="#">Chest Wall</a></li>
-                        <li><a href="#">Spine</a></li>
-                        <li><a href="#">Shoulder</a></li>
-                        <li><a href="#">Elbow</a></li>
-                        <li><a href="#">Hand &amp; Wrist</a></li>
-                        <li><a href="#">Pelvis</a></li>
-                        <li><a href="#">Hip</a></li>
-                        <li><a href="#">Knee</a></li>
-                        <li><a href="#">Foot &amp; Ankle</a></li>
-                        <li class="nav-calendar"><a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
         <div class="right_column">
             <header class="mobile_header visible-xs-block clearfix">
 					<div class="white-bg">	
@@ -133,25 +87,6 @@
 
 
             </div><!-- end right column -->
-            <footer class="footer">
-                <nav class="footer_nav">
-                    <ul class="list-inline">
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Careers &ndash; Johnson &amp; Johnson</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Legal Notice</a></li>
-                        <li><a href="#">Site Map</a></li>
-                        <li><a href="#">Ethics</a></li>
-                        <li><a href="#">Hotline</a></li>
-                        <li><a href="#">Consultant Indentification &amp; Payments</a></li>
-                        <li><a href="#">California Compliance Notice</a></li>
-                    </ul>
-                </nav>
-                <p>&copy; DePuy Synthes Companies 2014. All rights reserved. This site is published by DePuy Synthes Companies which is solely responsible for its content. This site is intended for visitors from the United States. Third party trademarks used herein are trademarks of their respective owners.</p>
-                <p class="updated">Last updated Jun 16, 2014<br>
-                DSUS/INS/0514/0125</p>
-			</footer>
         </div>
     </div>
 	
@@ -185,15 +120,11 @@
 			  <input type="email" value="joe@" /><br />
 			  <label>PASSWORD</label><br />
 			  <input type="password" /><br /> 
-			  
-			  <div class="row">
-			  	<div class="col-sm-12">
-				<p />
-					<p class="pull-left"><a href="#">Forgot password?</a></p>
-			  		<button type="button" class="btn button-lg button-modal pull-right">Sign In</button>
-				</div>
-			</div>
 		  </div>
+		  <div class="modal-footer">
+		  	<p class="pull-left"><a href="#">Forgot password?</a></p>
+			<button type="button" class="btn button-lg button-modal pull-right">Sign In</button>
+	      </div>
 		</div>
 	  </div>
 	</div>
@@ -280,51 +211,71 @@
 				  <li><input type="checkbox"> General</li>
 			  </ul>
 		  </div>
-		  <button type="submit" class="pull-right btn button-lg button-modal">Create Account</button>
-		  </div>
 		</div>
+		<div class="modal-footer">
+		  	<button type="submit" class="pull-right btn button-lg button-modal">Create Account</button>
+	      </div>
 	  </div>
 	</div>
-	
-	<!-- Forgot Password Modal -->
+</div>
+
+<!-- Forgot Password Modal -->
 	<div class="modal fade" id="forgotpass" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
 		<div class="modal-content">
 		  <div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			<h2 class="modal-title">Forgot Password</h2><a href="#" class="pull-right">register</a>
+			<div class="row">
+				<div class="col-sm-12 modal-header-left">
+					<h2 class="modal-title">Forgot Password</h2>
+				</div>
+			</div>
 		  </div>
 		  <div class="modal-body">
-		  <p>Enter your email address and we'll send your password.</p> 
-		  <label class="small-grey">EMAIL ADDRESS</label>
-		  <input type="email" value="email@address.org" />
-		  <button type="submit" class="pull-right btn button-lg button-modal">Sign In</button>
+			  <div class="row">
+			  	<div class="col-sm-12">
+					<p>Enter yoru email address and we'll send your password.</p> 
+				</div>
+			  </div>
+			  <label>EMAIL ADDRESS</label><br />
+			  <input type="email" value="joe@" /><br />
 		  </div>
+		  <div class="modal-footer">
+			<button type="submit" class="btn button-lg button-modal pull-right">Submit</button>
+	      </div>
 		</div>
 	  </div>
 	</div>
-	
-	<!-- Forgot Password Enter Password Modal -->
+					
+	<!-- Forgot Password Two Modal -->
 	<div class="modal fade" id="forgotpassenterpass" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
 		<div class="modal-content">
 		  <div class="modal-header">
 			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			<h2 class="modal-title">Forgot Password</h2><a href="#" class="pull-right">register</a>
+			<div class="row">
+				<div class="col-sm-12 modal-header-left">
+					<h2 class="modal-title">Forgot Password</h2>
+				</div>
+			</div>
 		  </div>
 		  <div class="modal-body">
-		  <p>Your password has been sent. Check your email.</p> 
-		  <label class="small-grey">EMAIL ADDRESS</label>
-		  <input type="email" value="email@address.org" />
-		  <label class="small-grey">PASSWORD</label>
-		  <input type="password" />
-		  <button type="submit" class="pull-right btn button-lg button-modal">Sign In</button>
+			  <div class="row">
+			  	<div class="col-sm-12">
+					<p>Your password has been sent. Check your email.</p> 
+				</div>
+			  </div>
+			  <label>EMAIL ADDRESS</label><br />
+			  <input type="email" value="joe@" /><br />
+			  <label>PASSWORD</label><br />
+			  <input type="password" value="password" /><br />
 		  </div>
+		  <div class="modal-footer">
+			<button type="submit" class="btn button-lg button-modal pull-right">Submit</button>
+	      </div>
 		</div>
 	  </div>
-	</div>
-					
-				
+	</div>			
 				
 				
 				

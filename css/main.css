@@ -3,7 +3,7 @@
    ========================================================================== */
 
 body {
-  background: repeating-linear-gradient(-45deg, #f2f2f1, #f2f2f1 1px, #e4e4e2 1px, #e4e4e2 4px);
+  background: #E4E4E2;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -142,10 +142,12 @@ margin-right: -28px;
 .modal span.filter_amount {color:#AFB0B1;}
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
-.modal-body {padding:10px;padding-bottom:10px;}
+.modal-body {padding:10px;}
 .modal label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
 
-#signin .modal-dialog {width: 300px;}
+#signin .modal-dialog,
+#forgotpass .modal-dialog,
+#forgotpassenterpass .modal-dialog {width: 300px;}
 
 .modal input[type="email"],
 .modal input[type="url"],
@@ -180,6 +182,7 @@ background-color: #f0f0f0;
 
 .button-modal {
 color: #ffffff;
+font-weight:bold;
 background-color: #a89968;
 border-color: #928557;
 border-top: 2px solid #9c8d5a;
@@ -199,7 +202,7 @@ ul.register-sub-two {
 font-weight: bold;
 font-weight: bold;
 font-size: 13px;
-padding: 10px;
+padding: 0px 5px;
 list-style: none;
 }
 
