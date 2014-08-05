@@ -302,6 +302,30 @@ text-decoration: none;
 .mobile_nav_button {
   width: 88%;
 }
+
+/* mobile nav */
+.mobile-nav {
+  width: 100%;
+  border-radius: 0;
+  background: url(../img/nav-tile.jpg) repeat left top;
+  padding: 0;
+}
+.mobile-nav li a {
+  text-shadow: 0px 1px #FFF;
+  padding: 8px 15px;
+  border-top: 1px solid #D4D5D1;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  color: #003C60;
+}
+.mobile-nav li a:hover, .mobile-nav li a:focus {
+  background-color: #d5d6d2;
+  color: #003C60;
+}
+.mobile-nav .mobile-nav-break {
+  height: 10px;
+  box-shadow: inset -2px 0px 2px 3px rgba(000,000,000,.1);
+}
+
  .nav-search{
 position: absolute;
 left: 15px;
@@ -337,12 +361,6 @@ li.nav-calendar {margin-top: 10px;}
 a.nav_home, a.nav_calendar {position: relative;}
 a.nav_home .glyphicon.icon-home {}
 a.nav_calendar .glyphicon.icon-cal {position: absolute;right: -80px;}
-
-.collapse-nav.collapse.in {
-background: url(../img/nav-tile.jpg) repeat left top;
-width: 300px;
-margin: 0 auto;
-}
 
 /* ==============================
    $Main Nav - Signed in
