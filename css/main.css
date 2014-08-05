@@ -92,7 +92,21 @@ cursor: pointer;
 .padding-top {padding-bottom:10px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
-/* Form Styling */
+.play-icon {
+position: absolute;
+left: 44%;
+top: 17%;
+border-radius: 40px;
+background-color: rgba(255,255,255,.8);
+opacity: .6;
+}
+
+span.glyphicon.icon-play {
+font-size: 45px;
+padding: 0;
+margin: 0;
+color: black;
+}
 
 
 /* ==============================
