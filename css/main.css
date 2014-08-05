@@ -142,10 +142,34 @@ margin-right: -28px;
 .modal span.filter_amount {color:#AFB0B1;}
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
-.modal-body {padding:10px;}
+.modal-body {padding:10px;padding-bottom:50px;}
 .modal label {color:#A7A8AA;}
 
 #signin .modal-dialog {width: 300px;}
+
+.modal input[type="email"],
+.modal input[type="url"],
+.modal input[type="password"] {
+height: 32px;
+padding: 5px;
+border: 1px solid #f4f4f3;
+border-radius: 5px;
+width: 100%;
+}
+
+.button-modal {
+color: #ffffff;
+background-color: #a89968;
+border-color: #928557;
+border-top: 2px solid #9c8d5a;
+border-bottom: 2px solid #B8AB83;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
+background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
+background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
+background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
+background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
+-moz-background-size: 5px 100%;
+}
 
 /* ==========================================================================
    $Navigation
