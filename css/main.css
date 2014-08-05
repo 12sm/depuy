@@ -844,6 +844,15 @@ border: 1px solid #D5D6D2;
 .about-location img {
 width: 100%;
 }
+blockquote {
+padding: 0;
+margin: 20px 0px;
+font-size: 18px;
+color: #4D4F53;
+text-shadow: 0px 1px rgba(255,255,255,.8);
+border:none;
+width:90%;
+}
 /*Collapse Panels*/
 .panel-default > div.panel-heading{
   background: transparent;
