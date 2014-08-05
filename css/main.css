@@ -176,6 +176,8 @@ width: 100%;
 background-color: #f0f0f0;
 }
 
+.modal span.caret {margin-top: 8px;}
+
 .button-modal {
 color: #ffffff;
 background-color: #a89968;
@@ -859,7 +861,7 @@ color: #9FA09E;
 .flag:after {
   content: "\e602";
   font-family: 'Glyphicons Halflings';
-  color: #fff;
+  color: #8CA7B5;
   font-size: 20px;
   position: absolute;
   width: 100%;
@@ -869,13 +871,13 @@ color: #9FA09E;
 }
 
 .flag.opaque {
-  border-left-color: #ededed;
-  border-right-color: #ededed;
-  opacity: 0.7;
+  border-left-color: #EBE9E7;
+  border-right-color: #EBE9E7;
+  opacity: .9;
 }
 
 .flag.opaque:after {
-  color: #fff;
+  color: #8CA7B5;
 }
 
 .video_likes {
