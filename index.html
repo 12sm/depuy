@@ -68,7 +68,7 @@
         <div class="right_column">
             <header class="mobile_header visible-xs-block clearfix">
 					<div class="white-bg">	
-						<p class="login pull-right"><a href="#">Sign In / Register</a></p>
+						<p class="login pull-right"><a href="#" data-toggle="modal" data-target="#signin">Sign In / Register</a></p>
 						<h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
 						<div class="mobile_nav_button pull-left">
 							<button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target=".collapse-nav">Home <span class="glyphicon icon-caret-down" ></span></button>
@@ -373,9 +373,142 @@
                 <p>&copy; DePuy Synthes Companies 2014. All rights reserved. This site is published by DePuy Synthes Companies which is solely responsible for its content. This site is intended for visitors from the United States. Third party trademarks used herein are trademarks of their respective owners.</p>
                 <p class="updated">Last updated Jun 16, 2014<br>
                 DSUS/INS/0514/0125</p>
+				<p>Attention Project Magellan Team: These temporary buttons trigger all modals in the registration process. Please remove from footer before making the site live.</p>
+				<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#signin">Sign in modal</button>
+				<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#register">Register modal</button>
+				<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#forgotpass">Forgot Password modal</button>
+				<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#forgotpassenterpass">Forgot Password, Enter Password modal</button>
             </footer>
         </div>
     </div>
+	
+	
+	<!-- Sign In Modal -->
+	<div class="modal fade" id="signin" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h2 class="modal-title">Sign In</h2><a href="#" class="pull-right">register</a>
+		  </div>
+		  <div class="modal-body">
+			  <p>Optional text area. Might say something like this: Registration is required to favorite resources and events. Maybe we don't need text here.</p> 
+			  <label class="small-grey">EMAIL ADDRESS</label>
+			  <input type="email" value="joe@" />
+			  <label class="small-grey">PASSWORD</label>
+			  <input type="password" />
+			  <p class="pull-left"><a href="#">Forgot password?</a></p>
+			  <button type="submit" class="pull-right">Sign In</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Register Modal -->
+	<div class="modal fade" id="register" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h2 class="modal-title">Register</h2><a href="#" class="pull-right clearfix">Sign in</a>
+		  </div>
+		  <div class="modal-body">
+		  <p>Optional text area. Might say something like this about why DePuy Synthes needs this information.</p> 
+		  <label class="small-grey">PROFESSION</label>
+		  <div class="dropdown">
+			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+				Attending / Private Practice
+				<span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+			  </ul>
+			</div>
+		  
+		  <div class="row">
+		  <ul class="register-specialty-one col-sm-6">
+		  <label class="small-grey">SPECIALTY</label>
+			  <li><input type="checkbox"> Acute Care Surgery</li>
+			  <li><input type="checkbox"> Diagnostic Radiology</li>
+			  <li><input type="checkbox"> Interventional Radiology</li>
+			  <li><input type="checkbox"> Neurology</li>
+			  <li><input type="checkbox"> Orthopedic Surgery</li>
+			  <li><input type="checkbox"> Pain Management</li>
+			  <li><input type="checkbox"> Plastic Surgery</li>
+		  </ul>
+		  <ul class="register-specialty-two col-sm-6">
+			  <li><input type="checkbox"> Anesthesiology</li>
+			  <li><input type="checkbox"> General Surgery</li>
+			  <li><input type="checkbox"> Neurosurgery</li>
+			  <li><input type="checkbox"> Oral and Maxillofacial Surgery</li>
+			  <li><input type="checkbox"> Otalarynology</li>
+			  <li><input type="checkbox"> Physiatry</li>
+		  </ul>
+		   
+		   <ul class="register-sub-one col-sm-6">
+		   <label class="small-grey">SUB-SPECIALTY</label>
+			  <li><input type="checkbox"> Joint Reconstruction</li>
+			  <li><input type="checkbox"> Trauma</li>
+			  <li><input type="checkbox"> Pediatric</li>
+			  <li><input type="checkbox"> Hand & Wrist</li>
+		  </ul>
+		  <ul class="register-sub-two col-sm-6">
+			  <li><input type="checkbox"> Sports Medicine</li>
+			  <li><input type="checkbox"> Spine</li>
+			  <li><input type="checkbox"> Foot & Ankle</li>
+			  <li><input type="checkbox"> General</li>
+		  </ul>
+		  </div>
+		  <button type="submit" class="pull-right">Create Account</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Forgot Password Modal -->
+	<div class="modal fade" id="forgotpass" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h2 class="modal-title">Forgot Password</h2><a href="#" class="pull-right">register</a>
+		  </div>
+		  <div class="modal-body">
+		  <p>Enter your email address and we'll send your password.</p> 
+		  <label class="small-grey">EMAIL ADDRESS</label>
+		  <input type="email" value="email@address.org" />
+		  <button type="submit" class="pull-right">Sign In</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Forgot Password Enter Password Modal -->
+	<div class="modal fade" id="forgotpassenterpass" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<h2 class="modal-title">Forgot Password</h2><a href="#" class="pull-right">register</a>
+		  </div>
+		  <div class="modal-body">
+		  <p>Your password has been sent. Check your email.</p> 
+		  <label class="small-grey">EMAIL ADDRESS</label>
+		  <input type="email" value="email@address.org" />
+		  <label class="small-grey">PASSWORD</label>
+		  <input type="password" />
+		  <button type="submit" class="pull-right">Sign In</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
