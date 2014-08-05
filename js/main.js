@@ -12,3 +12,6 @@ $('.btn-search').click(function(){
 	$('.nav-search').toggleClass('form-hide');
 });
 
+$('.flag').click(function(){
+	$(this).toggleClass('opaque');
+})
