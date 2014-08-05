@@ -736,6 +736,12 @@ li.indent {margin-left: 20px;}
    $Resource Detail Views
    ============================== */
 
+.content .flag.opaque {
+z-index: 999;
+text-align: right;
+right: 5px;
+}
+
 /* $Video Specific */
 
 .row.resource-description {
