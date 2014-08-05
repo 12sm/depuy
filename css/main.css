@@ -142,10 +142,55 @@ margin-right: -28px;
 .modal span.filter_amount {color:#AFB0B1;}
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
-.modal-body {padding:10px;}
+.modal-body {padding:10px;padding-bottom:10px;}
 .modal label {color:#A7A8AA;}
 
 #signin .modal-dialog {width: 300px;}
+
+.modal input[type="email"],
+.modal input[type="url"],
+.modal input[type="password"] {
+height: 32px;
+padding: 5px;
+border: 1px solid #f4f4f3;
+border-radius: 5px;
+width: 100%;
+}
+
+.modal .dropdown-toggle {
+width: 100%;
+padding: 3px 5px;
+text-align: left;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #f0f0ef 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#f0f0ef)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#f0f0ef 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#f0f0ef 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#f0f0ef 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#f0f0ef 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f0f0ef',GradientType=0 ); /* IE6-9 */
+}
+
+.modal ul.dropdown-menu {
+width: 100%;
+background-color: #f0f0f0;
+}
+
+.modal span.caret {margin-top: 8px;}
+
+.button-modal {
+color: #ffffff;
+background-color: #a89968;
+border-color: #928557;
+border-top: 2px solid #9c8d5a;
+border-bottom: 2px solid #B8AB83;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
+background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
+background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
+background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
+background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
+-moz-background-size: 5px 100%;
+}
 
 /* ==========================================================================
    $Navigation
@@ -834,7 +879,7 @@ color: #9FA09E;
 .flag:after {
   content: "\e602";
   font-family: 'Glyphicons Halflings';
-  color: #fff;
+  color: #8CA7B5;
   font-size: 20px;
   position: absolute;
   width: 100%;
@@ -844,13 +889,13 @@ color: #9FA09E;
 }
 
 .flag.opaque {
-  border-left-color: #ededed;
-  border-right-color: #ededed;
-  opacity: 0.7;
+  border-left-color: #EBE9E7;
+  border-right-color: #EBE9E7;
+  opacity: .9;
 }
 
 .flag.opaque:after {
-  color: #fff;
+  color: #8CA7B5;
 }
 
 .video_likes {

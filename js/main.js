@@ -16,3 +16,8 @@ $('#mobileDropdown').on('show.bs.dropdown', function() {
 }).on('hide.bs.dropdown', function() {
 	$('#mobileNavIcon').removeClass('icon-caret-up').addClass('icon-caret-down');
 });
+
+$('.flag').click(function(){
+	$(this).toggleClass('opaque');
+})
+
