@@ -203,16 +203,23 @@
 	  <div class="modal-dialog">
 		<div class="modal-content">
 		  <div class="modal-header">
-			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-			<h2 class="modal-title">Register</h2><a href="#" class="pull-right clearfix">Sign in</a>
+		  	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<div class="row">
+					<div class="col-sm-6 modal-header-left">
+						<h2 class="modal-title">Register</h2>
+					</div>
+					<div class="col-sm-6 modal-header-right">
+						<a href="#">Sign In</a>
+					</div>
+				</div>
 		  </div>
 		  <div class="modal-body">
 		  <p>Optional text area. Might say something like this about why DePuy Synthes needs this information.</p> 
-		  <label class="small-grey">PROFESSION</label>
+		  <label>PROFESSION</label>
 		  <div class="dropdown">
 			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
 				Attending / Private Practice
-				<span class="caret"></span>
+				<span class="caret pull-right"></span>
 			  </button>
 			  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
@@ -226,7 +233,7 @@
 		  
 		  <div class="row">
 		  <ul class="register-specialty-one col-sm-6">
-		  <label class="small-grey">SPECIALTY</label>
+		  <label>SPECIALTY</label>
 			  <li><input type="checkbox"> Acute Care Surgery</li>
 			  <li><input type="checkbox"> Diagnostic Radiology</li>
 			  <li><input type="checkbox"> Interventional Radiology</li>
@@ -245,7 +252,7 @@
 		  </ul>
 		   
 		   <ul class="register-sub-one col-sm-6">
-		   <label class="small-grey">SUB-SPECIALTY</label>
+		   <label>SUB-SPECIALTY</label>
 			  <li><input type="checkbox"> Joint Reconstruction</li>
 			  <li><input type="checkbox"> Trauma</li>
 			  <li><input type="checkbox"> Pediatric</li>
@@ -258,7 +265,7 @@
 			  <li><input type="checkbox"> General</li>
 		  </ul>
 		  </div>
-		  <button type="submit" class="pull-right">Create Account</button>
+		  <button type="submit" class="pull-right btn button-lg button-modal">Create Account</button>
 		  </div>
 		</div>
 	  </div>
@@ -276,7 +283,7 @@
 		  <p>Enter your email address and we'll send your password.</p> 
 		  <label class="small-grey">EMAIL ADDRESS</label>
 		  <input type="email" value="email@address.org" />
-		  <button type="submit" class="pull-right">Sign In</button>
+		  <button type="submit" class="pull-right btn button-lg button-modal">Sign In</button>
 		  </div>
 		</div>
 	  </div>
@@ -296,7 +303,7 @@
 		  <input type="email" value="email@address.org" />
 		  <label class="small-grey">PASSWORD</label>
 		  <input type="password" />
-		  <button type="submit" class="pull-right">Sign In</button>
+		  <button type="submit" class="pull-right btn button-lg button-modal">Sign In</button>
 		  </div>
 		</div>
 	  </div>
