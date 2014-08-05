@@ -259,7 +259,7 @@ border-top:none;
 box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1);
 }
 
-ul.list-unstyled.nav_list li:last-child {
+ul.list-unstyled.nav_list li:nth-last-child(2) {
 border-top: none;
 -webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2);
 -moz-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2);
@@ -320,15 +320,23 @@ display: inline-block;
 li.nav-home, li.nav-calendar {
 list-style: none;
 padding: 7px 30px;
-margin-bottom: 10px;
 -webkit-box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 -moz-box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1);
 }
 
+li.nav-home {margin-bottom: 10px;}
+li.nav-calendar {margin-top: 10px;}
+
 a.nav_home, a.nav_calendar {position: relative;}
 a.nav_home .glyphicon.icon-home {position: absolute;right: -150px;}
 a.nav_calendar .glyphicon.icon-cal {position: absolute;right: -80px;}
+
+.collapse-nav.collapse.in {
+background: url(../img/nav-tile.jpg) repeat left top;
+width: 300px;
+margin: 0 auto;
+}
 
 /* ==========================================================================
    $Content
@@ -866,6 +874,19 @@ background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B
 /* Padding to 15px */
 li.active {padding: 7px 15px;}
 .nav_list li {padding: 8px 15px;}
+ul.list-unstyled.nav_list li:nth-last-child(2) {
+border-top: none;
+-webkit-box-shadow: 0px 4px 4px -4px rgba(000,000,000,.2);
+-moz-box-shadow: 0px 4px 4px -4px rgba(000,000,000,.2);
+box-shadow: 0px 4px 4px -4px rgba(000,000,000,.2);
+}
+li.nav-home, li.nav-calendar {
+list-style: none;
+padding: 7px 30px;
+-webkit-box-shadow: 0px 0px 2px 3px rgba(000,000,000,.1);
+-moz-box-shadow: 0px 0px 2px 3px rgba(000,000,000,.1);
+box-shadow: 0px 1px 2px -1px rgba(000,000,000,.1);
+}
 .content {padding: 10px 15px;background: #E4E4E2;}
 .upcoming-courses {padding: 0px;}
 .single-content-box {margin-bottom: 15px;}
