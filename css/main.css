@@ -211,9 +211,9 @@ background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B
 -moz-background-size: 5px 100%;
 }
 
-ul.register-specialty-one, 
-ul.register-specialty-two, 
-ul.register-sub-one, 
+ul.register-specialty-one,
+ul.register-specialty-two,
+ul.register-sub-one,
 ul.register-sub-two {
 font-weight: bold;
 font-weight: bold;
@@ -222,9 +222,9 @@ padding: 0px 5px;
 list-style: none;
 }
 
-ul.register-specialty-one li, 
-ul.register-specialty-two li, 
-ul.register-sub-one li, 
+ul.register-specialty-one li,
+ul.register-specialty-two li,
+ul.register-sub-one li,
 ul.register-sub-two li {
 padding: 5px 0px;
 }
@@ -424,6 +424,9 @@ display: none;
 }
 .nav_calendar span.float-right {
 color: #a89968;
+}
+.float-right{
+  float: right;
 }
 .form-group.mobile-search {
 width: 80%;
