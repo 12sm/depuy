@@ -237,9 +237,14 @@ padding: 5px 0px;
    $Top Nav
    ============================== */
 
+.top_nav li.active {
+background-color: #1A5070;
+border: none;
+}
+
 .top_nav {
   background: #003c60;
-  padding: 3px 20px;
+  padding: 0px 20px;
   -webkit-box-shadow: 0 3px 5px 1px #BDBDBD;
   box-shadow: 0 3px 5px 1px #BDBDBD;
   -moz-box-shadow: 0 3px 5px 1px #BDBDBD;
@@ -451,11 +456,11 @@ a.nav_calendar .glyphicon.icon-cal {position: absolute;right: -80px;}
    $Main Nav - Signed in
    ============================== */
 
-.profile li.nav-home {
+.logged-in li.nav-home {
 margin-bottom: 0;
 }
 
-.profile li.nav-favorites {
+.logged-in li.nav-favorites {
 margin-bottom: 10px;
 -webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2)!important;
 -moz-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2)!important;
@@ -839,6 +844,15 @@ border: 1px solid #D5D6D2;
 }
 .about-location img {
 width: 100%;
+}
+blockquote {
+padding: 0;
+margin: 20px 0px;
+font-size: 18px;
+color: #4D4F53;
+text-shadow: 0px 1px rgba(255,255,255,.8);
+border:none;
+width:90%;
 }
 /*Collapse Panels*/
 .panel-default > div.panel-heading{
