@@ -67,49 +67,33 @@
         </div>
         <div class="right_column">
             <header class="mobile_header visible-xs-block clearfix">
-					<div class="white-bg">	
-						<p class="login pull-right"><a href="#" data-toggle="modal" data-target="#signin">Sign In / Register</a></p>
-						<h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
-						<div class="mobile_nav_button pull-left">
-							<button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target=".collapse-nav">Home <span class="glyphicon icon-caret-down" ></span></button>
+                <div class="white-bg">
+                    <p class="login pull-right"><a href="#" data-toggle="modal" data-target="#signin">Sign In / Register</a></p>
+                    <h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
+                    <div id="mobileDropdown" class="dropdown mobile_nav_button pull-left">
+                        <button class="btn btn-info btn-block dropdown-toggle" type="button" data-toggle="dropdown">Home <span id="mobileNavIcon" class="glyphicon icon-caret-down" ></span></button>
+                        <ul class="dropdown-menu mobile-nav">
+                            <li><a href="#"><span class="pull-right glyphicon icon-home"></span>Home</a></li>
+                            <li class="mobile-nav-break"></li>
+                            <li><a href="#">Craniomaxillofacial</a></li>
+                            <li><a href="#">Chest Wall</a></li>
+                            <li><a href="#">Spine</a></li>
+                            <li><a href="#">Shoulder</a></li>
+                            <li><a href="#">Elbow</a></li>
+                            <li><a href="#">Hand &amp; Wrist</a></li>
+                            <li><a href="#">Pelvis</a></li>
+                            <li><a href="#">Hip</a></li>
+                            <li><a href="#">Knee</a></li>
+                            <li><a href="#">Foot &amp; Ankle</a></li>
+                            <li class="mobile-nav-break"></li>
+                            <li><a href="#" class=""><span class="pull-right glyphicon icon-cal"></span>Course Calendar</a></li>
+                        </ul>
 					</div>
                 </div>
                 <div class="mobile_search_button pull-right">
                     <button class="btn btn-info btn-search"><span class="glyphicon icon-search"></span></button>
                     <input id="search" name="search" type="text" class="form-control nav-search form-hide" placeholder="search">
-
                 </div>
-            <div class="collapse-nav collapse">
-                <div class="column_header">
-                <div class="search">
-                    <form class="form-inline">
-                        <div class="form-group mobile-search">
-                            <label for="search" class="sr-only">Search criteria</label>
-                            <input id="search" name="search" type="text" class="form-control" placeholder="search">
-                        </div>
-                        <button type="submit" class="btn btn-info "><span class="glyphicon icon-search"></span></button>
-                    </form>
-                </div>
-            </div>
-            <div class="column_nav">
-                <nav class="main_nav">
-                    <ul class="list-unstyled nav_list">
-                    	<li class="nav-home active"><a href="#" class="nav_home">Home<span class="float-right glyphicon icon-home"></span></a></li>
-                        <li><a href="#">Craniomaxillofacial</a></li>
-                        <li><a href="#">Chest Wall</a></li>
-                        <li><a href="#">Spine</a></li>
-                        <li><a href="#">Shoulder</a></li>
-                        <li><a href="#">Elbow</a></li>
-                        <li><a href="#">Hand &amp; Wrist</a></li>
-                        <li><a href="#">Pelvis</a></li>
-                        <li><a href="#">Hip</a></li>
-                        <li><a href="#">Knee</a></li>
-                        <li><a href="#">Foot &amp; Ankle</a></li>
-                        <li class="nav-calendar"><a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
             </header>
             <div class="hero">
                 <div class="hero_image">
@@ -381,8 +365,8 @@
             </footer>
         </div>
     </div>
-	
-	
+
+
 	<!-- Sign In Modal -->
 	<div class="modal fade" id="signin" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
@@ -392,7 +376,7 @@
 			<h2 class="modal-title">Sign In</h2><a href="#" class="pull-right">register</a>
 		  </div>
 		  <div class="modal-body">
-			  <p>Optional text area. Might say something like this: Registration is required to favorite resources and events. Maybe we don't need text here.</p> 
+			  <p>Optional text area. Might say something like this: Registration is required to favorite resources and events. Maybe we don't need text here.</p>
 			  <label class="small-grey">EMAIL ADDRESS</label>
 			  <input type="email" value="joe@" />
 			  <label class="small-grey">PASSWORD</label>
@@ -403,7 +387,7 @@
 		</div>
 	  </div>
 	</div>
-	
+
 	<!-- Register Modal -->
 	<div class="modal fade" id="register" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
@@ -413,7 +397,7 @@
 			<h2 class="modal-title">Register</h2><a href="#" class="pull-right clearfix">Sign in</a>
 		  </div>
 		  <div class="modal-body">
-		  <p>Optional text area. Might say something like this about why DePuy Synthes needs this information.</p> 
+		  <p>Optional text area. Might say something like this about why DePuy Synthes needs this information.</p>
 		  <label class="small-grey">PROFESSION</label>
 		  <div class="dropdown">
 			  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
@@ -429,7 +413,7 @@
 				<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
 			  </ul>
 			</div>
-		  
+
 		  <div class="row">
 		  <ul class="register-specialty-one col-sm-6">
 		  <label class="small-grey">SPECIALTY</label>
@@ -449,7 +433,7 @@
 			  <li><input type="checkbox"> Otalarynology</li>
 			  <li><input type="checkbox"> Physiatry</li>
 		  </ul>
-		   
+
 		   <ul class="register-sub-one col-sm-6">
 		   <label class="small-grey">SUB-SPECIALTY</label>
 			  <li><input type="checkbox"> Joint Reconstruction</li>
@@ -469,7 +453,7 @@
 		</div>
 	  </div>
 	</div>
-	
+
 	<!-- Forgot Password Modal -->
 	<div class="modal fade" id="forgotpass" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
@@ -479,7 +463,7 @@
 			<h2 class="modal-title">Forgot Password</h2><a href="#" class="pull-right">register</a>
 		  </div>
 		  <div class="modal-body">
-		  <p>Enter your email address and we'll send your password.</p> 
+		  <p>Enter your email address and we'll send your password.</p>
 		  <label class="small-grey">EMAIL ADDRESS</label>
 		  <input type="email" value="email@address.org" />
 		  <button type="submit" class="pull-right">Sign In</button>
@@ -487,7 +471,7 @@
 		</div>
 	  </div>
 	</div>
-	
+
 	<!-- Forgot Password Enter Password Modal -->
 	<div class="modal fade" id="forgotpassenterpass" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
@@ -497,7 +481,7 @@
 			<h2 class="modal-title">Forgot Password</h2><a href="#" class="pull-right">register</a>
 		  </div>
 		  <div class="modal-body">
-		  <p>Your password has been sent. Check your email.</p> 
+		  <p>Your password has been sent. Check your email.</p>
 		  <label class="small-grey">EMAIL ADDRESS</label>
 		  <input type="email" value="email@address.org" />
 		  <label class="small-grey">PASSWORD</label>
@@ -507,8 +491,8 @@
 		</div>
 	  </div>
 	</div>
-	
-	
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
