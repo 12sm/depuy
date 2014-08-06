@@ -101,8 +101,8 @@ width: 100%;
 text-align: center;
 left: 0;
 top: 8%;
-color: #fff;
-opacity: 0.5;
+color: #000;
+opacity: 0.7;
 font-size: 3em;
 }
 
@@ -538,8 +538,21 @@ font-weight: 100;
 margin-top: 0px;
 }
 
-.hero_image {position: relative;}
+.hero_image {position: relative;max-height: 420px;overflow: hidden;}
 .hero_text {position: absolute;bottom: 0;}
+
+.hero_image .play-icon {
+position: absolute;
+width: 100%;
+text-align: center;
+left: 0;
+top: 25%;
+color: #1B1B1B;
+opacity: 0.5;
+font-size: 7em;
+}
+
+.hero_image .play-icon:hover {opacity:1;}
 
 .hero_description {
 padding: 10px 20px;
