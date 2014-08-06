@@ -19,5 +19,19 @@ $('#mobileDropdown').on('show.bs.dropdown', function() {
 
 $('.flag').click(function(){
 	$(this).toggleClass('opaque');
-})
+});
 
+$('input[type="checkbox"]').change(function() {
+	if ($(this).is(':checked')) {
+		$(this).parent('label').addClass('input_checked');
+	} else {
+		$(this).parent('label').removeClass('input_checked');
+	}
+});
+$('input[type="radio"]').change(function() {
+	var name = $(this).attr('name');
+	$('input[name="' + name + '"]').parent('label').removeClass('input_checked');
+	if ($(this).is(':checked')) {
+		$(this).parent('label').addClass('input_checked');
+	}
+});
