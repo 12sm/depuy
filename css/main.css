@@ -1341,7 +1341,7 @@ h2 {font-size: 18px;}
 
 /* Content boxes */
 .text-max-height {height: 100px;}
-.col-xs-6.col-md-3.single-content-box {height: 357px;}
+.col-xs-6.col-md-3.single-content-box {height: auto;}
 
 /* Footer */
 footer.footer {padding: 30px;}
@@ -1385,7 +1385,7 @@ footer.footer {padding: 30px;}
 
 /* Content boxes */
 .text-max-height {height: 100px;}
-.col-xs-6.col-md-3.single-content-box {height: 270px;}
+.col-xs-6.col-md-3.single-content-box {height: auto;}
 
 /* Footer */
 footer.footer {padding: 30px;}
@@ -1400,7 +1400,7 @@ h2 {font-size: 24px;}
 
 .text-max-height {height: 80px;}
 
-.col-xs-6.col-md-3.single-content-box {height: 296px;}
+.col-xs-6.col-md-3.single-content-box {height: auto;}
 
 .upcoming-courses {padding:0px;}
 
