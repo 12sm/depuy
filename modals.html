@@ -18,55 +18,9 @@
     <![endif]-->
   </head>
   <body>
-    <div class="main_wrapper container-fluid">
-        <div class="right_column">
-            <header class="mobile_header visible-xs-block clearfix">
-					<div class="white-bg">	
-						<p class="login pull-right"><a href="#" data-toggle="modal" data-target="#signin">Sign In / Register</a></p>
-						<h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
-						<div class="mobile_nav_button pull-left">
-							<button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target=".collapse-nav">Home <span class="glyphicon icon-caret-down" ></span></button>
-					</div>
-                </div>
-                <div class="mobile_search_button pull-right">
-                    <button class="btn btn-info btn-search"><span class="glyphicon icon-search"></span></button>
-                    <input id="search" name="search" type="text" class="form-control nav-search form-hide" placeholder="search">
+    <div class=" container-fluid">
 
-                </div>
-            <div class="collapse-nav collapse">
-                <div class="column_header">
-                <div class="search">
-                    <form class="form-inline">
-                        <div class="form-group mobile-search">
-                            <label for="search" class="sr-only">Search criteria</label>
-                            <input id="search" name="search" type="text" class="form-control" placeholder="search">
-                        </div>
-                        <button type="submit" class="btn btn-info "><span class="glyphicon icon-search"></span></button>
-                    </form>
-                </div>
-            </div>
-            <div class="column_nav">
-                <nav class="main_nav">
-                    <ul class="list-unstyled nav_list">
-                    	<li class="nav-home active"><a href="#" class="nav_home">Home<span class="float-right glyphicon icon-home"></span></a></li>
-                        <li><a href="#">Craniomaxillofacial</a></li>
-                        <li><a href="#">Chest Wall</a></li>
-                        <li><a href="#">Spine</a></li>
-                        <li><a href="#">Shoulder</a></li>
-                        <li><a href="#">Elbow</a></li>
-                        <li><a href="#">Hand &amp; Wrist</a></li>
-                        <li><a href="#">Pelvis</a></li>
-                        <li><a href="#">Hip</a></li>
-                        <li><a href="#">Knee</a></li>
-                        <li><a href="#">Foot &amp; Ankle</a></li>
-                        <li class="nav-calendar"><a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-     </header>
-	 
-	 
+
             <div class="content">
                 <section>
 					<div class="row">
@@ -77,22 +31,17 @@
 					<div class="row">
 						<div class="col-sm-12 all-buttons">
 						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#signin">Sign in modal</button>
-						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#register">Register modal</button>
+						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#register1">Register modal 1</button>
+						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#register2">Register modal 2</button>
+						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#register3">Register modal 3</button>
 						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#forgotpass">Forgot Password modal</button>
 						<button type="button" class="btn btn-sm filter-btn" data-toggle="modal" data-target="#forgotpassenterpass">Forgot Password, Enter Password modal</button>
 						</div>
 					</div>
                 </section>
 			</div><!-- end content -->
-
-
-            </div><!-- end right column -->
-        </div>
     </div>
-	
-	
-	
-				
+
 <!-- MODALS -->
 
 <!-- Sign In Modal -->
@@ -113,13 +62,13 @@
 		  <div class="modal-body">
 			  <div class="row">
 			  	<div class="col-sm-12">
-					<p>Optional text area. Might say something like this: Registration is required to favorite resources and events. Maybe we don't need text here.</p> 
+					<p>Optional text area. Might say something like this: Registration is required to favorite resources and events. Maybe we don't need text here.</p>
 				</div>
 			  </div>
 			  <label>EMAIL ADDRESS</label><br />
 			  <input type="email" value="joe@" /><br />
 			  <label>PASSWORD</label><br />
-			  <input type="password" /><br /> 
+			  <input type="password" /><br />
 		  </div>
 		  <div class="modal-footer">
 		  	<p class="pull-left"><a href="#">Forgot password?</a></p>
@@ -128,96 +77,356 @@
 		</div>
 	  </div>
 	</div>
-	
-	<!-- Register Modal -->
-	<div class="modal fade" id="register" tabindex="-1" role="dialog">
+
+	<!-- Register Modal 1 -->
+	<div class="modal fade" id="register1" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
 		<div class="modal-content">
-		  <div class="modal-header">
-		  	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<div class="row">
-					<div class="col-sm-6 modal-header-left">
-						<h2 class="modal-title">Register</h2>
-					</div>
-					<div class="col-sm-6 modal-header-right">
-						<a href="#">Sign In</a>
-					</div>
-				</div>
-		  </div>
-		  <div class="modal-body">
-		  <div class="row">
-		  	<div class="col-sm-12">
-				<p>Optional text area. Might say something like this about why DePuy Synthes needs this information.</p> 
-				<label>PROFESSION</label>
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-						Attending / Private Practice
-						<span class="caret pull-right"></span>
-					</button>
-					  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
-						<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
-					  </ul>
-					</div>
-				</div>
+		  <form>
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				  <div class="row">
+					  <div class="col-sm-6 modal-header-left">
+						  <h2 class="modal-title">Register</h2>
+					  </div>
+					  <div class="col-sm-6 modal-header-right">
+						  <a href="#">Sign In</a>
+					  </div>
+				  </div>
 			</div>
-		  
-		  
-		  	<div class="row">
-				<div class="col-sm-12">
-					<label>SPECIALTY</label>
+			<div class="modal-body">
+			  <div class="row">
+				<div class="col-sm-6">
+				  <div class="form-group">
+					<label for="firstName">FIRST NAME</label>
+					<input type="text" class="form-control" id="firstName" name="first_name" placeholder="first name" required>
+				  </div>
 				</div>
-			</div>
-		  <div class="row">
-			  <ul class="register-specialty-one col-sm-6">
-				  <li><input type="checkbox"> Acute Care Surgery</li>
-				  <li><input type="checkbox"> Diagnostic Radiology</li>
-				  <li><input type="checkbox"> Interventional Radiology</li>
-				  <li><input type="checkbox"> Neurology</li>
-				  <li><input type="checkbox"> Orthopedic Surgery</li>
-				  <li><input type="checkbox"> Pain Management</li>
-				  <li><input type="checkbox"> Plastic Surgery</li>
-			  </ul>
-			  <ul class="register-specialty-two col-sm-6">
-				  <li><input type="checkbox"> Anesthesiology</li>
-				  <li><input type="checkbox"> General Surgery</li>
-				  <li><input type="checkbox"> Neurosurgery</li>
-				  <li><input type="checkbox"> Oral and Maxillofacial Surgery</li>
-				  <li><input type="checkbox"> Otalarynology</li>
-				  <li><input type="checkbox"> Physiatry</li>
-			  </ul>
-			</div>
-			
-			<div class="row">
-				<div class="col-sm-12">
-					<label>SUB-SPECIALTY</label>
+				<div class="col-sm-6">
+				  <div class="form-group">
+					<label for="lastName">LAST NAME</label>
+					<input type="text" class="form-control" id="lastName" name="last_name" placeholder="last name" required>
+				  </div>
 				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-6">
+				  <div class="form-group">
+					<label for="email">EMAIL ADDRESS</label>
+					<input type="email" class="form-control" id="email" name="email" placeholder="email@address.org" required>
+				  </div>
+				</div>
+				<div class="col-sm-6">
+				  <div class="form-group">
+					<label for="emailConfirm">CONFIRM EMAIL ADDRESS</label>
+					<input type="email" class="form-control" id="emailConfirm" name="email_confirm" placeholder="email@address.org" required>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-6">
+				  <div class="form-group">
+					<label for="password">CHOOSE A PASSWORD</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="at least 8 characters" required pattern=".{8,}">
+				  </div>
+				</div>
+				<div class="col-sm-6">
+				  <div class="form-group">
+					<label for="passwordConfirm">CONFIRM PASSWORD</label>
+					<input type="password" class="form-control" id="passwordConfirm" name="password_confirm" placeholder="confirm password" required pattern=".{8,}">
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				 <div class="col-xs-12">
+				  <div class="checkbox">
+					<label>
+					  <input class="sr-only" type="checkbox" name="terms"><span class="styled_checkbox"></span> I agree to the <a href="#">terms and conditions</a>.
+					</label>
+				  </div>
+				 </div>
+			  </div>
+			  <div class="row">
+				 <div class="col-xs-12">
+				  <div class="checkbox">
+					<label>
+					  <input class="sr-only" type="checkbox" name="privacy"><span class="styled_checkbox"></span> If you check this box we will send you information through email communication about our products and services. You agree that the information you provide will be governed by our <a href="#">Privacy Policy</a>.
+					</label>
+				  </div>
+				 </div>
+			  </div>
 			</div>
-			<div class="row">   
-			   <ul class="register-sub-one col-sm-6">
-				  <li><input type="checkbox"> Joint Reconstruction</li>
-				  <li><input type="checkbox"> Trauma</li>
-				  <li><input type="checkbox"> Pediatric</li>
-				  <li><input type="checkbox"> Hand & Wrist</li>
-			  </ul>
-			  <ul class="register-sub-two col-sm-6">
-				  <li><input type="checkbox"> Sports Medicine</li>
-				  <li><input type="checkbox"> Spine</li>
-				  <li><input type="checkbox"> Foot & Ankle</li>
-				  <li><input type="checkbox"> General</li>
-			  </ul>
-		  </div>
-		</div>
-		<div class="modal-footer">
-		  	<button type="submit" class="pull-right btn button-lg button-modal">Create Account</button>
-	      </div>
+			<div class="modal-footer">
+			  <button type="submit" class="pull-right btn button-lg button-modal">Next <span class="glyphicon icon-caret-right"></span></button>
+			</div>
+		  </form>
 	  </div>
 	</div>
 </div>
+
+	<!-- Register Modal 2 -->
+	<div class="modal fade register_two" id="register2" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <form>
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				  <div class="row">
+					  <div class="col-sm-6 modal-header-left">
+						  <h2 class="modal-title">Register</h2>
+					  </div>
+					  <div class="col-sm-6 modal-header-right">
+						  <a href="#">Sign In</a>
+					  </div>
+				  </div>
+			</div>
+			<div class="modal-body">
+			  <div class="row">
+				<div class="col-sm-12">
+				  <p>Optional text area. Might say something like this about why DePuy Synthes needs this information.</p>
+				  <div class="dropdown form-group">
+					<label>PROFESSION</label>
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+						<span class="caret pull-right"></span>
+						Attending / Private Practice
+					</button>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+					  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Profession</a></li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				  <div class="col-xs-12">
+					  <div class="radio-group">
+						<label>SPECIALTY</label>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-6">
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty1" value="option1">
+					  <span class="styled_radio"></span>
+					  Acute Care Surgery
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty2" value="option2">
+					  <span class="styled_radio"></span>
+					  Diagnostic Radiology
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty3" value="option3">
+					  <span class="styled_radio"></span>
+					  Interventional Radiology
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty4" value="option4">
+					  <span class="styled_radio"></span>
+					  Neurology
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty5" value="option5">
+					  <span class="styled_radio"></span>
+					  Orthopedic Surgery
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty6" value="option6">
+					  <span class="styled_radio"></span>
+					  Pain Management
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty7" value="option7">
+					  <span class="styled_radio"></span>
+					  Plastic Surgery
+					</label>
+				  </div>
+				</div>
+				<div class="col-sm-6">
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty8" value="option8">
+					  <span class="styled_radio"></span>
+					  Anesthesiology
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty9" value="option9">
+					  <span class="styled_radio"></span>
+					  General Surgery
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty10" value="option10">
+					  <span class="styled_radio"></span>
+					  Neurosurgery
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty11" value="option11">
+					  <span class="styled_radio"></span>
+					  Oral and Maxillofacial Surgery
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty12" value="option12">
+					  <span class="styled_radio"></span>
+					  Otalarynology
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="specialty" id="specialty13" value="option13">
+					  <span class="styled_radio"></span>
+					  Physiatry
+					</label>
+				  </div>
+				</div>
+			  </div>
+			  <div class="row">
+				  <div class="col-xs-12">
+					  <div class="radio-group">
+						<label>SUB-SPECIALTY</label>
+					  </div>
+				  </div>
+			  </div>
+			  <div class="row">
+				<div class="col-sm-6">
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty1" value="option1">
+					  <span class="styled_radio"></span>
+					  Joint Reconstruction
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty2" value="option2">
+					  <span class="styled_radio"></span>
+					  Trauma
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty3" value="option3">
+					  <span class="styled_radio"></span>
+					  Pediatric
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty4" value="option4">
+					  <span class="styled_radio"></span>
+					  Hand &amp; Wrist
+					</label>
+				  </div>
+				</div>
+				<div class="col-sm-6">
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty5" value="option5">
+					  <span class="styled_radio"></span>
+					  Sports Medicine
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty6" value="option6">
+					  <span class="styled_radio"></span>
+					  Spine
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty7" value="option7">
+					  <span class="styled_radio"></span>
+					  Foot &amp; Ankle
+					</label>
+				  </div>
+				  <div class="radio">
+					<label>
+					  <input class="sr-only" type="radio" name="subSpecialty" id="subSpecialty8" value="option8">
+					  <span class="styled_radio"></span>
+					  General
+					</label>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			<div class="modal-footer">
+			  <button type="submit" class="pull-right btn button-lg button-modal">Create Account</button>
+			</div>
+		  </form>
+		</div>
+	  </div>
+	</div>
+
+	<!-- Register Modal 3 -->
+	<div class="modal fade" id="register3" tabindex="-1" role="dialog">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<div class="row">
+				<div class="col-sm-6 modal-header-left">
+					<h2 class="modal-title">Register</h2>
+				</div>
+				<div class="col-sm-6 modal-header-right">
+					<a href="#">Sign In</a>
+				</div>
+			</div>
+		  </div>
+		  <div class="modal-body">
+			<div class="row">
+			  <div class="col-sm-12">
+				<p>You're registered! Thanks for signing up. You can now favorite resources and events. View your favorites in your profile.</p>
+				<div class="form-group">
+				  <label>NAME</label>
+				  <p>Bob Marley</p>
+				</div>
+				<div class="form-group">
+				  <label>EMAIL ADDRESS</label>
+				  <p>bmarley@hospitalone.org</p>
+				</div>
+				<div class="form-group">
+				  <label>PROFESSION</label>
+				  <p>Attending / Private Practice</p>
+				</div>
+				<div class="form-group">
+				  <label>SPECIALTY</label>
+				  <p>Orthopaedic Surgery, General</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<a href="#" class="pull-right btn button-lg button-modal">Go to Profile</a>
+	      </div>
+		</div>
+	  </div>
+	</div>
 
 <!-- Forgot Password Modal -->
 	<div class="modal fade" id="forgotpass" tabindex="-1" role="dialog">
@@ -234,7 +443,7 @@
 		  <div class="modal-body">
 			  <div class="row">
 			  	<div class="col-sm-12">
-					<p>Enter yoru email address and we'll send your password.</p> 
+					<p>Enter yoru email address and we'll send your password.</p>
 				</div>
 			  </div>
 			  <label>EMAIL ADDRESS</label><br />
@@ -246,7 +455,7 @@
 		</div>
 	  </div>
 	</div>
-					
+
 	<!-- Forgot Password Two Modal -->
 	<div class="modal fade" id="forgotpassenterpass" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
@@ -262,7 +471,7 @@
 		  <div class="modal-body">
 			  <div class="row">
 			  	<div class="col-sm-12">
-					<p>Your password has been sent. Check your email.</p> 
+					<p>Your password has been sent. Check your email.</p>
 				</div>
 			  </div>
 			  <label>EMAIL ADDRESS</label><br />
@@ -275,18 +484,18 @@
 	      </div>
 		</div>
 	  </div>
-	</div>			
-				
-				
-				
-				
-				
-				
-				
-				
-				
-	
-	
+	</div>
+
+
+
+
+
+
+
+
+
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
