@@ -6162,54 +6162,63 @@ button.close {
     display: none !important;
   }
 }
+.icon-dog:before {
+	content: "\e611";
+}
+.icon-horse:before {
+	content: "\e613";
+}
+.icon-ecomm:before {
+	content: "\e612";
+}
 .icon-cal:before {
-  content: "\e604";
+	content: "\e604";
 }
 .icon-search:before {
-  content: "\e600";
+	content: "\e600";
 }
 .icon-profile:before {
-  content: "\e601";
+	content: "\e601";
 }
 .icon-star:before {
-  content: "\e602";
+	content: "\e602";
 }
 .icon-home:before {
-  content: "\e603";
+	content: "\e603";
 }
 .icon-play:before {
-  content: "\e605";
+	content: "\e605";
 }
 .icon-list-view:before {
-  content: "\e606";
+	content: "\e606";
 }
 .icon-gal-view:before {
-  content: "\e607";
+	content: "\e607";
 }
 .icon-share:before {
-  content: "\e608";
+	content: "\e608";
 }
 .icon-banner:before {
-  content: "\e609";
+	content: "\e609";
 }
 .icon-info:before {
-  content: "\e60a";
+	content: "\e60a";
 }
 .icon-download:before {
-  content: "\e60b";
+	content: "\e60b";
 }
 .icon-plus:before {
-  content: "\e60c";
+	content: "\e60c";
 }
 .icon-caret-left:before {
-  content: "\e60d";
+	content: "\e60d";
 }
 .icon-caret-right:before {
-  content: "\e60e";
+	content: "\e60e";
 }
 .icon-caret-down:before {
-  content: "\e60f";
+	content: "\e60f";
 }
 .icon-caret-up:before {
-  content: "\e610";
+	content: "\e610";
 }
