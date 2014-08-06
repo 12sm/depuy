@@ -111,6 +111,33 @@ font-size: 3em;
   opacity: 0.9;
 }
 
+/* ==============================
+   $Forms General Styling
+   ============================== */
+
+label {
+  position: relative;
+}
+.styled_checkbox {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 1px;
+  background: #fff;
+}
+.styled_radio {
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+}
+.input_checked .styled_checkbox, .input_checked .styled_radio {
+  background: #003C60;
+  box-shadow: inset 0 0 0 4px #fff;
+}
 
 /* ==============================
    $Modals General Styling
@@ -160,7 +187,8 @@ margin-right: -28px;
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
 .modal-body {padding:10px;}
-.modal label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
+.modal .form-group label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
+.modal .radio-group label {color: #A7A8AA; margin-bottom: 0; margin-top: 10px;}
 
 #signin .modal-dialog,
 #forgotpass .modal-dialog,
@@ -212,11 +240,15 @@ background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B
 -moz-background-size: 5px 100%;
 }
 
+.button-modal:hover, .button-modal:focus, .button-modal:active {
+  color: #efefef;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
 ul.register-specialty-one,
 ul.register-specialty-two,
 ul.register-sub-one,
 ul.register-sub-two {
-font-weight: bold;
 font-weight: bold;
 font-size: 13px;
 padding: 0px 5px;
@@ -228,6 +260,11 @@ ul.register-specialty-two li,
 ul.register-sub-one li,
 ul.register-sub-two li {
 padding: 5px 0px;
+}
+
+.register_two .radio label {
+  font-weight: bold;
+  font-size: 13px;
 }
 
 /* ==========================================================================
@@ -894,7 +931,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f3f2', end
 /* ==============================
    $Search
    ============================== */
-   
+
 .next-page {
 font-weight: bold;
 color: #003C60;
@@ -1231,9 +1268,9 @@ h2 {font-size: 16px;}
   .event_content h2, .event_content p, .faculty {
     padding: 0 5px;
   }
-  
+
   #presentation .col-sm-5 {border-right:none;}
-  
+
 }
 
 
