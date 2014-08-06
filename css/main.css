@@ -377,13 +377,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 .search form.form-inline {
-text-align: center;
+text-align: left;
 padding: 5px;
 }
 
 .search {margin-top: -44px;}
 
-.search .form-inline .form-group {width:75%;}
 .search .form-inline .form-control {width:100%;}
 
 ::-webkit-input-placeholder {
@@ -1381,6 +1380,8 @@ ul.share-like-list li {font-size:11px;}
 
 @media only screen and (min-width: 600px) {
 
+.colum_header img {margin: 0px 0px 40px 20px;}
+
 .right_column {
 padding-left: 0px!important;
 padding-right: 0px!important;
@@ -1446,10 +1447,21 @@ footer.footer {padding: 30px;}
 
 .hero_image .play-icon {font-size: 5em;}
 
+.search .form-inline .form-group {width:67%; margin-left: 15px;}
+
+.search .btn-info, .mobile_search_button .btn-info {
+width: 30px;
+margin-right: 10px;
+float: right;
+}
+
+
 
 }
 
 @media only screen and (min-width: 1024px) {
+
+.colum_header img {margin: 0px 0px 40px 30px;}
 
 .right_column {
   background: #E4E4E2;
@@ -1492,6 +1504,17 @@ footer.footer {padding: 30px;}
 footer.footer {padding: 30px;}
 
 .hero_image .play-icon {font-size: 7em;}
+
+.search .form-inline .form-group {
+width: 67%;
+margin-left: 25px;
+}
+
+.search .btn-info, .mobile_search_button .btn-info {
+width: 30px;
+margin-right: 20px;
+float: right;
+}
 
 
 }
