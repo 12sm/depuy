@@ -547,7 +547,7 @@ left: 0;
 top: 25%;
 color: #1B1B1B;
 opacity: 0.5;
-font-size: 7em;
+font-size: 3em;
 }
 
 .hero_image .play-icon:hover {opacity:1;}
@@ -1284,6 +1284,8 @@ h2 {font-size: 16px;}
 
   #presentation .col-sm-5 {border-right:none;}
 
+.hero_image .play-icon {font-size: 5em;}
+
 }
 
 
@@ -1346,6 +1348,9 @@ h2 {font-size: 18px;}
 /* Footer */
 footer.footer {padding: 30px;}
 
+.hero_image .play-icon {font-size: 5em;}
+
+
 }
 
 @media only screen and (min-width: 1024px) {
@@ -1390,6 +1395,9 @@ footer.footer {padding: 30px;}
 /* Footer */
 footer.footer {padding: 30px;}
 
+.hero_image .play-icon {font-size: 7em;}
+
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1403,5 +1411,7 @@ h2 {font-size: 24px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
 
 .upcoming-courses {padding:0px;}
+
+.hero_image .play-icon {font-size: 7em;}
 
 }
