@@ -20,7 +20,7 @@
   <body>
     <div class="top_nav">
         <ul class="list-inline pull-right hidden-xs">
-            <li><a href="#">Sign In/Register</a></li>
+            <li><a href="#">Sign Out</a></li>
         </ul>
         <div class="clearfix">
             <ul class="list-inline">
@@ -48,8 +48,10 @@
             </div>
             <div class="column_nav">
                 <nav class="main_nav">
-                    <ul class="list-unstyled nav_list">
-                    	<li class="nav-home active"><a href="#" class="nav_home">Home<span class="pull-right glyphicon icon-home"></span></a></li>
+                    <ul class="logged-in list-unstyled nav_list">
+                    	<li class="nav-home"><a href="#" class="nav_home">Home<span class="pull-right glyphicon icon-home"></span></a></li>
+						<li class="nav-profile"><a href="#" class="nav_home">My Profile<span class="pull-right glyphicon icon-profile"></span></a></li>
+						<li class="nav-favorites"><a href="#" class="nav_home">My Favorites<span class="pull-right glyphicon icon-star"></span></a></li>
                         <li><a href="#">Craniomaxillofacial</a></li>
                         <li><a href="#">Chest Wall</a></li>
                         <li><a href="#">Spine</a></li>
@@ -74,6 +76,8 @@
                         <button class="btn btn-info btn-block dropdown-toggle" type="button" data-toggle="dropdown">Home <span id="mobileNavIcon" class="glyphicon icon-caret-down" ></span></button>
                         <ul class="dropdown-menu mobile-nav">
                             <li><a href="#"><span class="pull-right glyphicon icon-home"></span>Home</a></li>
+							<li><a href="#"><span class="pull-right glyphicon icon-profile"></span>My Profile</a></li>
+							<li><a href="#"><span class="pull-right glyphicon icon-star"></span>My Favorites</a></li>
                             <li class="mobile-nav-break"></li>
                             <li><a href="#">Craniomaxillofacial</a></li>
                             <li><a href="#">Chest Wall</a></li>
@@ -106,7 +110,7 @@
                 </div>
             </div>
             <nav class="event_nav">
-                <ul class="list-inline">
+                <ul class="event_nav_list">
                     <li><a href="#">pre-course</a></li>
                     <li class="active"><a href="#">event details</a></li>
                     <li><a href="#">post course</a></li>
