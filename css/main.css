@@ -386,12 +386,10 @@ font-size: 20px;
 ul.view_type_nav li.active {background-color: transparent;padding: 0;} /*for list/grid view btns*/
 
 ul.list-unstyled.nav_list li:first-child {
-border-top:none;
--webkit-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1)!important;
--moz-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1)!important;
-box-shadow: -2px -2px 3px 0 rgba(000,000,000,.1)!important;
+-webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1)!important;
+-moz-box-shadow: -2px 3px 3px 0 rgba(000,000,000,.1)!important;
+box-shadow: -2px 2px 3px 0 rgba(000,000,000,.1)!important;
 }
-
 ul.list-unstyled.nav_list li:nth-last-child(2) {
 border-top: none;
 -webkit-box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2)!important;
