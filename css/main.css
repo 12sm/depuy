@@ -1277,7 +1277,7 @@ h2 {font-size: 16px;}
 
 }
 /* mobile only */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 600px) {
   .event_content h2, .event_content p, .faculty {
     padding: 0 5px;
   }
@@ -1287,7 +1287,7 @@ h2 {font-size: 16px;}
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
 .content {
   padding: 20px;
 }
