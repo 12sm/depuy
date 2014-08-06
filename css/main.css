@@ -15,9 +15,9 @@ top: 0;
 bottom: 0;
 background: url(../img/nav-tile.jpg) repeat left top;
 box-sizing: border-box;
--webkit-box-shadow: inset -30px 0px 30px 0 rgba(000,000,000,.1);
--moz-box-shadow: inset -30px 0px 30px 0 rgba(000,000,000,.1);
-box-shadow: inset -30px 0px 30px 0 rgba(000,000,000,.1);
+-webkit-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
+-moz-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
+box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 overflow: hidden;
 }
 
