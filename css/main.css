@@ -666,7 +666,7 @@ font-size: 3em;
 .hero_image .play-icon:hover {opacity:1;}
 
 .hero_description {
-padding: 10px 20px;
+padding: 0px 20px 10px 20px;
 background-color: #003c60;
 border-bottom: 2px solid #002D48;
 }
