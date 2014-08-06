@@ -338,9 +338,21 @@ text-align: center;
 padding: 5px;
 }
 
-.search {
-margin-top: -44px;
+.search {margin-top: -44px;}
+
+::-webkit-input-placeholder {
+color: #A7A8AA;
 }
+:-moz-placeholder { /* Firefox 18- */
+color: #A7A8AA;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+color: #A7A8AA;  }
+:-ms-input-placeholder {color: #A7A8AA;  
+}
+
+.btn-search {padding: 0px 4px!important;}
+span.glyphicon.icon-search {font-size: 25px;}
 
 .btn-info {
 color: #ffffff;
