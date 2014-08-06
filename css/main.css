@@ -39,6 +39,9 @@ p {color: #4D4F53; font-size:14px;}
 .center {text-align:center;margin:0 auto;}
 .strong {font-weight:bold;}
 .tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
+.tiny-tan {color:#a89968;margin-bottom:0;text-transform:uppercase;text-shadow: 0 1px 0 #FFF;font-size:10px;font-weight:bold;}
+.left {text-align:left;}
+.right {text-align:right;}
 
 h1 {
 font-size: 16px;
@@ -877,6 +880,19 @@ li.indent {margin-left: 20px;}
 .course-calendar-hero {
 max-height: 200px;
 overflow: hidden;
+}
+
+p.small-grey.pull-left.left {
+text-shadow: none;
+padding-left: 20px;
+padding-top: 9px;
+}
+
+p.small-grey.pull-right.right {
+text-shadow: none;
+padding-right: 20px;
+padding-top: 9px;
+color:#a89968;
 }
 
 /* ==============================
