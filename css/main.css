@@ -668,6 +668,8 @@ text-shadow: 0 1px 0 #FFF;
 margin: 0;
 }
 
+.course_interaction .col-sm-12 {padding: 0;}
+
 ul.share-like-list {list-style:none;padding:0;}
 ul.share-like-list li:last-child {border:none;}
 ul.share-like-list li {display:inline;padding:0px 10px;}
