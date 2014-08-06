@@ -123,8 +123,10 @@ label {
   left: 0;
   width: 15px;
   height: 15px;
-  border-radius: 1px;
   background: #fff;
+}
+.video_feature .styled_checkbox {
+  border: 1px solid #ccc;
 }
 .styled_radio {
   position: absolute;

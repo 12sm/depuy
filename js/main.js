@@ -21,6 +21,14 @@ $('.flag').click(function(){
 	$(this).toggleClass('opaque');
 });
 
+$(document).ready(function() {
+	$('input[type="checkbox"], input[type="radio"]').each(function() {
+		if ($(this).is(':checked')) {
+			$(this).parent('label').addClass('input_checked');
+		}
+	});
+});
+
 $('input[type="checkbox"]').change(function() {
 	if ($(this).is(':checked')) {
 		$(this).parent('label').addClass('input_checked');
