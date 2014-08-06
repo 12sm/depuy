@@ -1275,6 +1275,10 @@ color: #9FA09E;
   background: #fff;
 }
 
+.video_feature .play-icon img {
+width: 20%;
+}
+
 .video_feature .flag {
   right: 15px;
 }
