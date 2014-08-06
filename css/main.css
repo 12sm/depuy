@@ -26,6 +26,8 @@ height: 100%;
 .right_column {
 background: #E4E4E2;
 float:right;
+padding-left:0px;
+padding-right:0px;
 }
 
 .img-responsive {width:100%; max-width:100%;}
@@ -324,9 +326,11 @@ border: none;
 .top_nav {
   background: #003c60;
   padding: 0px 20px;
-  -webkit-box-shadow: 0 3px 5px 1px #BDBDBD;
-  box-shadow: 0 3px 5px 1px #BDBDBD;
-  -moz-box-shadow: 0 3px 5px 1px #BDBDBD;
+-webkit-box-shadow: 0px 8px 8px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow:    0px 8px 8px 0px rgba(50, 50, 50, 0.4);
+box-shadow:         0px 8px 8px 0px rgba(50, 50, 50, 0.4);
+  position:relative;
+  z-index:999;
 }
 
 li.top-nav-dividers {
@@ -341,21 +345,40 @@ margin: 3px 3px;
 margin-bottom: 0;
 }
 
-.top_nav ul a {
+.top_nav ul li {
+padding: 0px;
+margin: 0px;
+display: block;
+float: left;
+height: 30px;
+}
+
+.top_nav ul li a {
   color: #fff;
+  display:block;
+  padding:5px 10px;
+  margin:0px;
+}
+
+.top_nav ul li a:hover {
+background:#194f70;
+text-decoration:none;
 }
 
 /* ==============================
    Main Nav - Signed out
    ============================== */
 
-nav.main_nav .glyphicon {font-size: 20px;color: #a89968;}
+nav.main_nav .glyphicon,
+.mobile-nav .glyphicon {font-size: 20px;color: #a89968;}
 nav.main_nav li.active .glyphicon {color: #FFF;}
 
 .mobile_header {
 padding: 10px 15px;
-background: url(../img/logo-mobile.png) no-repeat left top #FFF;
+background: url(../img/logo-mobile.png) no-repeat -15px 0px #FFF;
 }
+
+.mobile_header .login.pull-right {margin-top:10px;}
 
 .logo {
 width: 100%;
@@ -409,7 +432,6 @@ span.glyphicon.icon-search {font-size: 25px;}
 
 .btn-info {
 color: #ffffff;
-background-color: #a89968;
 border-color: #928557;
 border-top: 2px solid #9c8d5a;
 border-bottom: 2px solid #B8AB83;
@@ -418,12 +440,18 @@ background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
 background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
 background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
 background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
--moz-background-size: 5px 100%;
-background-size: 2px 100%;
 background-position: 0 0, 100% 0;
 background-repeat: no-repeat;
 padding:0px;
 height: 30px;
+}
+
+#mobileNavIcon {font-size:10px; color:#d3ccb3;}
+#mobileDropdown button {
+font-weight:600;
+text-shadow: 0 1px 0 rgba(0,0,0,.5);
+-moz-text-shadow: 0 1px 0 rgba(0,0,0,.5);
+-webkit-text-shadow: 0 1px 0 rgba(0,0,0,.5);
 }
 
 .search .btn-info,
@@ -432,7 +460,6 @@ height: 30px;
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
 color: #ffffff;
-background-color: #928557;
 border-color: #928557;
 border-top: 2px solid #928557;
 border-bottom: 2px solid #928557;
@@ -441,8 +468,6 @@ background-image: -webkit-linear-gradient(#9c8d5a, #a89968);
 background-image: -moz-linear-gradient(#9c8d5a, #a89968), -moz-linear-gradient(#9c8d5a, #a89968);
 background-image: -o-linear-gradient(#9c8d5a, #a89968), -o-linear-gradient(#9c8d5a, #a89968);
 background-image: linear-gradient(#8D8051, #94875C), linear-gradient(#8A7C4E, #998B5F);
--moz-background-size: 5px 100%;
-background-size: 2px 100%;
 background-position: 0 0, 100% 0;
 background-repeat: no-repeat;
 }
@@ -570,6 +595,13 @@ li.nav-calendar {margin-top: 10px;}
 a.nav_home, a.nav_calendar {position: relative;}
 a.nav_home .glyphicon.icon-home {}
 a.nav_calendar .glyphicon.icon-cal {}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+color: #ffffff;
+text-decoration: none;
+outline: 0;
+background-color: #a79960;
+}
 
 /* ==============================
    $Main Nav - Signed in
@@ -1408,7 +1440,7 @@ ul.share-like-list li {font-size:11px;}
 
 @media only screen and (min-width: 600px) {
 
-.column_header img {margin: 0px 0px 40px 20px;}
+.column_header img {margin: 10px 0px 40px 20px;}
 
 .right_column {
 padding-left: 0px!important;
@@ -1489,7 +1521,7 @@ float: right;
 
 @media only screen and (min-width: 1024px) {
 
-.column_header img {margin: 0px 0px 40px 30px;}
+.column_header img {margin: 10px 0px 40px 30px;}
 
 .right_column {
   background: #E4E4E2;
