@@ -338,10 +338,9 @@ text-shadow: 0 -1px 0 #8f8159;
 font-size: 20px;
 }
 
-li.active {background-color: #a79867;border: none;}
-li.active a {color:#FFF; text-decoration:none;text-shadow:none!important;}
-.nav_list li.active a {text-shadow: none}
-li.active:hover {background-color: #91845a!important;}
+.nav_list li.active {background-color: #a79867;border: none;}
+.nav_list li.active a {color:#FFF; text-decoration:none;text-shadow:none!important;}
+.nav_list li.active:hover {background-color: #91845a!important;}
 .column_nav li a {text-shadow: 0 1px #FFF;}
 ul.view_type_nav li.active {background-color: transparent;padding: 0;} /*for list/grid view btns*/
 
@@ -675,24 +674,29 @@ font-size: 13px;
 float: right;
 }
 
-.view-btn {
-margin-top: 20px;
-border:1px solid #D5D6D2;
-border-radius:0px;
-background:#E5E5E2;
-color:#A7A8AA;
+.view_type_nav {
+  margin-top: 20px;
+}
+.view_type_nav.nav-pills > li + li {
+  margin-left: 0;
 }
 
-.view-btn:hover, .view-btn:active, .view-btn:focus,
-.view-btn.active:hover, .view-btn.active:focus, .view-btn.active:active {
-background-color:#FFF;
-color:#4D4F53;
+.view_type_nav.nav > li > a {
+  border:1px solid #D5D6D2;
+  font-size: 24px;
+  padding: 0 5px;
+  background:#E5E5E2;
+  color:#A7A8AA;
 }
-
-.view-btn.active {
-background-color: #D5D6D2;
-color: #4D4F53;
-box-shadow: none;
+.view_type_nav.nav > li > a:hover, .view_type_nav.nav > li > a:active, .view_type_nav.nav > li > a:focus,
+.view_type_nav.nav > li.active > a:hover, .view_type_nav.nav > li.active > a:focus, .view_type_nav.nav > li.active > a:active {
+  background-color:#FFF;
+  color:#4D4F53;
+}
+.view_type_nav.nav > li.active > a {
+  background-color: #D5D6D2;
+  color: #4D4F53;
+  box-shadow: none;
 }
 
 /* List view Specific */
@@ -1008,7 +1012,7 @@ background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B
 @media only screen and (min-width: 320px) {
 
 /* Padding to 15px */
-li.active {padding: 7px 15px;}
+.nav_list li.active {padding: 7px 15px;}
 .nav_list li {padding: 8px 15px;}
 
 ul.list-unstyled.nav_list li:nth-last-child(2) {
@@ -1063,7 +1067,7 @@ h2 {font-size: 16px;}
 
 @media only screen and (min-width: 768px) {
 .content {
-  padding: 20px 10px;
+  padding: 20px;
 }
 
 .row {
@@ -1096,7 +1100,7 @@ h2 {font-size: 18px;}
 .filter-btn {min-width: 160px;}
 
 /* Padding to 20px */
-li.active {padding: 7px 20px;}
+.nav_list li.active {padding: 7px 20px;}
 .nav_list li {padding: 8px 20px;}
 .content {padding: 10px 20px;}
 .upcoming-courses {padding: 0px;}
@@ -1129,7 +1133,7 @@ footer.footer {padding: 30px;}
 }
 
 .content {
-  padding: 20px 15px;
+  padding: 20px 30px;
 }
 
 .row {
@@ -1152,7 +1156,7 @@ footer.footer {padding: 30px;}
 }
 
 /* Padding to 30px */
-li.active {padding: 7px 30px;}
+.nav_list li.active {padding: 7px 30px;}
 .nav_list li {padding: 8px 30px;}
 .content {padding: 10px 30px;}
 .upcoming-courses {padding: 0px;}
