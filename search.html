@@ -19,20 +19,23 @@
   </head>
   <body>
     <div class="top_nav">
+        <ul class="list-inline pull-right hidden-xs">
+            <li><a href="#">Sign Out</a></li>
+        </ul>
         <div class="clearfix">
             <ul class="list-inline">
                 <li><a href="#">Nursing</a></li>
 				<li class="top-nav-dividers">|</li>
                 <li><a href="#">Veterinary</a></li>
 				<li class="top-nav-dividers">|</li>
-                <li><a href="#">About</a></li>
+                <li class="active"><a href="#">About</a></li>
             </ul>
         </div>
     </div>
     <div class="main_wrapper container-fluid">
         <div class="left_column hidden-xs">
             <div class="column_header">
-                <h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
+				<img src="img/depuy-logo.png" class="hidden-xs" alt= "Depuy Synthes Institute - advancing education and research" />
                 <div class="search">
                     <form class="form-inline">
                         <div class="form-group">
@@ -43,11 +46,12 @@
                     </form>
                 </div>
             </div>
+            <div class="column_nav">
                 <nav class="main_nav">
-				<li class="active"><a href="#" class="nav_home">Home<span class="float-right glyphicon icon-home"></span></a></li>
-				<li><a href="#" class="nav_profile">My Profile<span class="float-right glyphicon icon-home"></span></a></li>
-				<li><a href="#" class="nav_favorites">My Favorites<span class="float-right glyphicon icon-home"></span></a></li>
-                    <ul class="list-unstyled nav_list">
+                    <ul class="logged-in list-unstyled nav_list">
+                    	<li class="nav-home"><a href="#" class="nav_home">Home<span class="pull-right glyphicon icon-home"></span></a></li>
+						<li class="nav-profile"><a href="#" class="nav_home">My Profile<span class="pull-right glyphicon icon-profile"></span></a></li>
+						<li class="nav-favorites"><a href="#" class="nav_home">My Favorites<span class="pull-right glyphicon icon-star"></span></a></li>
                         <li><a href="#">Craniomaxillofacial</a></li>
                         <li><a href="#">Chest Wall</a></li>
                         <li><a href="#">Spine</a></li>
@@ -58,48 +62,42 @@
                         <li><a href="#">Hip</a></li>
                         <li><a href="#">Knee</a></li>
                         <li><a href="#">Foot &amp; Ankle</a></li>
+                        <li class="nav-calendar"><a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a></li>
                     </ul>
-                    <a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a>
                 </nav>
+            </div>
         </div>
         <div class="right_column">
             <header class="mobile_header visible-xs-block clearfix">
-                <p class="login pull-right"><a href="#">Sign In / Register</a></p>
-                <h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
-                <div class="mobile_nav_button pull-left">
-                    <button class="btn btn-info btn-block" type="button" data-toggle="collapse" data-target=".collapse-nav">Home <span class="glyphicon icon-caret-down" ></span></button>
+                <div class="white-bg">
+                    <p class="login pull-right"><a href="#" data-toggle="modal" data-target="#signin">Sign In / Register</a></p>
+                    <h1 class="logo">Depuy Synthes Institute - advancing education and research</h1>
+                    <div id="mobileDropdown" class="dropdown mobile_nav_button pull-left">
+                        <button class="btn btn-info btn-block dropdown-toggle" type="button" data-toggle="dropdown">Home <span id="mobileNavIcon" class="glyphicon icon-caret-down" ></span></button>
+                        <ul class="dropdown-menu mobile-nav">
+						<li class="nav_home"><a href="#" class="nav_home">Home<span class="pull-right glyphicon icon-home"></span></a></li>
+						<li class="nav-profile"><a href="#" class="nav_profile">My Profile<span class="pull-right glyphicon icon-profile"></span></a></li>
+						<li class="nav-favorites"><a href="#" class="nav_favorites">My Favorites<span class="pull-right glyphicon icon-star"></span></a></li>
+                            <li class="mobile-nav-break"></li>
+                            <li><a href="#">Craniomaxillofacial</a></li>
+                            <li><a href="#">Chest Wall</a></li>
+                            <li><a href="#">Spine</a></li>
+                            <li><a href="#">Shoulder</a></li>
+                            <li><a href="#">Elbow</a></li>
+                            <li><a href="#">Hand &amp; Wrist</a></li>
+                            <li><a href="#">Pelvis</a></li>
+                            <li><a href="#">Hip</a></li>
+                            <li><a href="#">Knee</a></li>
+                            <li><a href="#">Foot &amp; Ankle</a></li>
+                            <li class="mobile-nav-break"></li>
+                            <li><a href="#" class=""><span class="pull-right glyphicon icon-cal"></span>Course Calendar</a></li>
+                        </ul>
+					</div>
                 </div>
-            <div class="collapse-nav">
-                <div class="column_header">
-                <div class="search">
-                    <form class="form-inline">
-                        <div class="form-group mobile-search">
-                            <label for="search" class="sr-only">Search criteria</label>
-                            <input id="search" name="search" type="text" class="form-control" placeholder="search">
-                        </div>
-                        <button type="submit" class="btn btn-info"><span class="glyphicon icon-search"></span></button>
-                    </form>
+                <div class="mobile_search_button pull-right">
+                    <button class="btn btn-info btn-search"><span class="glyphicon icon-search"></span></button>
+                    <input id="search" name="search" type="text" class="form-control nav-search form-hide" placeholder="search">
                 </div>
-            </div>
-            <div class="column_nav">
-                <nav class="main_nav">
-                <li class="nav-home active"><a href="#" class="nav_home">Home<span class="float-right glyphicon icon-home"></span></a></li>
-                    <ul class="list-unstyled nav_list">
-                        <li><a href="#">Craniomaxillofacial</a></li>
-                        <li><a href="#">Chest Wall</a></li>
-                        <li><a href="#">Spine</a></li>
-                        <li><a href="#">Shoulder</a></li>
-                        <li><a href="#">Elbow</a></li>
-                        <li><a href="#">Hand &amp; Wrist</a></li>
-                        <li><a href="#">Pelvis</a></li>
-                        <li><a href="#">Hip</a></li>
-                        <li><a href="#">Knee</a></li>
-                        <li><a href="#">Foot &amp; Ankle</a></li>
-                    </ul>
-                    <li class="nav-calendar"><a href="#" class="nav_calendar">Course Calendar<span class="float-right glyphicon icon-cal"></span></a></li>
-                </nav>
-            </div>
-        </div>
             </header>
             <div class="content">
                 <section>
@@ -182,162 +180,296 @@
 							</div> <!-- end row -->
 						</div> <!-- end #list -->
 						<div class="tab-pane fade in active" id="gallery">
-							<div class="row">
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag opaque"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Shoulder</h4>
-												<h3>Case Insights: Distal Humerus Extra Articular</h3>
-												<h5>Video, 2:24</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">362</div>
-											</div>
-										</div>
+					<!-- Row of Video Thumbnail Cards! -->
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+                                <a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag opaque"></div>
+                                <img class="img-responsive" src="img/thumb_01.png">
+                                <div class="box-text-content">
+                                    <div class="text-max-height">
+                                        <h4>Elbow</h4>
+                                        <h3><a href="#">Case Insights: Distal Humerus Extra Articular</a></h3>
+                                        <h5>Video, 2:24</h5>
+                                    </div>
+                                    <hr>
+                                    <div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+								<a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag opaque"></div>
+                                <img class="img-responsive" src="img/thumb_02.png">
+                                <div class="box-text-content">
+									<div class="text-max-height">
+										<h4>Shoulder</h4>
+										<h3>
+                                            <a href="#">Clavicle: Segmental Pediatric</a>
+                                        </h3>
+										<h5>Video, 5:08</h5>
 									</div>
+									<hr>
+									<div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
 								</div>
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag opaque"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Shoulder</h4>
-												<h3>Clavicle: Segmental Pediatric</h3>
-												<h5>Video, 5:08</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">1,220</div>
-											</div>
-										</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+								<a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag opaque"></div>
+                                <img class="img-responsive" src="img/thumb_03.png">
+                                <div class="box-text-content">
+									<div class="text-max-height">
+										<h4>Hand & Wrist</h4>
+										<h3><a href="#">Extensile Approach to the Ulna</a></h3>
+										<h5>Video, 10:18</h5>
 									</div>
+									<hr>
+									<div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
 								</div>
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag opaque"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Shoulder</h4>
-												<h3>A.L.P.S Elbow Plating System Surgical Technique</h3>
-												<h5>PDF, 1.1MB</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">54,7641</div>
-											</div>
-										</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+								<a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag"></div>
+                                <img class="img-responsive" src="img/thumb_04.jpg">
+                                <div class="box-text-content">
+									<div class="text-max-height">
+										<h4>Elbow</h4>
+										<h3><a href="#">Case Insights: Proximal Ulna Monteggia Fracture</a></h3>
+										<h5>Video, 20:18</h5>
 									</div>
+									<hr>
+									<div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
 								</div>
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Shoulder</h4>
-												<h3>Case Insights: Proximal Ulna Monteggia Fracture</h3>
-												<h5>Video, 20:18</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">893</div>
-											</div>
-										</div>
+                            </div>
+                        </div>
+                    </div> <!-- end row of cards -->
+					<!-- Row of Video Thumbnail Cards! -->
+                    <div class="row">
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+                                <a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag opaque"></div>
+                                <img class="img-responsive" src="img/thumb_01.png">
+                                <div class="box-text-content">
+                                    <div class="text-max-height">
+                                        <h4>Elbow</h4>
+                                        <h3><a href="#">Case Insights: Distal Humerus Extra Articular</a></h3>
+                                        <h5>Video, 2:24</h5>
+                                    </div>
+                                    <hr>
+                                    <div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+								<a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag opaque"></div>
+                                <img class="img-responsive" src="img/thumb_02.png">
+                                <div class="box-text-content">
+									<div class="text-max-height">
+										<h4>Shoulder</h4>
+										<h3>
+                                            <a href="#">Clavicle: Segmental Pediatric</a>
+                                        </h3>
+										<h5>Video, 5:08</h5>
 									</div>
+									<hr>
+									<div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
 								</div>
-							</div> <!-- end row -->
-							<div class="row">
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag opaque"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Shoulder</h4>
-												<h3>Case Insights: Proximal Ulna Monteggia Fracture</h3>
-												<h5>Video, 20:18</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">362</div>
-											</div>
-										</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+								<a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag opaque"></div>
+                                <img class="img-responsive" src="img/thumb_03.png">
+                                <div class="box-text-content">
+									<div class="text-max-height">
+										<h4>Hand & Wrist</h4>
+										<h3><a href="#">Extensile Approach to the Ulna</a></h3>
+										<h5>Video, 10:18</h5>
 									</div>
+									<hr>
+									<div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
 								</div>
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag opaque"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Shoulder</h4>
-												<h3>A.L.P.S. Elbow Plating System Surgical Technique</h3>
-												<h5>PDF, 1.1MB</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">1,220</div>
-											</div>
-										</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3 single-content-box">
+                            <div class="video_feature clearfix">
+								<a href="#" class="play-icon"><span class="glyphicon icon-play"></span></a>
+                                <div class="flag"></div>
+                                <img class="img-responsive" src="img/thumb_04.jpg">
+                                <div class="box-text-content">
+									<div class="text-max-height">
+										<h4>Elbow</h4>
+										<h3><a href="#">Case Insights: Proximal Ulna Monteggia Fracture</a></h3>
+										<h5>Video, 20:18</h5>
 									</div>
+									<hr>
+									<div class="course_interaction">
+                                        <ul class="share-like-list">
+                                            <li class="video_share dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                                                <a href="#" class="dropdown-toggle"><span class="glyphicon icon-share"></span> share</a>
+                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/fb.jpg" /> Facebook</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/tw.jpg" /> Twitter</a>
+                                                </li>
+                                                <li role="presentation">
+                                                    <a role="menuitem" tabindex="-1" href="#"><img src="img/mail.jpg" /> Email</a>
+                                                </li>
+                                              </ul>
+                                            </li>
+                                            <li class="divider">&nbsp;</li>
+                                            <li class="video_likes unliked">26 views</li>
+                                        </ul>
+                                    </div>
 								</div>
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag opaque"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Hand & Wrist</h4>
-												<h3>Extensile Approach to the Ulna</h3>
-												<h5>Video, 10:18</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">54,7641</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="col-xs-6 col-md-3 single-content-box">
-									<div class="video_feature clearfix">
-										<div class="flag"></div>
-										<img class="img-responsive" src="http://placehold.it/640x360">
-										<div class="box-text-content">
-											<div class="text-max-height">
-												<h4>Elbow</h4>
-												<h3>Case Insights: Proximal Ulna Monteggia Fracture</h3>
-												<h5>Video, 20:18</h5>
-											</div>
-											<hr>
-											<div class="row">
-												<div class="col-sm-5 pull-left share"><span class="glyphicon icon-share"></span> share</div>
-												<div class="col-sm-2 divider">&nbsp;</div>
-												<div class="col-sm-5 pull-right views">893</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div> <!-- end row -->
+                            </div>
+                        </div>
+                    </div> <!-- end row of cards -->
 						</div> <!-- end #gallery -->
 					</div> <!-- end tabs -->
                 </section>
