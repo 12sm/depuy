@@ -7,8 +7,9 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.main_wrapper {background: url(../img/nav-tile.jpg) repeat left top;}
+
 .left_column {
-background: url(../img/nav-tile.jpg) repeat left top;
 box-sizing: border-box;
 -webkit-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 -moz-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
@@ -16,10 +17,15 @@ box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 overflow: hidden;
 padding-left: 0px!important;
 padding-right: 0px!important;
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
 }
 
 .right_column {
-  background: #E4E4E2;
+background: #E4E4E2;
+float:right;
 }
 
 .img-responsive {width:100%; max-width:100%;}
@@ -1373,6 +1379,12 @@ ul.share-like-list li {font-size:11px;}
 
 
 @media only screen and (min-width: 600px) {
+
+.right_column {
+padding-left: 0px!important;
+padding-right: 0px!important;
+}
+
 .content {
   padding: 20px;
 }
