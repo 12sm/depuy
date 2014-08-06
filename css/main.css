@@ -871,6 +871,15 @@ li.indent {margin-left: 20px;}
 
 
 /* ==============================
+   $Course Calendar
+   ============================== */
+
+.course-calendar-hero {
+max-height: 200px;
+overflow: hidden;
+}
+
+/* ==============================
    $Resource Detail Views
    ============================== */
 
