@@ -820,7 +820,7 @@ li.indent {margin-left: 20px;}
 .content .flag.opaque {
 z-index: 999;
 text-align: right;
-right: 5px;
+right: 15px;
 }
 
 button.resource-btn {
@@ -1150,7 +1150,7 @@ color: #9FA09E;
 }
 
 .video_feature .flag {
-  right: 5px;
+  right: 15px;
 }
 
 .flag {
