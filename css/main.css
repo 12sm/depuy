@@ -676,6 +676,7 @@ ul.share-like-list {list-style:none;padding:0;}
 ul.share-like-list li:last-child {border:none;}
 ul.share-like-list li {display:inline;padding:0px 10px;}
 ul.share-like-list li:last-child {padding-left: 10px;}
+ul.share-like-list li {font-size:12px;}
 .row.interaction.calendar-share {border-bottom: 1px solid #CCC;box-shadow:0 1px rgba(255,255,255,.5);}
 
 
@@ -1277,6 +1278,8 @@ h2 {font-size: 16px;}
 
 .filter-btn {min-width: 190px;width:auto;}
 
+.text-max-height {height: 105px;}
+
 }
 /* mobile only */
 @media only screen and (max-width: 600px) {
@@ -1287,6 +1290,7 @@ h2 {font-size: 16px;}
   #presentation .col-sm-5 {border-right:none;}
 
 .hero_image .play-icon {font-size: 5em;}
+ul.share-like-list li {font-size:11px;}
 
 }
 
