@@ -1090,13 +1090,13 @@ h2 {font-size: 16px;}
 
 @media only screen and (min-width: 768px) {
 .content {
-  padding: 20px;
+  padding: 20px 10px;
 }
 
-.row {
-  margin-left: -10px;
-  margin-right: -10px;
-}
+ .row {
+  margin-left: 0px;
+  margin-right: 0px;
+} 
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2,
 .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3,
@@ -1156,12 +1156,12 @@ footer.footer {padding: 30px;}
 }
 
 .content {
-  padding: 20px 30px;
+  padding: 20px 15px;
 }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2,
