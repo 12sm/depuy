@@ -8,17 +8,14 @@ body {
 }
 
 .left_column {
-width: 250px;
-position: absolute;
-left: 0;
-top: 0;
-bottom: 0;
 background: url(../img/nav-tile.jpg) repeat left top;
 box-sizing: border-box;
 -webkit-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 -moz-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 overflow: hidden;
+padding-left: 0px!important;
+padding-right: 0px!important;
 }
 
 .right_column {
@@ -360,6 +357,13 @@ margin: 10px auto;
 
 .column_header {
 padding-bottom: 10px;
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,1) 85%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(85%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 }
 
 .search form.form-inline {
@@ -368,6 +372,9 @@ padding: 5px;
 }
 
 .search {margin-top: -44px;}
+
+.search .form-inline .form-group {width:75%;}
+.search .form-inline .form-control {width:100%;}
 
 ::-webkit-input-placeholder {
 color: #A7A8AA;
@@ -1387,7 +1394,7 @@ ul.share-like-list li {font-size:11px;}
 
 .right_column {background: #E4E4E2;}
 h2 {font-size: 18px;}
-.main_wrapper {position: relative;padding-left: 250px;}
+.main_wrapper {position: relative;}
 .course {border-bottom: 0px;}
 .hero_title h2 {font-size: 18px;}
 .play-button-center {
