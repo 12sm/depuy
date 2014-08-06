@@ -31,6 +31,7 @@ a {color:#003c60;}
 a:hover, a:active, a:focus {}
 
 p, h1, h2, h3, h4, h5, h6 {letter-spacing: .01em;}
+
 p {color: #4D4F53; font-size:14px;}
 .center {text-align:center;margin:0 auto;}
 .strong {font-weight:bold;}
@@ -269,6 +270,9 @@ margin-bottom: 0;
 /* ==============================
    Main Nav - Signed out
    ============================== */
+
+nav.main_nav .glyphicon {font-size: 18px;color: #a89968;}
+nav.main_nav li.active .glyphicon {color: #FFF;}
 
 .mobile_header {
 padding: 10px 15px;
@@ -750,6 +754,23 @@ text-align: right;
 right: 5px;
 }
 
+button.resource-btn {
+background: #000;
+opacity: .8;
+font-weight: bold;
+color: #FFF;
+padding: 10px 10px;
+font-size: 16px;
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -50px;
+}
+
+.resource-detail-item {
+position: relative;
+}
+
 /* $Video Specific */
 
 .row.resource-description {
@@ -805,6 +826,18 @@ border: 2px solid #D5D6D2;
 margin-right: 30px;
 }
 
+/* $Presentation Specific */
+
+#presentation .modal-dialog {width:75%;}
+ul.presentation-navigation {height: 100%;list-style: none;font-weight: bold;padding:0;margin-bottom: 0;}
+ul.presentation-navigation li:nth-child(even) {background-color: #DCDDDA;}
+li.completed {color: #ABACAE;}
+li.current, li.up-next {color:#4D4F53;}
+li.current {background-color: #FFFFFF!important;}
+ul.presentation-navigation li {padding: 15px 10px;}
+#presentation .col-sm-5 {padding: 5px 0 0 5px;border-right: 2px solid #A7A8AA;}
+#presentation .col-sm-7 {padding:0 5px 0 0;}
+#presentation .modal-body {padding-top: 0;padding-bottom:0;}
 
 /* ==============================
    $Calendar Detail
@@ -1198,6 +1231,9 @@ h2 {font-size: 16px;}
   .event_content h2, .event_content p, .faculty {
     padding: 0 5px;
   }
+  
+  #presentation .col-sm-5 {border-right:none;}
+  
 }
 
 
