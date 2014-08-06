@@ -1380,7 +1380,7 @@ ul.share-like-list li {font-size:11px;}
 
 @media only screen and (min-width: 600px) {
 
-.colum_header img {margin: 0px 0px 40px 20px;}
+.column_header img {margin: 0px 0px 40px 20px;}
 
 .right_column {
 padding-left: 0px!important;
@@ -1461,7 +1461,7 @@ float: right;
 
 @media only screen and (min-width: 1024px) {
 
-.colum_header img {margin: 0px 0px 40px 30px;}
+.column_header img {margin: 0px 0px 40px 30px;}
 
 .right_column {
   background: #E4E4E2;
