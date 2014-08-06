@@ -43,3 +43,11 @@ $('input[type="radio"]').change(function() {
 		$(this).parent('label').addClass('input_checked');
 	}
 });
+
+$('#accordion .panel-collapse').on('show.bs.collapse', function(e) {
+	var id = $(e.currentTarget).attr('id');
+	$('a[href="#' + id + '"]').children('.glyphicon').removeClass('icon-caret-down').addClass('icon-caret-up');
+}).on('hide.bs.collapse', function(e) {
+	var id = $(e.currentTarget).attr('id');
+	$('a[href="#' + id + '"]').children('.glyphicon').removeClass('icon-caret-up').addClass('icon-caret-down');
+});
