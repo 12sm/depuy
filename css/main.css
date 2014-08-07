@@ -661,6 +661,8 @@ padding: 10px 5px; /*20px*/
 
 /* -- $Hero -- */
 
+.hero {position:relative;}
+
 .hero .flag.opaque {
 z-index: 10;
 right: 5px;
