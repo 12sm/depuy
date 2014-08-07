@@ -918,6 +918,7 @@ img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;heig
 .list-item-content {padding-top:5px;padding-bottom:5px;}
 
 p.list-item-type {font-weight: bold;margin-bottom:3px;}
+p.list-item-excerpt {display: block;overflow: hidden;}
 
 /* Modal Specific */
 
