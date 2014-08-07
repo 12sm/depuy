@@ -853,6 +853,10 @@ white-space: nowrap;
    $Bodypart Landing Page
    ============================== */
 
+.pull-left.section-title h2 {
+margin-bottom: 5px;
+}
+
 .landing-page-hero .hero_text {
 padding: 10px 20px;
 background-color: #003c60;
