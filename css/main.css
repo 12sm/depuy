@@ -790,6 +790,7 @@ margin: 0;
 .course_interaction .col-sm-12 {padding: 0;}
 
 .share-like-list {padding:0;}
+.share-like-list a:hover {text-decoration:none;color:#8ca7b6;}
 .share-like-list span:last-child {border:none;padding-left: 0px;}
 .share-like-list span {display:inline;padding:0px;font-size:12px;}
 .row.interaction.calendar-share {border-bottom: 1px solid #CCC;box-shadow:0 1px rgba(255,255,255,.5);}
