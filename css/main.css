@@ -804,6 +804,7 @@ margin: 0;
 margin-right: 30px;
 }
 
+.title .col-sm-12 {padding: 0;}
 .course_interaction .col-sm-12 {padding: 0;}
 
 .share-like-list {
