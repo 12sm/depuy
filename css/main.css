@@ -1641,6 +1641,10 @@ ul.share-like-list li {font-size:11px;}
 width: 38px;
 }
 
+.hero-description h3 {
+display: none;
+}
+
 }
 
 
@@ -1738,6 +1742,10 @@ top:-35%;
 }
 
 h2 {font-size:18px;}
+
+.hero-description h3 {
+display: none;
+}
 
 }
 
