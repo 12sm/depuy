@@ -769,11 +769,12 @@ padding: 0;
 
 p.course_length {
 line-height: .7;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 
 .row.course_details {
 padding-top: 10px;
+margin-left: -10px;
 }
 
 h3.course_description,
@@ -784,7 +785,7 @@ margin: 0;
 
 .course_interaction .col-sm-12 {padding: 0;}
 
-ul.share-like-list {list-style:none;padding:0;}
+ul.share-like-list {list-style:none;padding:0;margin-bottom: 0;}
 ul.share-like-list li:last-child {border:none;}
 ul.share-like-list li {display:inline;padding:0px;}
 ul.share-like-list li:last-child {padding-left: 0px;}
@@ -887,7 +888,7 @@ margin-bottom: 5px;
 }
 
 .procedure .flag {
-right: 15px;
+right: 5px;
 margin-top: 1px;
 }
 
@@ -938,7 +939,7 @@ color:#a89968;
 .content .flag.opaque {
 z-index: 999;
 text-align: right;
-right: 15px;
+right: 5px;
 }
 
 button.resource-btn {
@@ -1281,7 +1282,7 @@ width: 20%;
 }
 
 .video_feature .flag {
-  right: 15px;
+  right: 5px;
 }
 
 .flag {
@@ -1340,7 +1341,7 @@ margin-bottom: 10px;
 }
 
 .course .flag {
-  right: 15px;
+  right: 15px!important;
   margin-top: 1px;
 }
 
@@ -1562,7 +1563,7 @@ float: right;
 .upcoming-courses {padding: 0px;}
 
 /* Content boxes */
-.text-max-height {height: 100px;}
+.text-max-height {height: 90px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
 
 /* Footer */
