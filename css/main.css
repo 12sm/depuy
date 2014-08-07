@@ -1086,14 +1086,15 @@ line-height: 1;
   height: 100px;
   font-size: 12px;
   white-space: normal;
-  color: #aaa;
-  text-shadow: -1px -1px 1px rgba(0,0,0,0.5);
+  color: #a7a8aa;
+  text-shadow: -1px -1px 1px rgba(0,0,0,0.2);
 }
 .single-video-thumb.active {background-color: #a79867;}
 .single-video-thumb.active p {color:#FFF;}
 .single-video-thumb:hover, .single-video-thumb:focus, .single-video-thumb:active {background-color: #a79867; color: #fff; text-decoration: none;}
 .single-video-thumb a:hover, .single-video-thumb a:focus, .single-video-thumb a:active {color:#FFFFFF;}
-
+.single-video-thumb .duration {font-size: 0.833em;}
+.single-video-thumb:hover .duration, .single-video-thumb:focus .duration, .single-video-thumb:active .duration {color:#ccc;}
 /* $PDF and App Specific */
 
 img.img-responsive.thumb-hero {
@@ -1670,7 +1671,7 @@ float: right;
 .hero_image .play-icon {
 top:-35%;
 }
-	
+
 }
 
 @media only screen and (max-width: 1024px) {
