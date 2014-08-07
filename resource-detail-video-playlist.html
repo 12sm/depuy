@@ -123,12 +123,15 @@
 				  jwplayer().onReady(function(){
 					var playlist = jwplayer().getPlaylist();
 					for (var index=0;index<playlist.length;index++) {
-					  console.log(playlist[index]);
-					  var playindex = index +1,
-					  markup = '<li><a class="single-video-thumb" href="javascript:playThis(' + index + ')">'
+					  var playindex = index +1;
+					  var markup = '<li><a class="single-video-thumb" href="javascript:playThis(' + index + ')">'
 					  + '<img class="img-responsive" src="' + playlist[index].image + '">'
-					  + playlist[index].title
-					  + '</a></li>';
+					  + playlist[index].title;
+					  if ("duration" in playlist[index]) {
+						var duration = playlist[index].duration;
+						markup += '<br><span class="duration">' + duration + '</span>';
+					  }
+					  markup += '</a></li>';
 					  html += markup;
 					  log.innerHTML = html;
 					}
@@ -395,7 +398,7 @@
                             </div>
                         </div>
                     </div>
-				
+
 
                 </section>
 				</div>
@@ -420,7 +423,7 @@
 				</nav>
             </footer>
             </div>
-            
+
         </div>
     </div>
 
