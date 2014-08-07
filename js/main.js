@@ -44,7 +44,7 @@ $('input[type="radio"]').change(function() {
 	}
 });
 
-$('#accordion .panel-collapse').on('show.bs.collapse', function(e) {
+$('.selection_accordion .panel-collapse').on('show.bs.collapse', function(e) {
 	var id = $(e.currentTarget).attr('id');
 	$('a[href="#' + id + '"]').children('.glyphicon').removeClass('icon-caret-down').addClass('icon-caret-up');
 }).on('hide.bs.collapse', function(e) {
