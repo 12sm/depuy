@@ -666,7 +666,7 @@ margin-top: 0px;
 }
 
 .hero_image {position: relative;max-height: 420px;overflow: hidden;}
-.hero_text {position: absolute;bottom: 0;}
+.hero_text {position: absolute;bottom: 0;z-index: 10;}
 
 .hero_image .play-icon {
 position: absolute;
@@ -1465,8 +1465,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 .flag.opaque {
-  border-left-color: #EBE9E7;
-  border-right-color: #EBE9E7;
+  border-left-color: #F8F8F8;
+  border-right-color: #F8F8F8;
   opacity: .9;
 }
 
@@ -1517,12 +1517,13 @@ margin-bottom: 10px;
   background: #a89968;
   margin-bottom: 0;
   text-shadow: 0 -1px 0 #8f8159;
+ 
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B8AB83), to(#9c8d5a));
+background-image: -webkit-linear-gradient(#B8AB83, #9c8d5a);
+background-image: -moz-linear-gradient(#B8AB83, #9c8d5a), -moz-linear-gradient(#B8AB83, #9c8d5a);
+background-image: -o-linear-gradient(#B8AB83, #9c8d5a), -o-linear-gradient(#B8AB83, #9c8d5a);
+background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9c8d5a);
 
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
-background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
-background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
-background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
-background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
 }
 
 .calendar_date {
