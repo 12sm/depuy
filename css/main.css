@@ -1551,6 +1551,7 @@ background: url(../img/nav-tile.jpg) repeat left top;
 .hero_text {width: 100%;}
 .hero_title {width: 100%;}
 .hero_title h2 {font-size: 16px;}
+.hero_title h2 a {color:#FFF;}
 
 .hero_image {min-height: 180px;background-color: #FFF;}
 
