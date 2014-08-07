@@ -405,14 +405,14 @@ background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 
 background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
--webkit-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
--moz-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
+-webkit-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
+-moz-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
+box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
 }
 
 .search form.form-inline {
 text-align: left;
-padding: 5px;
+padding: 20px 5px 5px 5px;
 }
 
 .search {margin-top: -44px;}
@@ -440,15 +440,29 @@ color: #ffffff;
 border-color: #928557;
 border-top: 2px solid #9c8d5a;
 border-bottom: 2px solid #B8AB83;
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B8AB83), to(#9c8d5a));#
+background-image: -webkit-linear-gradient(#B8AB83, #9c8d5a);
+background-image: -moz-linear-gradient(#B8AB83, #9c8d5a), -moz-linear-gradient(#9c8d5a, #9c8d5a);
+background-image: -o-linear-gradient(#B8AB83, #9c8d5a), -o-linear-gradient(#9c8d5a, #9c8d5a);
+background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#9c8d5a, #9c8d5a);
+background-position: 0 0, 100% 0;
+background-repeat: no-repeat;
+padding:0px;
+height: 30px;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+color: #ffffff;
+border-color: #928557;
+border-top: 2px solid #9c8d5a;
+border-bottom: 2px solid #B8AB83;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));#
 background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
 background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
 background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
 background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
 background-position: 0 0, 100% 0;
 background-repeat: no-repeat;
-padding:0px;
-height: 30px;
 }
 
 #mobileNavIcon {font-size:10px; color:#d3ccb3;}
@@ -461,21 +475,6 @@ text-shadow: 0 1px 0 rgba(0,0,0,.5);
 
 .search .btn-info,
 .mobile_search_button .btn-info {width: 30px;}
-
-
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
-color: #ffffff;
-border-color: #928557;
-border-top: 2px solid #928557;
-border-bottom: 2px solid #928557;
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#a89968));
-background-image: -webkit-linear-gradient(#9c8d5a, #a89968);
-background-image: -moz-linear-gradient(#9c8d5a, #a89968), -moz-linear-gradient(#9c8d5a, #a89968);
-background-image: -o-linear-gradient(#9c8d5a, #a89968), -o-linear-gradient(#9c8d5a, #a89968);
-background-image: linear-gradient(#8D8051, #94875C), linear-gradient(#8A7C4E, #998B5F);
-background-position: 0 0, 100% 0;
-background-repeat: no-repeat;
-}
 
 span.glyphicon.icon-search {
 text-shadow: 0 -1px 0 #8f8159;
@@ -556,7 +555,7 @@ text-decoration: none;
   box-shadow: inset -2px 0px 2px 3px rgba(000,000,000,.1);
 }
 
- .nav-search{
+.nav-search{
 position: absolute;
 left: 15px;
 width: 77%;
@@ -589,6 +588,12 @@ box-shadow: -2px 0px 2px 3px rgba(000,000,000,.1)!important;
 
 li.nav-calendar {
 list-style: none;
+-webkit-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
+-moz-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
+box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
+}
+
+ul.nav_list li:nth-child(2) {
 -webkit-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
 -moz-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
 box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
@@ -1724,7 +1729,7 @@ footer.footer {padding: 30px;}
 .hero_image .play-icon {font-size: 7em;}
 
 .search .form-inline .form-group {
-width: 67%;
+width: 65%;
 margin-left: 25px;
 }
 
