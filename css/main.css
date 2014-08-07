@@ -1291,6 +1291,8 @@ padding: 20px;
 margin: 0;
 }
 
+.body-font {font-size:14px;}
+nav.footer_nav {font-size: 12px;}
 nav.footer_nav {font-size: 12px;}
 
 nav.footer_nav ul.list-inline li {
