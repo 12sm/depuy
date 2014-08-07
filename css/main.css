@@ -970,6 +970,12 @@ margin-right: 15px!important;
 padding: 0px 20px;
 }
 
+.list-thumb {position:relative;}
+.list-thumb a.play-icon img {width:25%!important;padding:0!important;top: -7px!important;}
+.list-thumb a.play-icon {padding:0!important;}
+
+.pull-left {float: left !important;font-size: 1em;}
+
 img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;height: auto;width: 90px;}
 .list-item-content {padding-top:5px;padding-bottom:5px;}
 
