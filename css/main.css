@@ -639,7 +639,7 @@ padding: 10px 5px; /*20px*/
 
 .hero_title h2 {
 color: #FFF;
-font-size: 14px;
+font-size: 14px!important;
 font-weight: 100;
 padding: 10px 20px 0px 20px;
 margin: 0;
@@ -941,6 +941,15 @@ padding-top: 9px;
 color:#a89968;
 }
 
+.resource-detail-item.cal-hero-imge {
+max-height: 200px;
+overflow: hidden;
+}
+
+span.add-to-calendar {
+color: #003c60;
+}
+
 /* ==============================
    $Resource Detail Views
    ============================== */
@@ -1043,8 +1052,10 @@ ul.presentation-navigation li {padding: 15px 10px;}
 .calendar-item-grey {
 	color:#A7A8AA;
 	text-shadow: 0 1px 0 #FFF;
+	font-weight:bold;
 }
 
+.calendar-heading h2 {margin-bottom:0;}
 .cal-detail-heading {color:#A7A8AA;text-transform:uppercase;margin-bottom:0px;font-weight:bold;}
 
 .calendar.search-cal {
@@ -1592,6 +1603,8 @@ margin-right: 20px;
 float: right;
 }
 
+.resource-detail-item.cal-hero-imge img {
+margin-top:-50px;}
 
 }
 
@@ -1608,5 +1621,8 @@ h2 {font-size: 24px!important;}
 .upcoming-courses {padding:0px;}
 
 .hero_image .play-icon {font-size: 7em;}
+
+.resource-detail-item.cal-hero-imge img {
+margin-top:-200px;}
 
 }
