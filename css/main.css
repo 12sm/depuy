@@ -1396,6 +1396,8 @@ h2 + .content_rule {
 line-height: 15px;
 }
 
+
+
 /* ==========================================================================
    $Footer
    ========================================================================== */
@@ -1834,6 +1836,7 @@ margin-top:-50px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
 h2, .hero_title h2 {font-size: 24px!important;}
+h2.vet-heading {padding: 5px 20px 0px 20px;}
 
 }
 
@@ -1855,6 +1858,8 @@ h2, .hero_title h2 {font-size: 24px!important;}
 margin-top:-200px;}
 
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
+
+h2.vet-heading {padding: 5px 20px 0px 20px;}
 
 
 }
