@@ -673,10 +673,13 @@ position: absolute;
 width: 100%;
 text-align: center;
 left: 0;
-top: -20%;
+top: 0px;
 color: #1B1B1B;
-opacity: 0.5;
+opacity: 1;
 font-size: 3em;
+-webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+box-shadow: inset 0px 12px 12px 0px rgba(50, 50, 50, 0.4);
 }
 
 .hero_image .play-icon:hover {opacity:1;}
@@ -1675,6 +1678,14 @@ footer.footer {padding: 30px;}
 width: 30px;
 margin-right: 10px;
 float: right;
+}
+
+.hero_image .play-icon {
+-webkit-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow: 0px 0px 0px 0px rgba(50, 50, 50, 0.4);
+box-shadow: inset 0px 0px 0px 0px rgba(50, 50, 50, 0.4);
+}
+
 }
 
 @media only screen and (max-width: 1024px) and (min-width:600px) {
