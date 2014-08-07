@@ -786,6 +786,7 @@ h3.course_description,
 h3.procedure_description {
 text-shadow: 0 1px 0 #FFF;
 margin: 0;
+margin-right: 30px;
 }
 
 .course_interaction .col-sm-12 {padding: 0;}
@@ -1297,7 +1298,6 @@ box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
 .body-font {font-size:14px!important;}
 nav.footer_nav {font-size: 12px;}
 nav.footer_nav {font-size: 12px;}
-
 nav.footer_nav ul.list-inline li {
 border-right: 1px solid #9E9E9E;
 }
@@ -1388,7 +1388,7 @@ margin-bottom: 10px;
 }
 
 .course .flag {
-  right: 15px!important;
+  right: 20px!important;
   margin-top: 1px;
 }
 
@@ -1569,9 +1569,15 @@ margin-right: 10px;
 float: right;
 }
 
+@media only screen and (max-width: 1024px) {
 
+.course_interaction.border-bottom {
+border: 0;
+box-shadow: none;
+}
 
 }
+
 
 @media only screen and (min-width: 1024px) {
 
@@ -1637,6 +1643,9 @@ float: right;
 .resource-detail-item.cal-hero-imge img {
 margin-top:-50px;}
 
+.border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
+
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -1655,5 +1664,8 @@ h2 {font-size: 24px!important;}
 
 .resource-detail-item.cal-hero-imge img {
 margin-top:-200px;}
+
+.border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
+
 
 }
