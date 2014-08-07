@@ -327,13 +327,13 @@ border: none;
 }
 
 .top_nav {
-  background: #003c60;
-  padding: 0px 20px;
--webkit-box-shadow: 0px 8px 8px 0px rgba(50, 50, 50, 0.4);
--moz-box-shadow:    0px 8px 8px 0px rgba(50, 50, 50, 0.4);
-box-shadow:         0px 8px 8px 0px rgba(50, 50, 50, 0.4);
-  position:relative;
-  z-index:999;
+background: #003c60;
+padding: 0px 20px;
+-webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+-moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+position: relative;
+z-index: 999;
 }
 
 li.top-nav-dividers {
@@ -467,10 +467,10 @@ background-repeat: no-repeat;
 
 #mobileNavIcon {font-size:10px; color:#d3ccb3;}
 #mobileDropdown button {
-font-weight:600;
-text-shadow: 0 1px 0 rgba(0,0,0,.5);
--moz-text-shadow: 0 1px 0 rgba(0,0,0,.5);
--webkit-text-shadow: 0 1px 0 rgba(0,0,0,.5);
+font-weight: 600;
+text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+-moz-text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+-webkit-text-shadow: 0 -1px 0 rgba(0,0,0,.25);
 }
 
 .search .btn-info,
@@ -970,6 +970,12 @@ margin-right: 15px!important;
 padding: 0px 20px;
 }
 
+.list-thumb {position:relative;}
+.list-thumb a.play-icon img {width:25%!important;padding:0!important;top: -7px!important;}
+.list-thumb a.play-icon {padding:0!important;}
+
+.pull-left {float: left !important;font-size: 1em;}
+
 img.list-item-thumbnail {border:2px solid #FFF; padding:0; margin-right:5px;height: auto;width: 90px;}
 .list-item-content {padding-top:5px;padding-bottom:5px;}
 
@@ -993,8 +999,12 @@ li.indent {margin-left: 20px;}
    ============================== */
 
 .course-calendar-hero {
-max-height: 200px;
-overflow: hidden;
+max-height:200px;
+overflow:hidden;
+}
+
+.course-calendar-hero .hero_image {
+height: 200px;
 }
 
 p.small-grey.pull-left.left {
@@ -1006,6 +1016,7 @@ padding-top: 9px;
 p.small-grey.pull-right.right {
 text-shadow: none;
 padding-right: 20px;
+font-size:1em;
 padding-top: 9px;
 color:#a89968;
 }
