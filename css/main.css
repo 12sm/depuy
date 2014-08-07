@@ -228,11 +228,11 @@ margin-right: -28px;
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
 .modal-body {padding:10px;}
-#procedures .modal-body {padding: 0px;}
+#procedures .modal-body, #contentTypes .modal-body {padding: 0px;}
 .modal .form-group label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
 .modal .radio-group label {color: #A7A8AA; margin-bottom: 0; margin-top: 10px;}
 
-.panel.panel-default:hover {background-color: #d5d6d2;}
+.panel-default:nth-child(even) .panel-heading {background-color: #d5d6d2;}
 .panel-group .panel + .panel {margin-top: 0px;}
 
 #signin .modal-dialog,
@@ -422,11 +422,11 @@ padding: 5px;
 color: #A7A8AA;
 }
 :-moz-placeholder { /* Firefox 18- */
-color: #A7A8AA;  
+color: #A7A8AA;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
 color: #A7A8AA;  }
-:-ms-input-placeholder {color: #A7A8AA;  
+:-ms-input-placeholder {color: #A7A8AA;
 }
 
 .btn-search {padding: 0px 4px!important;}
@@ -590,7 +590,7 @@ li.nav-calendar {
 list-style: none;
 -webkit-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
 -moz-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;	
+box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
 }
 
 li.nav-home {margin-bottom: 10px;}
@@ -912,8 +912,11 @@ p.list-item-type {font-weight: bold;margin-bottom:3px;}
 
 /* Modal Specific */
 
-ul.filter-prodecure-sublist {list-style: none;padding-left: 20px;}
-ul.filter-prodecure-sublist li {padding:5px 0px;}
+ul.filter-prodecure-sublist {list-style: none;padding-left: 20px;margin-bottom: 0;}
+ul.filter-prodecure-sublist li {padding:10px 0px;}
+.filter-prodecure-sublist .checkbox label {
+  font-weight: normal;
+}
 .modal .panel-heading {8px 15px;}
 li.indent {margin-left: 20px;}
 .modal .glyphicon.icon-caret-down.pull-right {color: #D1D2D0;}
@@ -1140,17 +1143,30 @@ border:none;
 width:90%;
 }
 /*Collapse Panels*/
-.panel-default > div.panel-heading {
+.panel-default > .panel-heading {
 background: transparent;
-border-bottom: 1px solid #dddddd;
 padding: 10px;
 margin: 0px;
+border-radius: 0;
 }
+.panel-default label {
+  color: #AFB0B1;
+}
+.panel-default .input_checked {
+  color: #4D4F53;
+}
+.check_collapse {
+  color: #A7A8AA;
+}
+.panel-default .checkbox label {
+  font-size: 12px;
+}
+
 .modal .panel-body {
 padding: 0px 10px;
 }
 .modal li.checkbox {
-padding: 1px;
+margin: 0;
 }
 .radio label, .checkbox label {font-weight: bold;}
 .panel.panel-default {
@@ -1564,6 +1580,10 @@ float: right;
 .col-sm-12, .col-md-12, .col-lg-12 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.panel-default > div.panel-heading {
+  padding: 10px 15px;
 }
 
 /* Padding to 30px */
