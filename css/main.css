@@ -1376,7 +1376,7 @@ h2 + .content_rule {
 
 footer.footer {
 background-color: #D5D6D2;
-padding: 20px;
+padding: 15px;
 margin: 0;
 -webkit-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
 -moz-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
@@ -1687,7 +1687,7 @@ h2 {font-size: 18px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
 
 /* Footer */
-footer.footer {padding: 30px;}
+footer.footer {padding: 20px;}
 
 .hero_image .play-icon {font-size: 5em;}
 
