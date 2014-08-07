@@ -118,7 +118,6 @@ padding: 15% 0px;
 
 .play-icon:hover, .play-icon:focus {
   color: #fff;
-  opacity: 0.9;
 }
 
 /* ==============================
@@ -1318,6 +1317,8 @@ color: #9FA09E;
   background: #fff;
 }
 
+.video_feature:hover {background:#f2f2f2;}
+
 .video_feature .play-icon img {
 width: 20%;
 }
@@ -1367,8 +1368,8 @@ width: 20%;
 }
 
 .video_share {
-  color: #003c60;
-  padding-left: 0px!important;
+color: #003c60;
+padding: 4px 2px;
 }
 
 .course {
