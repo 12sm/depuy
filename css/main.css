@@ -999,8 +999,12 @@ li.indent {margin-left: 20px;}
    ============================== */
 
 .course-calendar-hero {
-max-height: 200px;
-overflow: hidden;
+max-height:200px;
+overflow:hidden;
+}
+
+.course-calendar-hero .hero_image {
+height: 200px;
 }
 
 p.small-grey.pull-left.left {
@@ -1012,6 +1016,7 @@ padding-top: 9px;
 p.small-grey.pull-right.right {
 text-shadow: none;
 padding-right: 20px;
+font-size:1em;
 padding-top: 9px;
 color:#a89968;
 }
