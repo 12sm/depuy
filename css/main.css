@@ -1619,12 +1619,8 @@ background: url(../img/nav-tile.jpg) repeat left top;
 
 .course {border-bottom: 0px;}
 
-<<<<<<< HEAD
 h3 {font-size: 14px;}
 h2, .hero_title h2 {font-size: 16px;}
-=======
-h2 {font-size: 16px!important;}
->>>>>>> FETCH_HEAD
 
 .filter-btn {min-width: 190px;width:auto;}
 
@@ -1747,15 +1743,11 @@ h2 {font-size: 18px!important;}
 
 @media only screen and (max-width: 1024px) and (min-width:600px) {
 
-<<<<<<< HEAD
 .hero_image .play-icon {
 top:-35%;
 }
 
 h2, .hero_title h2 {font-size:18px;}
-=======
-h2 {font-size:18px;}
->>>>>>> FETCH_HEAD
 
 .hero-description h3 {
 display: none;
