@@ -764,7 +764,7 @@
 		<h2 class="modal-title">Shoulder Procedures</h4>
 	  </div>
 	  <div class="modal-body">
-		<div class="panel-group" id="accordion">
+		<div class="panel-group selection_accordion" id="accordion">
 		  <div class="panel panel-default">
 			<div class="checkbox panel-heading">
 			  <label>
@@ -774,7 +774,7 @@
 		  </div>
 		  <div class="panel panel-default">
 			<div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon icon-caret-down"></span></a>
+			  <a class="check_collapse pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span class="glyphicon icon-caret-down"></span></a>
 			  <label>
 				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Shoulder Arthroplasty <span class="filter_amount">4</span></a>
 			  </label>
@@ -822,7 +822,7 @@
 		  </div>
 		  <div class="panel panel-default">
 			<div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
+			  <a class="check_collapse pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
 			  <label>
 				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Instability <span class="filter_amount">4</span></a>
 			  </label>
@@ -854,31 +854,29 @@
 			  </div>
 			</div>
 		  </div>
-
-
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
+		  <div class="panel panel-default">
+		    <div class="checkbox panel-heading">
 			  <label>
 				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Atraumatic Sot Tissue Liberator <span class="filter_amount"></span></a>
 			  </label>
 			</div>
-  </div>
-    <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon icon-caret-down"></span></a>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="checkbox panel-heading">
+			  <a class="check_collapse pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven"><span class="glyphicon icon-caret-down"></span></a>
 			  <label>
 				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Fracture Treatment <span class="filter_amount">8</span></a>
 			  </label>
 			</div>
-    <div id="collapseSeven" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li class="checkbox">
+		    <div id="collapseSeven" class="panel-collapse collapse">
+			  <div class="panel-body">
+			    <ul class="filter-prodecure-sublist">
+		  		<li class="checkbox">
 					  <label>
 						<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Clavical Fracture <span class="filter_amount">1</span>
 					  </label>
-			</li>
-			<li class="checkbox">
+				</li>
+				<li class="checkbox">
 					  <label>
 						<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Scapula Fracture <span class="filter_amount">1</span>
 					  </label>
@@ -923,7 +921,7 @@
   </div>
   <div class="panel panel-default">
     <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><span class="glyphicon icon-caret-down"></span></a>
+			  <a class="check_collapse pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseEight"><span class="glyphicon icon-caret-down"></span></a>
 			  <label>
 				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Pediatrics <span class="filter_amount">5</span></a>
 			  </label>
@@ -967,8 +965,8 @@
 		</div>
 	  </div>
 	</div>
-	
-	
+
+
 	<!-- Modal -->
 	<div class="modal fade" id="contentTypes" tabindex="-1" role="dialog">
 	  <div class="modal-dialog">
@@ -978,140 +976,84 @@
 			<h2 class="modal-title">Content Types</h2>
 		  </div>
 		  <div class="modal-body">
-
-			<div class="panel-group" id="accordion">
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> View all <span class="filter_amount">30</span></a>
-			  </label>
+			<div class="panel-group selection_accordion" id="accordion2">
+			  <div class="panel panel-default">
+			    <div class="checkbox panel-heading">
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> View all <span class="filter_amount">30</span></a>
+				  </label>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="checkbox panel-heading">
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Video <span class="filter_amount">12</span></a>
+				  </label>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="checkbox panel-heading">
+				  <a class="check_collapse pull-right" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne"><span class="glyphicon icon-caret-down"></span></a>
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> PDF <span class="filter_amount">4</span></a>
+				  </label>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse">
+				  <div class="panel-body">
+					<ul class="filter-prodecure-sublist">
+						<li class="checkbox">
+						  <label>
+							<input class="sr-only" type="checkbox" name="anatomic" value="anatomic"><span class="styled_checkbox"></span> Surgical Technique Guide <span class="filter_amount">1</span>
+						  </label>
+						</li>
+						<li class="checkbox">
+						  <label>
+							<input class="sr-only" type="checkbox" name="reverse" value="reverse"><span class="styled_checkbox"></span> White Paper <span class="filter_amount">1</span>
+						  </label>
+						</li>
+						<li class="checkbox">
+						  <label>
+							<input class="sr-only" type="checkbox" name="revision" value="revision"><span class="styled_checkbox"></span> Case Study <span class="filter_amount">1</span>
+						  </label>
+						</li>
+						<li class="checkbox">
+						  <label>
+							<input class="sr-only" type="checkbox" name="fracture" value="fracture"><span class="styled_checkbox"></span> Product Guide <span class="filter_amount">1</span>
+						  </label>
+						</li>
+					</ul>
+				  </div>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="checkbox panel-heading">
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> eLearning <span class="filter_amount">2</span></a>
+				  </label>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="checkbox panel-heading">
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Journal Article <span class="filter_amount">1</span></a>
+				  </label>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="checkbox panel-heading">
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Podcast <span class="filter_amount">7</span></a>
+				  </label>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="checkbox panel-heading">
+				  <label>
+					<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> App <span class="filter_amount">2</span></a>
+				  </label>
+				</div>
+			  </div>
 			</div>
-  </div>
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Video <span class="filter_amount">12</span></a>
-			  </label>
-			</div>
-    <div id="collapseTwo" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li><input type="checkbox" name="One" value="One"> One <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Two" value="Two"> Two <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Three" value="Three"> Three <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Four" value="Four"> Four <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Five" value="Five"> Five <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Six" value="Six"> Six <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Seven" value="Seven"> Seven <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Eight" value="Eight"> Eight <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Nine" value="Nine"> Nine <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Ten" value="Ten"> Ten <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Eleven" value="Eleven"> Eleven <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Twelve" value="Twelve"> Twelve <span class="filter_amount">1</span></li>
-		</ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> PDF <span class="filter_amount">8</span></a>
-			  </label>
-			</div>
-	<div id="collapseThree" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li><input type="checkbox" name="One" value="One"> Surgical Technique Guide <span class="filter_amount">4</span></li>
-			<li class="indent"><input type="checkbox" name="Two" value="Two"> White Paper <span class="filter_amount">2</span></li>
-			<li class="indent"><input type="checkbox" name="Three" value="Three"> Case Study <span class="filter_amount">1</span></li>
-			<li class="indent"><input type="checkbox" name="Four" value="Four"> Product Guide <span class="filter_amount">1</span></li>
-		</ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> eLearning <span class="filter_amount">2</span></a>
-			  </label>
-			</div>
-	<div id="collapseFour" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li><input type="checkbox" name="One" value="One"> One <span class="filter_amount">4</span></li>
-			<li><input type="checkbox" name="Two" value="Two"> Two <span class="filter_amount">4</span></li>
-		</ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Journal Article <span class="filter_amount">1</span></a>
-			  </label>
-			</div>
-  </div>
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Podcast <span class="filter_amount">7</span></a>
-			  </label>
-			</div>
-	<div id="collapseSix" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li><input type="checkbox" name="One" value="One"> One <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Two" value="Two"> Two <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Three" value="Three"> Three <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Four" value="Four"> Four <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Five" value="Five"> Five <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Six" value="Six"> Six <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Seven" value="Seven"> Seven <span class="filter_amount">1</span></li>
-		</ul>
-      </div>
-    </div>
-  </div>
-    <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> App <span class="filter_amount">2</span></a>
-			  </label>
-			</div>
-    <div id="collapseSeven" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li><input type="checkbox" name="One" value="One"> One <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="Two" value="Two"> Two <span class="filter_amount">1</span></li>
-		</ul>
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="checkbox panel-heading">
-			  <a class="pull-right" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span class="glyphicon icon-caret-down"></span></a>
-			  <label>
-				<input class="sr-only" type="checkbox"><span class="styled_checkbox"></span> Pediatrics <span class="filter_amount">12</span></a>
-			  </label>
-			</div>
-    <div id="collapseEight" class="panel-collapse collapse">
-      <div class="panel-body">
-        <ul class="filter-prodecure-sublist">
-			<li><input type="checkbox" name="one" value="one"> Clavical Fracture <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="two" value="two"> Humeral Shaft Fracture <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="three" value="three"> Distal Humerus Fracture <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="four" value="four"> Ulnar Shaft Fracture <span class="filter_amount">1</span></li>
-			<li><input type="checkbox" name="five" value="five"> Radial Shaft Fracture <span class="filter_amount">1</span></li>
-		</ul>
-      </div>
-    </div>
-  </div>
-</div>
 
 		  </div>
 		</div>

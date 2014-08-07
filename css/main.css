@@ -228,11 +228,11 @@ margin-right: -28px;
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
 .modal-body {padding:10px;}
-#procedures .modal-body {padding: 0px;}
+#procedures .modal-body, #contentTypes .modal-body {padding: 0px;}
 .modal .form-group label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
 .modal .radio-group label {color: #A7A8AA; margin-bottom: 0; margin-top: 10px;}
 
-.panel.panel-default:hover {background-color: #d5d6d2;}
+.panel-default:nth-child(even) .panel-heading {background-color: #d5d6d2;}
 .panel-group .panel + .panel {margin-top: 0px;}
 
 #signin .modal-dialog,
@@ -422,11 +422,11 @@ padding: 5px;
 color: #A7A8AA;
 }
 :-moz-placeholder { /* Firefox 18- */
-color: #A7A8AA;  
+color: #A7A8AA;
 }
 ::-moz-placeholder {  /* Firefox 19+ */
 color: #A7A8AA;  }
-:-ms-input-placeholder {color: #A7A8AA;  
+:-ms-input-placeholder {color: #A7A8AA;
 }
 
 .btn-search {padding: 0px 4px!important;}
@@ -590,7 +590,7 @@ li.nav-calendar {
 list-style: none;
 -webkit-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
 -moz-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
-box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;	
+box-shadow: -2px -3px 2px 0px rgba(000,000,000,.1)!important;
 }
 
 li.nav-home {margin-bottom: 10px;}
@@ -605,6 +605,7 @@ color: #ffffff;
 text-decoration: none;
 outline: 0;
 background-color: #a79960;
+text-shadow: none;
 }
 
 /* ==============================
@@ -638,7 +639,7 @@ padding: 10px 5px; /*20px*/
 
 .hero_title h2 {
 color: #FFF;
-font-size: 14px;
+font-size: 14px!important;
 font-weight: 100;
 padding: 10px 20px 0px 20px;
 margin: 0;
@@ -774,11 +775,12 @@ padding: 0;
 
 p.course_length {
 line-height: .7;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 
 .row.course_details {
 padding-top: 10px;
+margin-left: -10px;
 }
 
 h3.course_description,
@@ -789,10 +791,19 @@ margin: 0;
 
 .course_interaction .col-sm-12 {padding: 0;}
 
+<<<<<<< HEAD
 .share-like-list {padding:0;}
 .share-like-list a:hover {text-decoration:none;color:#8ca7b6;}
+=======
+ul.share-like-list {list-style:none;padding:0;margin-bottom: 0;}
+ul.share-like-list li:last-child {border:none;}
+ul.share-like-list li {display:inline;padding:0px;}
+ul.share-like-list li:last-child {padding-left: 0px;}
+ul.share-like-list li {font-size:12px;}
+/* .share-like-list {padding:0;}
+>>>>>>> FETCH_HEAD
 .share-like-list span:last-child {border:none;padding-left: 0px;}
-.share-like-list span {display:inline;padding:0px;font-size:12px;}
+.share-like-list span {display:inline;padding:0px;font-size:12px;} */
 .row.interaction.calendar-share {border-bottom: 1px solid #CCC;box-shadow:0 1px rgba(255,255,255,.5);}
 
 
@@ -891,7 +902,7 @@ margin-bottom: 5px;
 }
 
 .procedure .flag {
-right: 15px;
+right: 5px;
 margin-top: 1px;
 }
 
@@ -906,8 +917,11 @@ p.list-item-type {font-weight: bold;margin-bottom:3px;}
 
 /* Modal Specific */
 
-ul.filter-prodecure-sublist {list-style: none;padding-left: 20px;}
-ul.filter-prodecure-sublist li {padding:5px 0px;}
+ul.filter-prodecure-sublist {list-style: none;padding-left: 20px;margin-bottom: 0;}
+ul.filter-prodecure-sublist li {padding:10px 0px;}
+.filter-prodecure-sublist .checkbox label {
+  font-weight: normal;
+}
 .modal .panel-heading {8px 15px;}
 li.indent {margin-left: 20px;}
 .modal .glyphicon.icon-caret-down.pull-right {color: #D1D2D0;}
@@ -935,6 +949,15 @@ padding-top: 9px;
 color:#a89968;
 }
 
+.resource-detail-item.cal-hero-imge {
+max-height: 200px;
+overflow: hidden;
+}
+
+span.add-to-calendar {
+color: #003c60;
+}
+
 /* ==============================
    $Resource Detail Views
    ============================== */
@@ -942,7 +965,7 @@ color:#a89968;
 .content .flag.opaque {
 z-index: 999;
 text-align: right;
-right: 15px;
+right: 5px;
 }
 
 button.resource-btn {
@@ -1037,8 +1060,10 @@ ul.presentation-navigation li {padding: 15px 10px;}
 .calendar-item-grey {
 	color:#A7A8AA;
 	text-shadow: 0 1px 0 #FFF;
+	font-weight:bold;
 }
 
+.calendar-heading h2 {margin-bottom:0;}
 .cal-detail-heading {color:#A7A8AA;text-transform:uppercase;margin-bottom:0px;font-weight:bold;}
 
 .calendar.search-cal {
@@ -1134,17 +1159,30 @@ border:none;
 width:90%;
 }
 /*Collapse Panels*/
-.panel-default > div.panel-heading {
+.panel-default > .panel-heading {
 background: transparent;
-border-bottom: 1px solid #dddddd;
 padding: 10px;
 margin: 0px;
+border-radius: 0;
 }
+.panel-default label {
+  color: #AFB0B1;
+}
+.panel-default .input_checked {
+  color: #4D4F53;
+}
+.check_collapse {
+  color: #A7A8AA;
+}
+.panel-default .checkbox label {
+  font-size: 12px;
+}
+
 .modal .panel-body {
 padding: 0px 10px;
 }
 .modal li.checkbox {
-padding: 1px;
+margin: 0;
 }
 .radio label, .checkbox label {font-weight: bold;}
 .panel.panel-default {
@@ -1285,7 +1323,7 @@ width: 20%;
 }
 
 .video_feature .flag {
-  right: 15px;
+  right: 5px;
 }
 
 .flag {
@@ -1344,7 +1382,7 @@ margin-bottom: 10px;
 }
 
 .course .flag {
-  right: 15px;
+  right: 15px!important;
   margin-top: 1px;
 }
 
@@ -1401,6 +1439,7 @@ box-shadow: 0px 1px 2px -1px rgba(000,000,000,.1);
 }
 .single-content-box {margin-bottom: 15px;}
 .single-upcoming-course:last-child {margin-bottom: 15px;}
+.single-content-box h4 {font-weight: bold;}
 
 .container-fluid {padding: 0px;background-color: #E4E4E2;}
 
@@ -1559,6 +1598,10 @@ float: right;
   padding-right: 15px;
 }
 
+.panel-default > div.panel-heading {
+  padding: 10px 15px;
+}
+
 /* Padding to 30px */
 .nav_list li.active a {padding: 9px 30px;}
 .nav_list li a {padding: 8px 30px;}
@@ -1566,7 +1609,7 @@ float: right;
 .upcoming-courses {padding: 0px;}
 
 /* Content boxes */
-.text-max-height {height: 100px;}
+.text-max-height {height: 90px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
 
 /* Footer */
@@ -1585,6 +1628,8 @@ margin-right: 20px;
 float: right;
 }
 
+.resource-detail-item.cal-hero-imge img {
+margin-top:-50px;}
 
 }
 
@@ -1592,7 +1637,7 @@ float: right;
 
 .right_column {background: #E4E4E2;}
 
-h2 {font-size: 24px;}
+h2 {font-size: 24px!important;}
 
 .text-max-height {height: 80px;}
 
@@ -1601,5 +1646,8 @@ h2 {font-size: 24px;}
 .upcoming-courses {padding:0px;}
 
 .hero_image .play-icon {font-size: 7em;}
+
+.resource-detail-item.cal-hero-imge img {
+margin-top:-200px;}
 
 }
