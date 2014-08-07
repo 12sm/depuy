@@ -962,6 +962,10 @@ right: 5px;
 margin-top: 1px;
 }
 
+#list .flag.opaque {
+margin-right: 15px!important;
+}
+
 .procedures-list {
 padding: 0px 20px;
 }
