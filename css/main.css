@@ -108,10 +108,12 @@ position: absolute;
 width: 100%;
 text-align: center;
 left: 0;
-top: 8%;
+top: 0;
 color: #000;
 opacity: 0.7;
 font-size: 3em;
+height: 100%;
+padding: 15% 0px;
 }
 
 .play-icon:hover, .play-icon:focus {
@@ -371,6 +373,8 @@ text-decoration:none;
 
 nav.main_nav .glyphicon,
 .mobile-nav .glyphicon {font-size: 20px;color: #a89968;}
+.mobile-nav .active .glyphicon {color: #fff;}
+
 nav.main_nav li.active .glyphicon {color: #FFF;}
 
 .mobile_header {
@@ -735,7 +739,8 @@ font-size:12px;
 line-height: 1;
 }
 
-li.divider {
+li.divider,
+span.divider {
 border-left: 1px solid #ccc;
 margin: 0;
 padding: 0!important;
@@ -785,11 +790,17 @@ margin: 0;
 
 .course_interaction .col-sm-12 {padding: 0;}
 
+<<<<<<< HEAD
 ul.share-like-list {list-style:none;padding:0;margin-bottom: 0;}
 ul.share-like-list li:last-child {border:none;}
 ul.share-like-list li {display:inline;padding:0px;}
 ul.share-like-list li:last-child {padding-left: 0px;}
 ul.share-like-list li {font-size:12px;}
+=======
+.share-like-list {padding:0;}
+.share-like-list span:last-child {border:none;padding-left: 0px;}
+.share-like-list span {display:inline;padding:0px;font-size:12px;}
+>>>>>>> FETCH_HEAD
 .row.interaction.calendar-share {border-bottom: 1px solid #CCC;box-shadow:0 1px rgba(255,255,255,.5);}
 
 
