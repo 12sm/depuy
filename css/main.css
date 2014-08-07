@@ -99,6 +99,10 @@ border-right-color: #A5CFE9;
 cursor: pointer;
 }
 
+.top-flag {
+margin-right: 30px;
+}
+
 .padding-bottom {padding-bottom:10px;}
 .padding-top {padding-bottom:10px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
@@ -1136,6 +1140,11 @@ ul.presentation-navigation li {padding: 15px 10px;}
    $Calendar Detail
    ============================== */
 
+
+.course_interaction.border-bottom {
+padding-bottom: 10px;
+}
+
 .calendar-item-grey {
 	color:#A7A8AA;
 	text-shadow: 0 1px 0 #FFF;
@@ -1556,6 +1565,7 @@ box-shadow: 0px 1px 2px -1px rgba(000,000,000,.1);
 .content {
   padding: 10px 15px;
   background: #E4E4E2;
+  position:relative;
 }
 .single-content-box {margin-bottom: 15px;}
 .single-upcoming-course:last-child {margin-bottom: 15px;}
