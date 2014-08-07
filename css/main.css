@@ -1620,7 +1620,7 @@ background: url(../img/nav-tile.jpg) repeat left top;
 .course {border-bottom: 0px;}
 
 h3 {font-size: 14px;}
-h2 {font-size: 16px;}
+h2, .hero_title h2 {font-size: 16px;}
 
 .filter-btn {min-width: 190px;width:auto;}
 
@@ -1745,7 +1745,7 @@ box-shadow: inset 0px 0px 0px 0px rgba(50, 50, 50, 0.4);
 top:-35%;
 }
 
-h2 {font-size:18px;}
+h2, .hero_title h2 {font-size:18px;}
 
 .hero-description h3 {
 display: none;
@@ -1831,7 +1831,7 @@ margin-top:-50px;}
 
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
-h2 {font-size: 24px!important;}
+h2, .hero_title h2 {font-size: 24px!important;}
 
 }
 
