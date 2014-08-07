@@ -1600,6 +1600,11 @@ ul.share-like-list li {font-size:11px;}
 
 .section-title {margin-left:10px;}
 
+.btn-info {height:38px;}
+.search .btn-info, .mobile_search_button .btn-info {
+width: 38px;
+}
+
 }
 
 
