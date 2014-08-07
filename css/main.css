@@ -683,8 +683,12 @@ font-weight: 100;
 margin-top: 0px;
 }
 
-.hero_image {position: relative;max-height: 420px;overflow: hidden;}
+.hero_image {position: relative;max-height: 420px;}
 .hero_text {position: absolute;bottom: 0;z-index: 10;}
+
+.hero_text .share-like-list a,
+.hero_text .share-like-list .video_likes {color:#fff;}
+.hero_text .share-like-list.open a {color:#8ca7b6;}
 
 .hero_image .play-icon {
 position: absolute;
@@ -1508,7 +1512,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .video_share {
 color: #003c60;
-padding: 5px 0px 5px 12px;
+padding: 5px 12px 5px 12px;
 }
 
 .course {
