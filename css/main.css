@@ -1289,9 +1289,12 @@ footer.footer {
 background-color: #D5D6D2;
 padding: 20px;
 margin: 0;
+-webkit-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
+-moz-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
+box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
 }
 
-.body-font {font-size:14px;}
+.body-font {font-size:14px!important;}
 nav.footer_nav {font-size: 12px;}
 nav.footer_nav {font-size: 12px;}
 
