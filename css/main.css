@@ -740,11 +740,6 @@ background-size: 125%!important;
 }
 .hero_text {position: absolute;bottom: 0;z-index: 10;}
 
-.resource-detail-item{
-  background: url(http://placehold.it/1280x720) no-repeat center center;
-  padding-bottom: 55%;
-  background-size: 125%;
-}
 .detail-presentation{
   padding-bottom: 0%;
   background-size: initial;
