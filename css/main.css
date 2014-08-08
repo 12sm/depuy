@@ -1700,7 +1700,7 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
-.resource-detail-banner {margin-bottom:15px;}
+.resource-detail-banner {margin-bottom:15px;margin-top: 5px;}
 
 .event_content h2, .event_content p, .faculty {
 padding: 0 5px;
@@ -1826,7 +1826,7 @@ h2 {margin-top: 0;}
 .hero-description h3 {
 display: none;
 }
-.resource-detail-banner {margin-bottom:20px;}
+.resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
 
 
 }
@@ -1839,7 +1839,7 @@ box-shadow: none;
 }
 
 h2 {margin-top: 0;}
-.resource-detail-banner {margin-bottom:20px;}
+.resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
 
 
 }
@@ -1918,7 +1918,7 @@ margin-top:-50px;}
 h2, .hero_title h2 {font-size: 24px!important;}
 h2 {margin-top: 0;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
-.resource-detail-banner {margin-bottom:30px;}
+.resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
 
 }
@@ -1945,7 +1945,7 @@ margin-top:-200px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
 h2.vet-heading {padding: 5px 20px 0px 20px;}
-.resource-detail-banner {margin-bottom:30px;}
+.resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
 
 
