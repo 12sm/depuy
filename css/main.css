@@ -782,13 +782,21 @@ text-align: center;
 left: 0;
 top: 0px;
 color: #1B1B1B;
-opacity: 1;
+opacity: .9;
 font-size: 3em;
 -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
 -moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
 box-shadow: inset 0px 12px 12px 0px rgba(50, 50, 50, 0.4);
 padding-bottom: 88px!important;
 padding-top: 0px!important;
+}
+
+.hero_image .play-icon:hover {
+opacity: 1;
+}
+
+.play-icon:hover {
+opacity: 1;
 }
 
 .hero_image .play-icon img{
@@ -1193,7 +1201,7 @@ z-index: 999;
 text-align: right;
 right: 5px;
 }
-.flag:first-child{
+.top-flag {
   margin-right: 15px;
 }
 button.resource-btn {
@@ -1885,7 +1893,7 @@ div.event_content{
   padding-top: 20px;
 }
 
-.flag:first-child{
+.top-flag {
   margin-right: 20px;
 }
 .top_nav {padding: 0px 20px;}
@@ -2040,7 +2048,7 @@ height: 57px;
 div.event_content{
   padding-top: 30px;
 }
-  .flag:first-child{
+.top-flag{
   margin-right: 30px;
 }
 
