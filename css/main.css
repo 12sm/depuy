@@ -47,11 +47,16 @@ p {color: #4D4F53; font-size:14px;}
 .strong {font-weight:bold;}
 .tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
 .tiny-tan {color:#a89968;margin-bottom:0;text-transform:uppercase;text-shadow: 0 1px 0 #FFF;font-size:10px;font-weight:bold;}
-.bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:20px;}
+.bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:15px;}
 .left {text-align:left;}
 .right {text-align:right;}
 .no-margin {margin:0!important;}
 .margin-top {margin-top:30px;}
+.little-margin {margin:10px 0px!important;}
+.no-margin-bottom {margin-bottom:0!important;}
+.margin-bottom {margin-bottom:10px!important;}
+.margin-left {margin-left:10px;}
+.margin-right {margin-right:10px;}
 
 h1 {
 font-size: 16px;
@@ -199,6 +204,21 @@ opacity:1;
 .form-control:-moz-placeholder, textarea:-moz-placeholder {
 color: #a7a8aa;
 opacity:1;
+}
+
+.add-course-form button.btn.btn-info {
+padding: 0px 10px;
+}
+
+form.form-inline.add-course-form {
+padding-left: 0!important;
+}
+input#add-course {
+width: 320px;
+}
+
+.form-group.add-course-form {
+margin-left: 0!important;
 }
 
 /* ==============================
@@ -785,6 +805,7 @@ border-bottom: 2px solid #002D48;
 
 .hero_title {
 background: url(../img/hero-gradient-tile.png) repeat-x left top;
+background-size: 100%;
 }
 .no-pad{
   padding-left: 0px;
@@ -1134,14 +1155,14 @@ height: 200px;
 p.small-grey.pull-left.left {
 text-shadow: none;
 padding-left: 20px;
-padding-top: 9px;
+padding-top: 7px;
 }
 
 p.small-grey.pull-right.right {
 text-shadow: none;
 padding-right: 20px;
 font-size:1em;
-padding-top: 9px;
+padding-top: 7px;
 color:#a89968;
 }
 
@@ -1341,8 +1362,8 @@ text-align: right;
    $Profile
    ============================== */
 
-p.profile-label {color:#CCC;font-weight:bold;text-transform:uppercase;margin-bottom:0;}
-p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}
+p.profile-label {color:#a7a8aa;font-weight:bold;text-transform:uppercase;margin-bottom:0;margin-top: 15px;}
+p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;margin-left:10px;}
 
 
 /* ==============================
@@ -1720,7 +1741,17 @@ background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9
 }
 
 
+@media only screen and (max-width:320px) {
+
+
+
+}
+
 @media only screen and (min-width: 320px) {
+
+.pull-left.section-title-favorites {
+margin-left: 0;
+}
 
 /* Padding to 15px */
 .nav_list li.active a {padding: 7px 15px;}
@@ -1782,6 +1813,11 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.box-text-content {
+min-height: 70px;
+}
+.favorites-margin-top {margin-top:5px}
+
 .resource-detail-banner {margin-bottom:15px;margin-top: 5px;}
 
 .event_content h2, .event_content p, .faculty {
@@ -1807,8 +1843,8 @@ display: none;
 }
 
 .hero_title h2 {
-font-size: 18px!important;
-padding: 15px 15px 0px 15px;
+font-size: 16px!important;
+padding: 10px 15px 0px 15px;
 }
 .hero_description {
 padding: 0px 15px 10px 15px;
@@ -1819,9 +1855,13 @@ padding: 0px 15px 10px 15px;
 
 
 @media only screen and (min-width: 600px) {
+
+.bigger-tan {margin-top:20px;}
+
 div.event_content{
   padding-top: 20px;
 }
+
 .flag:first-child{
   margin-right: 20px;
 }
@@ -1914,6 +1954,7 @@ h2 {font-size: 18px!important;margin-top: 0;}
 
 @media only screen and (max-width: 1023px) and (min-width:600px) {
 
+.favorites-margin-top {margin-top:10px}
 
 .hero_title h2 {
 font-size: 18px!important;
@@ -1929,6 +1970,7 @@ h2 {margin-top: 0;}
 display: none;
 }
 .resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
+
 .calendar.search-cal {
   width: 160px;
 }
@@ -1937,6 +1979,10 @@ display: none;
 }
 .search-cal .calendar_date {
   font-size: 50px;
+}
+
+.box-text-content {
+min-height: 73px;
 }
 
 }
@@ -1956,12 +2002,18 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
-  div.event_content{
+
+.favorites-margin-top {margin-top:20px}
+
+div.event_content{
   padding-top: 30px;
 }
   .flag:first-child{
   margin-right: 30px;
 }
+
+.bigger-tan {margin-top:30px;}
+
   .hero_image {
 background-size: cover!important;
 }
@@ -2036,7 +2088,7 @@ margin-top:-50px;}
 
 .hero_title h2 {
 font-size: 18px!important;
-padding: 15px 30px 20px 30px;
+padding: 10px 30px 20px 30px;
 }
 .hero_description {
 padding: 0px 30px 10px 30px;
