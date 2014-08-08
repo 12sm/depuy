@@ -814,6 +814,9 @@ background-size: 100%;
 .no-pad{
   padding-left: 0px;
 }
+
+ul.no-pad {padding-left:20px;}
+
 .medium-gray{
   color: #a7a8aa;
 }
