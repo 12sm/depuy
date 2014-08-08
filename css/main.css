@@ -1805,6 +1805,9 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.box-text-content {
+min-height: 70px;
+}
 .favorites-margin-top {margin-top:5px}
 
 .resource-detail-banner {margin-bottom:15px;margin-top: 5px;}
@@ -1962,6 +1965,9 @@ display: none;
 }
 .resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
 
+.box-text-content {
+min-height: 73px;
+}
 
 }
 
