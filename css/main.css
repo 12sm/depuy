@@ -1180,7 +1180,9 @@ text-shadow: none;
 padding-left: 20px;
 padding-top: 7px;
 }
-
+.small-grey span.glyphicon {
+font-size: 1em;
+}
 p.small-grey.pull-right.right {
 text-shadow: none;
 padding-right: 20px;
