@@ -729,6 +729,18 @@ background-size: 125%!important;
 .hero_image.body-landing{
   background: url(../img/bodypart-landing-hero.jpg) no-repeat center center;
 }
+.hero_image.home-hero{
+  background: url(../img/homevideo.png) no-repeat center center;
+}
+.hero-event .hero_image{
+  background: url(http://placehold.it/1280x420/) no-repeat center center;
+}
+.hero-vet.hero_image{
+  background: url(../img/Veterinary.jpg) no-repeat center center;
+}
+.hero-nurse.hero_image{
+  background: url(../img/Nursing.jpg) no-repeat center center;
+}
 .hero_text {position: absolute;bottom: 0;z-index: 10;}
 
 .hero_text .share-like-list a,
