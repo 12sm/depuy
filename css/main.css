@@ -722,7 +722,13 @@ font-size:12px;
 display: inherit;
 }
 
-.hero_image {position: relative;max-height: 420px;}
+.hero_image {position: relative;max-height: 420px;
+padding-bottom: 45%;
+background-size: 125%!important;
+}
+.hero_image.body-landing{
+  background: url(../img/bodypart-landing-hero.jpg) no-repeat center center;
+}
 .hero_text {position: absolute;bottom: 0;z-index: 10;}
 
 .hero_text .share-like-list a,
@@ -1820,6 +1826,7 @@ h2 {font-size: 18px!important;margin-top: 0;}
 @media only screen and (max-width: 1024px) and (min-width:600px) {
 
 
+
 h2, .hero_title h2 {font-size:18px;}
 h2 {margin-top: 0;}
 
@@ -1846,6 +1853,9 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
+  .hero_image {
+background-size: cover!important;
+}
 .play-icon {
 padding: 15% 0;
 }
