@@ -688,6 +688,14 @@ font-weight: 100;
 margin-top: 0px;
 }
 
+.hero_description h3 {
+color: #d4d5d1;
+font-weight: 100;
+padding: 3px 0px 0px 0px;
+margin:0;
+font-size:12px;
+}
+
 .hero_description p a {
 display: inherit;
 }
