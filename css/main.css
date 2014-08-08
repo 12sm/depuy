@@ -413,6 +413,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 -webkit-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
 -moz-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
 box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
+border-bottom: solid 1px #d5d6d2; 
 }
 
 .search form.form-inline {
