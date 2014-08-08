@@ -51,7 +51,6 @@ p {color: #4D4F53; font-size:14px;}
 .left {text-align:left;}
 .right {text-align:right;}
 .no-margin {margin:0!important;}
-.margin-top {margin-top:30px;}
 .little-margin {margin:10px 0px!important;}
 .no-margin-bottom {margin-bottom:0!important;}
 .margin-bottom {margin-bottom:10px!important;}
@@ -1396,7 +1395,7 @@ width: 100%;
 }
 blockquote {
 padding: 0;
-margin: 20px 0px;
+margin: 0px;
 font-size: 18px;
 color: #4D4F53;
 text-shadow: 0px 1px rgba(255,255,255,.8);
@@ -1833,6 +1832,8 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.margin-top {15px;}
+
 .box-text-content {
 min-height: 70px;
 }
@@ -1978,6 +1979,9 @@ h2 {font-size: 18px!important;margin-top: 0;}
 
 
 @media only screen and (max-width: 1023px) and (min-width:600px) {
+
+.margin-top {20px;}
+
 .nursing-content{
   padding-top: 20px;
 }
@@ -2019,6 +2023,7 @@ min-height: 73px;
 
 @media only screen and (max-width: 1024px) {
 
+
 .course_interaction.border-bottom {
 border: 0;
 box-shadow: none;
@@ -2032,6 +2037,8 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
+
+.margin-top {30px;}
 
 .hero-nurse .hero_title {
 height: 57px;
@@ -2137,6 +2144,9 @@ h2.vet-heading {padding: 5px 20px 0px 20px;}
 }
 
 @media only screen and (min-width: 1280px) {
+
+
+.margin-top {30px;}
 
 h2 {margin-top: 0;}
 
