@@ -1457,11 +1457,11 @@ border-bottom: 1px solid #d5d6d2;
 display: inline-block;
 width: 100%;
 height: auto;
-padding: 10px;
+padding:10px 10px 10px 0px;
 color:#003c60;
 }
 
-.explore_accordion .panel-title a .glyphicon {color:#A7A8AA;}
+.explore_accordion .panel-title a .glyphicon {color:#A7A8AA;font-size: 12px;}
 
 
 .explore_accordion .panel-title a span {margin-top:3px;}
@@ -1472,6 +1472,10 @@ padding: 0px!important;
 
 .explore_accordion .panel-default:nth-child(even) .panel-heading {
 background:transparent;
+}
+
+.explore_accordion .panel-body {
+padding-left: 0;
 }
 
 .modal-body.no-pad {padding:0px;}

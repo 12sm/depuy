@@ -16,6 +16,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script type="text/javascript" src="http://p.jwpcdn.com/6/9/jwplayer.js"></script>
+	<script type="text/javascript">jwplayer.key="xKIzZ2DInrL7P36ro9RlteoUwoiehSXrItLZsDAebyA=";</script>
   </head>
   <body class='about'>
     <div class="top_nav">
@@ -99,10 +101,18 @@
                     <input id="search" name="search" type="text" class="form-control nav-search form-hide" placeholder="search">
                 </div>
             </header>
-            <div class="hero">
-                <div class="hero_image home-hero">
-				<a href="#" class="play-icon"><img src="img/play-button.png" /></a>
-                </div>
+            <div class="hero resource-detail-banner no-margin">
+				<div id="videoPlayer"></div>
+
+				<script type="text/javascript">
+				  jwplayer("videoPlayer").setup({
+					  file: "http://russelljanderson.com/video/test.mp4",
+					  image: "img/bodypart-landing-hero.jpg",
+					  width: "100%",
+					  aspectratio: "16:9",
+					  skin: "glow"
+				  });
+				</script>
             </div>
             <div class="content">
                 <section>
