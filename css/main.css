@@ -1733,7 +1733,17 @@ background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9
 }
 
 
+@media only screen and (max-width:320px) {
+
+
+
+}
+
 @media only screen and (min-width: 320px) {
+
+.pull-left.section-title-favorites {
+margin-left: 0;
+}
 
 /* Padding to 15px */
 .nav_list li.active a {padding: 7px 15px;}
