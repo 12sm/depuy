@@ -50,7 +50,7 @@ p {color: #4D4F53; font-size:14px;}
 .bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:20px;}
 .left {text-align:left;}
 .right {text-align:right;}
-.no-margin {margin:0;}
+.no-margin {margin:0!important;}
 .margin-top {margin-top:30px;}
 
 h1 {
@@ -725,6 +725,18 @@ background-size: 125%!important;
 }
 .hero_image.body-landing{
   background: url(../img/bodypart-landing-hero.jpg) no-repeat center center;
+}
+.hero_image.home-hero{
+  background: url(../img/homevideo.png) no-repeat center center;
+}
+.hero-event .hero_image{
+  background: url(http://placehold.it/1280x420/) no-repeat center center;
+}
+.hero-vet.hero_image{
+  background: url(../img/Veterinary.jpg) no-repeat center center;
+}
+.hero-nurse.hero_image{
+  background: url(../img/Nursing.jpg) no-repeat center center;
 }
 .hero_text {position: absolute;bottom: 0;z-index: 10;}
 
