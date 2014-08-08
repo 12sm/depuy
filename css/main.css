@@ -945,7 +945,7 @@ padding: 0px;
 margin: 0px 0px 0px -10px;
 font-size:12px;
 }
-.share-like-list a:hover {text-decoration:none;color:#8ca7b6;}
+.share-like-list a:hover, .add-to-calendar:hover, .add-to-calendar:hover > * {text-decoration:none;color:#8ca7b6;}
 ul.share-like-list {list-style:none;padding:0;margin-bottom: 0;}
 ul.share-like-list li:last-child {border:none;}
 ul.share-like-list li {display:inline;padding:0px;}
