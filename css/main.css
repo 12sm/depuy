@@ -1603,6 +1603,16 @@ background: linear-gradient(to bottom, rgba(255,255,255,0) 80%,rgba(255,255,255,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
 }
 
+.search-gradient {
+width: 100%;
+height: 0px;
+display: block;
+padding-bottom: 57%;
+position: absolute;
+top: 0px;
+left: 0px;
+}
+
 .gradient:hover {cursor:pointer;}
 
 .video_feature:hover .gradient {
@@ -1997,6 +2007,10 @@ h2.vet-heading {padding: 5px 20px 0px 20px;}
 font-size: 20px!important;
 }
 
+.search-cal .calendar_date {
+font-size: 60px!important;
+}
+
 }
 
 @media only screen and (min-width: 1280px) {
@@ -2022,6 +2036,10 @@ margin-top:-200px;}
 
 h2.vet-heading {padding: 5px 20px 0px 20px;}
 .resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
+
+.search-cal .calendar_date {
+font-size: 60px;
+}
 
 
 
