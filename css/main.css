@@ -55,6 +55,8 @@ p {color: #4D4F53; font-size:14px;}
 .little-margin {margin:10px 0px!important;}
 .no-margin-bottom {margin-bottom:0!important;}
 .margin-bottom {margin-bottom:10px!important;}
+.margin-left {margin-left:10px;}
+.margin-right {margin-right:10px;}
 
 h1 {
 font-size: 16px;
@@ -1354,8 +1356,8 @@ text-align: right;
    $Profile
    ============================== */
 
-p.profile-label {color:#CCC;font-weight:bold;text-transform:uppercase;margin-bottom:0;}
-p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}
+p.profile-label {color:#a7a8aa;font-weight:bold;text-transform:uppercase;margin-bottom:0;margin-top: 15px;}
+p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;margin-left:10px;}
 
 
 /* ==============================
