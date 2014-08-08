@@ -129,7 +129,7 @@
 					</div>
 					<div class="tab-content">
 						<div class="tab-pane fade" id="list">
-							
+
 							<div class="row">
 								<div class="col-xs-12 col-md-12">
 									<div class="procedure clearfix">
@@ -436,10 +436,10 @@
 									</div>
 								</div>
 							</div> <!-- end row -->
-							
+
 						</div> <!-- end #list -->
 						<div class="tab-pane fade in active" id="gallery">
-					
+
 					<!-- Row of Video Thumbnail Cards! -->
                     <div class="row">
                         <div class="col-xs-6 col-md-3 single-content-box">
@@ -516,8 +516,8 @@
                         </div>
                         <div class="col-xs-6 col-md-3 single-content-box">
                             <div class="video_feature clearfix">
-                                <div class="flag opaque"></div>
                                 <div class="search-gradient"></div>
+                                <div class="flag opaque"></div>
                                  <div class="calendar search-cal">
                                             <p class="calendar_month">Jun</p>
                                             <p class="calendar_date">19</p>
@@ -589,12 +589,12 @@
 					<div class="row">
                         <div class="col-xs-6 col-md-3 single-content-box">
                             <div class="video_feature clearfix">
-                                <div class="flag opaque"></div>
                                 <div class="search-gradient"></div>
+                                <div class="flag opaque"></div>
                                  <div class="calendar search-cal">
-                                            <p class="calendar_month">Jun</p>
-                                            <p class="calendar_date">19</p>
-                                        </div>
+									  <p class="calendar_month">Jun</p>
+									  <p class="calendar_date">19</p>
+								  </div>
                                 <div class="box-text-content">
 									<div class="text-max-height">
 										<h3><a href="#">2014 DePuy Synthes Spine Future Leaders Workshop:...</a></h3>
@@ -731,8 +731,8 @@
                             </div>
                         </div>
                     </div> <!-- end row of cards -->
-					
-					
+
+
 						</div> <!-- end #gallery -->
 					</div> <!-- end tabs -->
                 </section>
@@ -1069,13 +1069,23 @@
 	  </div>
 	</div>
 
-
-
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src='js/main.js'></script>
+	<script>
+	  $(window).load(function() {
+		var height = 0;
+		$('.video_feature .img-responsive').each(function() {
+		  var imgHeight = $(this).innerHeight();
+		  if (imgHeight > height) {
+			height = imgHeight
+		  }
+		});
+		height = height + 5;
+		$('.search-cal').css('height', height);
+	  });
+	</script>
   </body>
 </html>
