@@ -820,6 +820,10 @@ margin: 0;
 padding: 0;
 }
 
+span.share-info .glyphicon.icon-info {
+top: 3px;
+}
+
 p.course_length {
 line-height: .7;
 margin-bottom: 10px;
