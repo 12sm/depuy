@@ -1791,6 +1791,8 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.favorites-margin-top {margin-top:5px}
+
 .resource-detail-banner {margin-bottom:15px;margin-top: 5px;}
 
 .event_content h2, .event_content p, .faculty {
@@ -1923,6 +1925,7 @@ h2 {font-size: 18px!important;margin-top: 0;}
 
 @media only screen and (max-width: 1024px) and (min-width:600px) {
 
+.favorites-margin-top {margin-top:10px}
 
 .hero_title h2 {
 font-size: 18px!important;
@@ -1957,7 +1960,10 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
-  div.event_content{
+
+.favorites-margin-top {margin-top:20px}
+
+div.event_content{
   padding-top: 30px;
 }
   .flag:first-child{
