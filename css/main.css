@@ -1425,6 +1425,31 @@ font-size: 28px;
 font-weight: 100;
 }
 
+.explore_accordion .panel-title {
+border-bottom: 1px solid #d5d6d2;
+}
+
+.explore_accordion .panel-title a {
+display: inline-block;
+width: 100%;
+height: auto;
+padding: 10px;
+color:#003c60;
+}
+
+.explore_accordion .panel-title a .glyphicon {color:#A7A8AA;}
+
+
+.explore_accordion .panel-title a span {margin-top:3px;}
+
+.explore_accordion .panel-default > div.panel-heading {
+padding: 0px!important;
+}
+
+.explore_accordion .panel-default:nth-child(even) .panel-heading {
+background:transparent;
+}
+
 /* ==============================
    $Event
    ============================== */
