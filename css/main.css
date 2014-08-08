@@ -68,8 +68,8 @@ h2 {
 font-size: 16px;
 font-weight: 100;
 text-shadow: 0 1px 0 #FFF;
-margin-bottom: 0px;
-margin-top: 0;
+margin-bottom:10px;
+margin-top: 10px;
 }
 
 h3 {
@@ -699,7 +699,7 @@ box-shadow: -2px 2px 3px 0 rgba(000,000,000,.2)!important;
    ============================== */
 
 .content {
-padding: 10px 5px; /*20px*/
+padding: 15px;
 }
 
 /* -- $Hero -- */
@@ -1369,10 +1369,7 @@ p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;margin
 /* ==============================
    $About
    ============================== */
-h2 {
-font-size: 16px;
-margin-bottom: 15px;
-}
+
 .about-location {
   position: relative;
   background: #fff;
@@ -1782,7 +1779,6 @@ box-shadow: 0px 1px 2px -1px rgba(000,000,000,.1);
 }
 
 .content {
-  padding: 10px 15px;
   background: #E4E4E2;
   position:relative;
 }
@@ -1814,7 +1810,6 @@ background: url(../img/nav-tile.jpg) repeat left top;
 
 h3 {font-size: 14px;}
 h2, .hero_title h2 {font-size: 16px;}
-h2 {margin-top: 0;}
 
 .filter-btn {min-width: 190px;width:auto;}
 
@@ -1834,8 +1829,6 @@ min-height: 70px;
 .event_content h2, .event_content p, .faculty {
 padding: 0 5px;
 }
-
-h2 {margin-top: 0;}
 
 #presentation .col-sm-5 {border-right:none;}
 
@@ -1885,10 +1878,6 @@ padding-left: 0px!important;
 padding-right: 0px!important;
 }
 
-.content {
-  padding: 20px;
-}
-
  .row {
   margin-left: -10px;
   margin-right: -10px;
@@ -1921,7 +1910,7 @@ h2 {font-size: 18px!important;}
 /* Padding to 20px */
 .nav_list li.active a {padding: 7px 20px;}
 .nav_list li a {padding: 8px 20px;}
-.content {padding: 10px 20px;}
+.content {padding: 20px;}
 .upcoming-courses {padding: 0px;}
 .single-content-box {margin-bottom: 20px;}
 .single-upcoming-course:last-child {margin-bottom: 20px;}
@@ -1959,7 +1948,7 @@ float: right;
 box-shadow: inset 0px 0px 0px 0px rgba(50, 50, 50, 0.4);
 }
 
-h2 {font-size: 18px!important;margin-top: 0;}
+h2 {font-size: 18px!important;}
 
 }
 
@@ -1974,8 +1963,6 @@ padding: 15px 20px 20px 20px;
 .hero_description {
 padding: 0px 20px 10px 20px;
 }
-
-h2 {margin-top: 0;}
 
 .hero-description h3 {
 display: none;
@@ -2005,9 +1992,7 @@ border: 0;
 box-shadow: none;
 }
 
-h2 {margin-top: 0;}
 .resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
-
 
 }
 
@@ -2039,10 +2024,6 @@ padding: 15% 0;
   background: #E4E4E2;
 }
 
-.content {
-  padding: 20px 30px;
-}
-
 .row {
   margin-left: -15px;
   margin-right: -15px;
@@ -2069,7 +2050,7 @@ padding: 15% 0;
 /* Padding to 30px */
 .nav_list li.active a {padding: 9px 30px;}
 .nav_list li a {padding: 8px 30px;}
-.content {padding: 10px 30px;}
+.content {padding: 30px;}
 .upcoming-courses {padding: 0px;}
 
 /* Content boxes */
@@ -2104,7 +2085,8 @@ padding: 10px 30px 20px 30px;
 .hero_description {
 padding: 0px 30px 10px 30px;
 }
-h2 {margin-top: 0;}
+
+h2 {font-size:24px!important;margin-top:20px;margin-bottom:15px;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
 .resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
@@ -2115,7 +2097,6 @@ h2.vet-heading {padding: 5px 20px 0px 20px;}
 
 @media only screen and (min-width: 1280px) {
 
-h2 {margin-top: 0;}
 
 .right_column {background: #E4E4E2;}
 
