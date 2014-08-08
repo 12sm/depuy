@@ -1591,9 +1591,6 @@ footer.footer {
 background-color: #D5D6D2;
 padding: 15px;
 margin: 0;
--webkit-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
--moz-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
 }
 
 .body-font {font-size:14px!important;}
