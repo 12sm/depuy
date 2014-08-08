@@ -52,6 +52,9 @@ p {color: #4D4F53; font-size:14px;}
 .right {text-align:right;}
 .no-margin {margin:0!important;}
 .margin-top {margin-top:30px;}
+.little-margin {margin:10px 0px!important;}
+.no-margin-bottom {margin-bottom:0!important;}
+.margin-bottom {margin-bottom:10px!important;}
 
 h1 {
 font-size: 16px;
@@ -587,7 +590,7 @@ position: absolute;
 left: 15px;
 width: 77%;
 z-index: 5;
-top: 110px;
+top: 82px;
 opacity: 1;
 transition: opacity .5s ease;
 -webkit-transition: opacity .5s ease;
@@ -787,7 +790,12 @@ border-bottom: 2px solid #002D48;
 background: url(../img/hero-gradient-tile.png) repeat-x left top;
 background-size: 100%;
 }
-
+.no-pad{
+  padding-left: 0px;
+}
+.medium-gray{
+  color: #a7a8aa;
+}
 .hero_description a {color: #d4caa0;}
 .hero_description a:hover {color: #FFFFFF;text-decoration:none;}
 .hero_description li.dropdown-toggle a {color: #FFFFFF;}
@@ -1510,6 +1518,9 @@ background:transparent;
   border-color: #A89968;
   text-decoration: none;
 }
+div.event_content{
+  padding-top: 15px;
+}
 .video_feature.viewed {
   opacity: 0.5;
 }
@@ -1784,6 +1795,8 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.favorites-margin-top {margin-top:5px}
+
 .resource-detail-banner {margin-bottom:15px;margin-top: 5px;}
 
 .event_content h2, .event_content p, .faculty {
@@ -1821,9 +1834,15 @@ padding: 0px 15px 10px 15px;
 
 
 @media only screen and (min-width: 600px) {
+<<<<<<< HEAD
 
 .bigger-tan {margin-top:20px;}
 
+=======
+div.event_content{
+  padding-top: 20px;
+}
+>>>>>>> FETCH_HEAD
 .flag:first-child{
   margin-right: 20px;
 }
@@ -1916,6 +1935,7 @@ h2 {font-size: 18px!important;margin-top: 0;}
 
 @media only screen and (max-width: 1024px) and (min-width:600px) {
 
+.favorites-margin-top {margin-top:10px}
 
 .hero_title h2 {
 font-size: 18px!important;
@@ -1950,6 +1970,12 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
+
+.favorites-margin-top {margin-top:20px}
+
+div.event_content{
+  padding-top: 30px;
+}
   .flag:first-child{
   margin-right: 30px;
 }
