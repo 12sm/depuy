@@ -1747,7 +1747,7 @@ background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9
 
 }
 
-.calendar_date {
+p.calendar_date {
   font-size: 20px;
 }
 
