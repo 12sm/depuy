@@ -1172,6 +1172,12 @@ padding:20px 0px;
 
 .resource-detail-banner {position:relative;margin-bottom:30px;}
 
+.flag.external_site {
+  top: auto;
+  bottom: -45px;
+  right: 0 !important;
+}
+
 .playlist-roll {
 background-color: #4c4e52;
 padding: 7px;
