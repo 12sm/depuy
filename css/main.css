@@ -59,6 +59,7 @@ font-size: 16px;
 font-weight: 100;
 text-shadow: 0 1px 0 #FFF;
 margin-bottom: 0px;
+margin-top: 0;
 }
 
 h3 {
@@ -283,12 +284,13 @@ background-color: #a89968;
 border-color: #928557;
 border-top: 2px solid #9c8d5a;
 border-bottom: 2px solid #B8AB83;
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
-background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
-background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
-background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
-background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
 -moz-background-size: 5px 100%;
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B8AB83), to(#9c8d5a));
+background-image: -webkit-linear-gradient(#B8AB83, #9c8d5a);
+background-image: -moz-linear-gradient(#B8AB83, #9c8d5a), -moz-linear-gradient(#B8AB83, #9c8d5a);
+background-image: -o-linear-gradient(#B8AB83, #9c8d5a), -o-linear-gradient(#B8AB83, #9c8d5a);
+background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9c8d5a);
+
 }
 
 .button-modal:hover, .button-modal:focus, .button-modal:active {
@@ -1635,6 +1637,7 @@ background: url(../img/nav-tile.jpg) repeat left top;
 
 h3 {font-size: 14px;}
 h2, .hero_title h2 {font-size: 16px;}
+h2 {margin-top: 0;}
 
 .filter-btn {min-width: 190px;width:auto;}
 
@@ -1643,11 +1646,14 @@ h2, .hero_title h2 {font-size: 16px;}
 }
 /* mobile only */
 @media only screen and (max-width: 600px) {
-  .event_content h2, .event_content p, .faculty {
-    padding: 0 5px;
-  }
 
-  #presentation .col-sm-5 {border-right:none;}
+.event_content h2, .event_content p, .faculty {
+padding: 0 5px;
+}
+
+h2 {margin-top: 0;}
+
+#presentation .col-sm-5 {border-right:none;}
 
 .hero_image .play-icon {font-size: 5em;}
 ul.share-like-list li {font-size:11px;}
@@ -1751,7 +1757,7 @@ float: right;
 box-shadow: inset 0px 0px 0px 0px rgba(50, 50, 50, 0.4);
 }
 
-h2 {font-size: 18px!important;}
+h2 {font-size: 18px!important;margin-top: 0;}
 
 }
 
@@ -1762,6 +1768,7 @@ top:-35%;
 }
 
 h2, .hero_title h2 {font-size:18px;}
+h2 {margin-top: 0;}
 
 .hero-description h3 {
 display: none;
@@ -1775,6 +1782,8 @@ display: none;
 border: 0;
 box-shadow: none;
 }
+
+h2 {margin-top: 0;}
 
 }
 
@@ -1848,11 +1857,14 @@ margin-top:-50px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
 h2, .hero_title h2 {font-size: 24px!important;}
+h2 {margin-top: 0;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
 
 }
 
 @media only screen and (min-width: 1280px) {
+
+h2 {margin-top: 0;}
 
 .right_column {background: #E4E4E2;}
 
