@@ -415,7 +415,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 -webkit-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
 -moz-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
 box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
-border-bottom: solid 1px #d5d6d2; 
+border-bottom: solid 1px #d5d6d2;
 }
 
 .search form.form-inline {
@@ -1586,7 +1586,7 @@ margin-bottom: 10px;
   background: #a89968;
   margin-bottom: 0;
   text-shadow: 0 -1px 0 #8f8159;
- 
+
 background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#B8AB83), to(#9c8d5a));
 background-image: -webkit-linear-gradient(#B8AB83, #9c8d5a);
 background-image: -moz-linear-gradient(#B8AB83, #9c8d5a), -moz-linear-gradient(#B8AB83, #9c8d5a);
@@ -1778,9 +1778,6 @@ h2 {font-size: 18px!important;margin-top: 0;}
 
 @media only screen and (max-width: 1024px) and (min-width:600px) {
 
-.hero_image .play-icon {
-top:-35%;
-}
 
 h2, .hero_title h2 {font-size:18px;}
 h2 {margin-top: 0;}
@@ -1804,7 +1801,9 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
-
+.hero_image .play-icon {
+padding: 10% 0;
+}
 .top_nav {padding: 0px 30px;}
 
 .column_header img {margin: 10px 0px 40px 30px;}
