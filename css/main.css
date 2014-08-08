@@ -55,9 +55,14 @@ p {color: #4D4F53; font-size:14px;}
 .little-margin {margin:10px 0px!important;}
 .no-margin-bottom {margin-bottom:0!important;}
 .margin-bottom {margin-bottom:10px!important;}
+
 .nursing-content .upcoming-courses{
   padding-top: 10px;
 }
+
+.margin-left {margin-left:10px;}
+.margin-right {margin-right:10px;}
+
 h1 {
 font-size: 16px;
 font-weight: 100;
@@ -204,6 +209,21 @@ opacity:1;
 .form-control:-moz-placeholder, textarea:-moz-placeholder {
 color: #a7a8aa;
 opacity:1;
+}
+
+.add-course-form button.btn.btn-info {
+padding: 0px 10px;
+}
+
+form.form-inline.add-course-form {
+padding-left: 0!important;
+}
+input#add-course {
+width: 320px;
+}
+
+.form-group.add-course-form {
+margin-left: 0!important;
 }
 
 /* ==============================
@@ -1356,8 +1376,8 @@ text-align: right;
    $Profile
    ============================== */
 
-p.profile-label {color:#CCC;font-weight:bold;text-transform:uppercase;margin-bottom:0;}
-p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;}
+p.profile-label {color:#a7a8aa;font-weight:bold;text-transform:uppercase;margin-bottom:0;margin-top: 15px;}
+p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;margin-left:10px;}
 
 
 /* ==============================
