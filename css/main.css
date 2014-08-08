@@ -1710,6 +1710,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 }
 
 .video_likes {
+  padding-left: 5px;
   color: #003c60;
 }
 
@@ -1719,7 +1720,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 
 .video_share {
 color: #003c60;
-padding: 5px 12px 5px 12px;
+padding: 5px 10px 5px 12px;
 }
 
 .course {
