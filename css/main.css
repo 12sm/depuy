@@ -923,7 +923,7 @@ border-bottom: 2px solid #002D48;
 }
 
 .hero_description ul.share-like-list li {color: #FFF;}
-.hero-landing .hero_description {padding: 0px 20px;}
+.hero-landing .hero_description {padding: 0px 20px 10px 20px;}
 
 .filter-btn {
 display: inline-block;
@@ -1030,7 +1030,10 @@ padding: 0px 20px;
 
 .list-thumb {position:relative;}
 .list-thumb a.play-icon img {width:25%!important;padding:0!important;top: -7px!important;}
-.list-thumb a.play-icon {padding:0!important;}
+.list-thumb a.play-icon {
+padding: 0!important;
+top: -6px!important;
+}
 
 .pull-left {float: left !important;font-size: 1em;}
 
