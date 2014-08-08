@@ -744,6 +744,11 @@ background-size: 125%!important;
   padding-bottom: 55%;
   background-size: 125%;
 }
+.detail-presentation{
+  padding-bottom: 0%;
+  background-size: initial;
+  background:initial;
+}
 .hero_text .share-like-list a,
 .hero_text .share-like-list .video_likes {color:#fff;}
 .hero_text .share-like-list.open a {color:#8ca7b6;}
