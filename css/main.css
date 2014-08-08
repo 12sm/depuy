@@ -1231,6 +1231,9 @@ ul.presentation-navigation li {padding: 15px 10px;}
 #presentation .col-sm-7 {padding:0 5px 0 0;}
 #presentation .modal-body {padding-top: 0;padding-bottom:0;}
 
+
+.podcast-space {margin-top:0px!important;}
+
 /* ==============================
    $Calendar Detail
    ============================== */
