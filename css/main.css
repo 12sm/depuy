@@ -59,8 +59,10 @@ p {color: #4D4F53; font-size:14px;}
   padding-top: 10px;
 }
 
-.margin-left {margin-left:10px;}
-.margin-right {margin-right:10px;}
+.margin-left {margin-left:15px;}
+.margin-right {margin-right:15px;}
+.margin-top {margin-top:15px;}
+.margin-bottom {margin-bottom:15px;}
 
 h1 {
 font-size: 16px;
@@ -1388,6 +1390,10 @@ p.profile-label a {color:#003C60;font-weight:100;text-transform:lowercase;margin
    $About
    ============================== */
 
+.img-container {
+height: 0px;
+padding-bottom: 56%;
+}
 .about-location {
   position: relative;
   background: #fff;
@@ -1841,8 +1847,6 @@ h2, .hero_title h2 {font-size: 16px;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
-.margin-top {15px;}
-
 .box-text-content {
 min-height: 70px;
 }
@@ -1885,9 +1889,6 @@ padding: 0px 15px 10px 15px;
 
 
 @media only screen and (min-width: 600px) {
-
-.bigger-tan {margin-top:20px;}
-
 
 div.event_content{
   padding-top: 20px;
@@ -1942,6 +1943,13 @@ h2 {font-size: 18px!important;}
 .nursing-content .upcoming-courses{padding-top: 10px;}
 .single-content-box {margin-bottom: 20px;}
 .single-upcoming-course:last-child {margin-bottom: 20px;}
+.bigger-tan {margin-top:20px;}
+.margin-left {margin-left:20px;}
+.margin-right {margin-right:20px;}
+.margin-top {margin-top:20px;}
+.margin-bottom {margin-bottom:20px;}
+
+
 .single-video-thumb {
   width: 200px;
   height: 75px;
@@ -1982,8 +1990,6 @@ h2 {font-size: 18px!important;}
 
 
 @media only screen and (max-width: 1023px) and (min-width:600px) {
-
-.margin-top {20px;}
 
 .nursing-content{
   padding-top: 20px;
@@ -2036,8 +2042,6 @@ box-shadow: none;
 
 
 @media only screen and (min-width: 1024px) {
-
-.margin-top {30px;}
 
 .hero-nurse .hero_title {
 height: 57px;
@@ -2092,6 +2096,10 @@ padding: 15% 0;
 }
 
 /* Padding to 30px */
+.margin-left {margin-left:30px;}
+.margin-right {margin-right:30px;}
+.margin-top {margin-top:30px;}
+.margin-bottom {margin-bottom:30px;}
 .nav_list li.active a {padding: 9px 30px;}
 .nav_list li a {padding: 8px 30px;}
 .content {padding: 30px;}
@@ -2140,8 +2148,6 @@ h2.vet-heading {padding: 5px 20px 0px 20px;}
 }
 
 @media only screen and (min-width: 1280px) {
-
-.margin-top {30px;}
 
 .right_column {background: #E4E4E2;}
 
