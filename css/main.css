@@ -739,6 +739,7 @@ background-size: 125%!important;
   background: url(../img/Nursing.jpg) no-repeat center center;
 }
 .hero_text {position: absolute;bottom: 0;z-index: 10;}
+
 .resource-detail-item{
   background: url(http://placehold.it/1280x720) no-repeat center center;
   padding-bottom: 55%;
@@ -1897,9 +1898,6 @@ h2 {margin-top: 0;}
 @media only screen and (min-width: 1024px) {
   .hero_image {
 background-size: cover!important;
-}
-.resource-detail-item{
-  background-size: cover!important;
 }
 .play-icon {
 padding: 15% 0;
