@@ -355,12 +355,9 @@ border: none;
 .top_nav {
 background: #003c60;
 padding: 0px 15px;
-/*-webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
--moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);*/
--webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
--moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
 position: relative;
 z-index: 999;
 }
