@@ -47,7 +47,7 @@ p {color: #4D4F53; font-size:14px;}
 .strong {font-weight:bold;}
 .tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
 .tiny-tan {color:#a89968;margin-bottom:0;text-transform:uppercase;text-shadow: 0 1px 0 #FFF;font-size:10px;font-weight:bold;}
-.bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:20px;}
+.bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:15px;}
 .left {text-align:left;}
 .right {text-align:right;}
 .no-margin {margin:0!important;}
@@ -785,6 +785,7 @@ border-bottom: 2px solid #002D48;
 
 .hero_title {
 background: url(../img/hero-gradient-tile.png) repeat-x left top;
+background-size: 100%;
 }
 
 .hero_description a {color: #d4caa0;}
@@ -1821,6 +1822,8 @@ padding: 0px 15px 10px 15px;
 
 @media only screen and (min-width: 600px) {
 
+.bigger-tan {margin-top:20px;}
+
 .flag:first-child{
   margin-right: 20px;
 }
@@ -1950,6 +1953,9 @@ h2 {margin-top: 0;}
   .flag:first-child{
   margin-right: 30px;
 }
+
+.bigger-tan {margin-top:30px;}
+
   .hero_image {
 background-size: cover!important;
 }
