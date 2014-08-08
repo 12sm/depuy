@@ -100,6 +100,8 @@ font-weight: bold;
 color: #4D4F53;
 }
 
+.btn-group {font-size:12px;}
+
 hr {
 margin-top: 10px;
 margin-bottom: 10px;
@@ -967,9 +969,11 @@ ul.share-like-list li {display:inline;padding:0px;}
 ul.share-like-list li:last-child {padding-left: 0px;}
 ul.share-like-list li {font-size:12px;}
 .row.interaction.calendar-share {border-bottom: 1px solid #CCC;box-shadow:0 1px rgba(255,255,255,.5);}
-.share-like-list .icon-share {position:relative;top:4px;}
+.share-like-list .icon-share,
+.add-to-calendar .icon-cal {position:relative;top:4px;}
 
-.share-like-list.open .dropdown-toggle {
+.share-like-list.open .dropdown-toggle,
+.add-to-cal.open .dropdown-toggle {
 -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125);
 box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125);
 background:#fff!important;
@@ -1192,7 +1196,9 @@ overflow: hidden;
 
 span.add-to-calendar {
 color: #003c60;
+padding: 5px 12px 5px 12px;
 }
+
 
 /* ==============================
    $Resource Detail Views
@@ -1246,7 +1252,7 @@ padding:20px 0px;
 
 /* $Video Playlist Specific */
 
-.resource-detail-banner {position:relative;margin-bottom:30px;}
+.resource-detail-banner {position:relative;}
 
 .flag.external_site {
   top: auto;
@@ -1850,8 +1856,6 @@ min-height: 70px;
 }
 .favorites-margin-top {margin-top:5px}
 
-.resource-detail-banner {margin-bottom:15px;margin-top: 5px;}
-
 .event_content h2, .event_content p, .faculty {
 padding: 0 5px;
 }
@@ -2006,7 +2010,6 @@ padding: 0px 20px 10px 20px;
 .hero-description h3 {
 display: none;
 }
-.resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
 
 .calendar.search-cal {
   width: 160px;
@@ -2033,8 +2036,6 @@ min-height: 73px;
 border: 0;
 box-shadow: none;
 }
-
-.resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
 
 }
 
@@ -2138,7 +2139,6 @@ padding: 0px 30px 10px 30px;
 
 h2 {font-size:24px!important;margin-top:20px;margin-bottom:15px;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
-.resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
 
 
@@ -2167,7 +2167,6 @@ margin-top:-200px;}
 h2.vet-heading {
 padding: 17px 30px 0px 20px;
 }
-.resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
 .calendar.search-cal {
   width: 140px;
