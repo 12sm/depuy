@@ -1295,32 +1295,23 @@ padding-bottom: 10px;
 .cal-detail-heading {color:#A7A8AA;text-transform:uppercase;margin-bottom:0px;font-weight:bold;}
 
 .calendar.search-cal {
-background: #fff;
-text-align: center;
-width: 138px;
-margin: 5px;
-height: 138px;
-border: 1px solid #E4E4E2;
+padding: 5px 0 0 5px;
+width: 85px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+background: transparent;
 }
 
 .search-cal .calendar_month {
-font-weight: bold;
-text-transform: uppercase;
-font-size: 38px;
-color: #fff;
-background: #a89968;
-margin-bottom: 0;
-box-shadow: 0px 1px 6px #C7C7C7;
-text-shadow: 0 -2px 0 #8f8159;
-background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#9c8d5a), to(#B8AB83));
-background-image: -webkit-linear-gradient(#9c8d5a, #B8AB83);
-background-image: -moz-linear-gradient(#9c8d5a, #B8AB83), -moz-linear-gradient(#9c8d5a, #B8AB83);
-background-image: -o-linear-gradient(#9c8d5a, #B8AB83), -o-linear-gradient(#9c8d5a, #B8AB83);
-background-image: linear-gradient(#9c8d5a, #B8AB83), linear-gradient(#9c8d5a, #B8AB83);
+  font-size: 18px;
 }
 
 .search-cal .calendar_date {
-font-size: 60px;
+  border: 1px solid #E4E4E2;
+  border-top: 0;
+  font-size: 32px;
+  background: #fff;
 }
 
 .calendar-background {
@@ -1921,7 +1912,7 @@ h2 {font-size: 18px!important;margin-top: 0;}
 
 }
 
-@media only screen and (max-width: 1024px) and (min-width:600px) {
+@media only screen and (max-width: 1023px) and (min-width:600px) {
 
 
 .hero_title h2 {
@@ -1938,7 +1929,15 @@ h2 {margin-top: 0;}
 display: none;
 }
 .resource-detail-banner {margin-bottom:20px;margin-top: 10px;}
-
+.calendar.search-cal {
+  width: 160px;
+}
+.search-cal .calendar_month {
+  font-size: 30px;
+}
+.search-cal .calendar_date {
+  font-size: 50px;
+}
 
 }
 
@@ -2046,13 +2045,8 @@ h2 {margin-top: 0;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
 .resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
-.calendar_date {
-font-size: 20px!important;
-}
 
-.search-cal .calendar_date {
-font-size: 60px!important;
-}
+
 
 }
 
@@ -2080,10 +2074,14 @@ margin-top:-200px;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
 .resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
-.search-cal .calendar_date {
-font-size: 60px;
+.calendar.search-cal {
+  width: 140px;
 }
-
-
+.search-cal .calendar_month {
+  font-size: 26px;
+}
+.search-cal .calendar_date {
+  font-size: 46px;
+}
 
 }
