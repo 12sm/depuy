@@ -786,7 +786,12 @@ border-bottom: 2px solid #002D48;
 .hero_title {
 background: url(../img/hero-gradient-tile.png) repeat-x left top;
 }
-
+.no-pad{
+  padding-left: 0px;
+}
+.medium-gray{
+  color: #a7a8aa;
+}
 .hero_description a {color: #d4caa0;}
 .hero_description a:hover {color: #FFFFFF;text-decoration:none;}
 .hero_description li.dropdown-toggle a {color: #FFFFFF;}
@@ -1509,6 +1514,9 @@ background:transparent;
   border-color: #A89968;
   text-decoration: none;
 }
+div.event_content{
+  padding-top: 15px;
+}
 .video_feature.viewed {
   opacity: 0.5;
 }
@@ -1820,7 +1828,9 @@ padding: 0px 15px 10px 15px;
 
 
 @media only screen and (min-width: 600px) {
-
+div.event_content{
+  padding-top: 20px;
+}
 .flag:first-child{
   margin-right: 20px;
 }
@@ -1947,6 +1957,9 @@ h2 {margin-top: 0;}
 
 
 @media only screen and (min-width: 1024px) {
+  div.event_content{
+  padding-top: 30px;
+}
   .flag:first-child{
   margin-right: 30px;
 }
