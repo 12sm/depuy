@@ -50,7 +50,7 @@ p {color: #4D4F53; font-size:14px;}
 .bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:20px;}
 .left {text-align:left;}
 .right {text-align:right;}
-.no-margin {margin:0;}
+.no-margin {margin:0!important;}
 .margin-top {margin-top:30px;}
 
 h1 {
