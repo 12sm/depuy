@@ -114,8 +114,8 @@ padding: 0px 0px 0px 5px;
 }
 
 .flag.opaque:hover {
-border-left-color: #A5CFE9;
-border-right-color: #A5CFE9;
+border-left-color: #8CA7B5;
+border-right-color: #8CA7B5;
 cursor: pointer;
 }
 
@@ -1687,7 +1687,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .flag:after {
   content: "\e602";
   font-family: 'Glyphicons Halflings';
-  color: #8CA7B5;
+  color:  #ffffff;
   font-size: 20px;
   position: absolute;
   width: 100%;
@@ -1699,11 +1699,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00f2f2f2', e
 .flag.opaque {
   border-left-color: #F8F8F8;
   border-right-color: #F8F8F8;
-  opacity: .9;
+  opacity: .95;
 }
 
 .flag.opaque:after {
-  color: #8CA7B5;
+  color:  #c6d3dc;
 }
 
 .video_likes {
