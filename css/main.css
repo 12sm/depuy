@@ -1452,6 +1452,8 @@ padding: 0px!important;
 background:transparent;
 }
 
+.modal-body.no-pad {padding:0px;}
+
 /* ==============================
    $Event
    ============================== */
