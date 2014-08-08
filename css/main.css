@@ -206,12 +206,15 @@ color: #a7a8aa;
 opacity:1;
 }
 
-input#add-course {
-margin-top: 30px;
+.add-course-form button.btn.btn-info {
+padding: 0px 10px;
 }
 
 form.form-inline.add-course-form {
 padding-left: 0!important;
+}
+input#add-course {
+width: 320px;
 }
 
 .form-group.add-course-form {
