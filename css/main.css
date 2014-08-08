@@ -1167,6 +1167,10 @@ left: 50%;
 margin-left: -50px;
 }
 
+button.resource-btn-pdf {
+left: 45%;
+}
+
 .resource-detail-item {
 position: relative;
 }
