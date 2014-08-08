@@ -1138,14 +1138,14 @@ height: 200px;
 p.small-grey.pull-left.left {
 text-shadow: none;
 padding-left: 20px;
-padding-top: 9px;
+padding-top: 7px;
 }
 
 p.small-grey.pull-right.right {
 text-shadow: none;
 padding-right: 20px;
 font-size:1em;
-padding-top: 9px;
+padding-top: 7px;
 color:#a89968;
 }
 
@@ -2072,7 +2072,7 @@ margin-top:-50px;}
 
 .hero_title h2 {
 font-size: 18px!important;
-padding: 15px 30px 20px 30px;
+padding: 10px 30px 20px 30px;
 }
 .hero_description {
 padding: 0px 30px 10px 30px;
