@@ -11,9 +11,9 @@ body {
 
 .left_column {
 box-sizing: border-box;
--webkit-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
+/*-webkit-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
 -moz-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
-box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);
+box-shadow: inset -12px 0px 24px -12px rgba(000,000,000,.4);*/
 overflow: hidden;
 padding-left: 0px!important;
 padding-right: 0px!important;
@@ -28,6 +28,9 @@ background: #E4E4E2;
 float:right;
 padding-left:0px;
 padding-right:0px;
+-webkit-box-shadow: 0 0 24px 0 rgba(000,000,000,.3);
+-moz-box-shadow: 0 0 24px 0 rgba(000,000,000,.3);
+box-shadow: 0 0 24px 0 rgba(000,000,000,.3);
 }
 
 .img-responsive {width:100%; max-width:100%;}
@@ -345,9 +348,12 @@ border: none;
 .top_nav {
 background: #003c60;
 padding: 0px 15px;
--webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+/*-webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
 -moz-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);
+box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.4);*/
+-webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 position: relative;
 z-index: 999;
 }
@@ -421,9 +427,9 @@ background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 
 background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,1) 85%,rgba(255,255,255,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
--webkit-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
+/*-webkit-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
 -moz-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
-box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);
+box-shadow: inset -12px 12px 24px -12px rgba(000,000,000,.4);*/
 border-bottom: solid 1px #d5d6d2;
 }
 
@@ -1460,9 +1466,9 @@ footer.footer {
 background-color: #D5D6D2;
 padding: 15px;
 margin: 0;
--webkit-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
+/*-webkit-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
 -moz-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
-box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;
+box-shadow: 0 5px 6px 0px rgba(000,000,000,.1) inset;*/
 }
 
 .body-font {font-size:14px!important;}
