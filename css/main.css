@@ -246,7 +246,7 @@ margin-right: -28px;
 .modal span.filter_amount {color:#AFB0B1;}
 .modal-header-left {}
 .modal-header-right {text-align:right;margin-top:5px;}
-.modal-body {padding:10px;}
+.modal-body {padding:20px;}
 #procedures .modal-body, #contentTypes .modal-body {padding: 0px;}
 .modal .form-group label {color: #A7A8AA;margin-top: 10px;margin-bottom: 5px;}
 .modal .radio-group label {color: #A7A8AA; margin-bottom: 0; margin-top: 10px;}
@@ -257,6 +257,7 @@ margin-right: -28px;
 #signin .modal-dialog,
 #forgotpass .modal-dialog,
 #forgotpassenterpass .modal-dialog {width: 300px;}
+#register1 .checkbox label {font-weight: 100;}
 
 .modal input[type="email"],
 .modal input[type="url"],
@@ -302,7 +303,11 @@ background-image: -webkit-linear-gradient(#B8AB83, #9c8d5a);
 background-image: -moz-linear-gradient(#B8AB83, #9c8d5a), -moz-linear-gradient(#B8AB83, #9c8d5a);
 background-image: -o-linear-gradient(#B8AB83, #9c8d5a), -o-linear-gradient(#B8AB83, #9c8d5a);
 background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9c8d5a);
+}
 
+.modal-footer span.glyphicon.icon-caret-right {
+color: #BDB497;
+font-size: 13px;
 }
 
 .button-modal:hover, .button-modal:focus, .button-modal:active {
