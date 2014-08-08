@@ -47,7 +47,7 @@ p {color: #4D4F53; font-size:14px;}
 .strong {font-weight:bold;}
 .tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
 .tiny-tan {color:#a89968;margin-bottom:0;text-transform:uppercase;text-shadow: 0 1px 0 #FFF;font-size:10px;font-weight:bold;}
-.bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:15px;}
+.bigger-tan {font-size: 16px;color: #a89968; padding-top: 10px; text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:15px;}
 .left {text-align:left;}
 .right {text-align:right;}
 .no-margin {margin:0!important;}
@@ -55,7 +55,9 @@ p {color: #4D4F53; font-size:14px;}
 .little-margin {margin:10px 0px!important;}
 .no-margin-bottom {margin-bottom:0!important;}
 .margin-bottom {margin-bottom:10px!important;}
-
+.nursing-content .upcoming-courses{
+  padding-top: 10px;
+}
 h1 {
 font-size: 16px;
 font-weight: 100;
@@ -1842,20 +1844,21 @@ padding: 10px 15px 0px 15px;
 padding: 0px 15px 10px 15px;
 }
 
-
+.nursing-content{
+  padding-top: 15px;
+}
 }
 
 
 @media only screen and (min-width: 600px) {
-<<<<<<< HEAD
 
-.bigger-tan {margin-top:20px;}
+.bigger-tan {margin-top:20px; padding-top: 10px;}
 
-=======
+
 div.event_content{
   padding-top: 20px;
 }
->>>>>>> FETCH_HEAD
+
 .flag:first-child{
   margin-right: 20px;
 }
@@ -1906,6 +1909,7 @@ h2 {font-size: 18px!important;}
 .nav_list li a {padding: 8px 20px;}
 .content {padding: 10px 20px;}
 .upcoming-courses {padding: 0px;}
+.nursing-content .upcoming-courses{padding-top: 10px;}
 .single-content-box {margin-bottom: 20px;}
 .single-upcoming-course:last-child {margin-bottom: 20px;}
 .single-video-thumb {
@@ -1947,12 +1951,14 @@ h2 {font-size: 18px!important;margin-top: 0;}
 }
 
 @media only screen and (max-width: 1024px) and (min-width:600px) {
-
+.nursing-content{
+  padding-top: 20px;
+}
 .favorites-margin-top {margin-top:10px}
 
 .hero_title h2 {
 font-size: 18px!important;
-padding: 15px 20px 20px 20px;
+padding: 10px 20px 20px 20px;
 }
 .hero_description {
 padding: 0px 20px 10px 20px;
@@ -1987,6 +1993,10 @@ h2 {margin-top: 0;}
 
 @media only screen and (min-width: 1024px) {
 
+.hero-nurse .hero_title {
+height: 57px;
+}
+
 .favorites-margin-top {margin-top:20px}
 
 div.event_content{
@@ -1996,7 +2006,7 @@ div.event_content{
   margin-right: 30px;
 }
 
-.bigger-tan {margin-top:30px;}
+.bigger-tan {margin-top:30px; padding-top: 20px;}
 
   .hero_image {
 background-size: cover!important;
@@ -2044,7 +2054,7 @@ padding: 15% 0;
 .nav_list li a {padding: 8px 30px;}
 .content {padding: 10px 30px;}
 .upcoming-courses {padding: 0px;}
-
+.nursing-content .upcoming-courses{padding-top: 10px;}
 /* Content boxes */
 .text-max-height {height: 90px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
@@ -2104,6 +2114,7 @@ h2 {margin-top: 0;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
 
 .upcoming-courses {padding:0px;}
+.nursing-content .upcoming-courses{padding-top: 20px;}
 
 .hero_image .play-icon {font-size: 7em;}
 
@@ -2112,7 +2123,9 @@ margin-top:-200px;}
 
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
-h2.vet-heading {padding: 5px 20px 0px 20px;}
+h2.vet-heading {
+padding: 17px 30px 0px 20px;
+}
 .resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
 .search-cal .calendar_date {
