@@ -50,6 +50,8 @@ p {color: #4D4F53; font-size:14px;}
 .bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:20px;}
 .left {text-align:left;}
 .right {text-align:right;}
+.no-margin {margin:0;}
+.margin-top {margin-top:30px;}
 
 h1 {
 font-size: 16px;
@@ -1162,7 +1164,7 @@ padding:20px 0px;
 
 /* $Video Playlist Specific */
 
-.resource-detail-banner {position:relative;}
+.resource-detail-banner {position:relative;margin-bottom:30px;}
 
 .playlist-roll {
 background-color: #4c4e52;
@@ -1698,6 +1700,8 @@ h2 {margin-top: 0;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.resource-detail-banner {margin-bottom:15px;}
+
 .event_content h2, .event_content p, .faculty {
 padding: 0 5px;
 }
@@ -1724,6 +1728,7 @@ display: none;
 
 
 @media only screen and (min-width: 600px) {
+
 
 .top_nav {padding: 0px 20px;}
 
@@ -1821,6 +1826,8 @@ h2 {margin-top: 0;}
 .hero-description h3 {
 display: none;
 }
+.resource-detail-banner {margin-bottom:20px;}
+
 
 }
 
@@ -1832,6 +1839,8 @@ box-shadow: none;
 }
 
 h2 {margin-top: 0;}
+.resource-detail-banner {margin-bottom:20px;}
+
 
 }
 
@@ -1909,6 +1918,8 @@ margin-top:-50px;}
 h2, .hero_title h2 {font-size: 24px!important;}
 h2 {margin-top: 0;}
 h2.vet-heading {padding: 5px 20px 0px 20px;}
+.resource-detail-banner {margin-bottom:30px;}
+
 
 }
 
@@ -1934,6 +1945,8 @@ margin-top:-200px;}
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
 h2.vet-heading {padding: 5px 20px 0px 20px;}
+.resource-detail-banner {margin-bottom:30px;}
+
 
 
 }
