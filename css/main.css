@@ -940,6 +940,10 @@ border-radius: 0px;
 width: 230px;
 }
 
+.filters button.filter-btn:first-child {
+margin-right: 10px;
+}
+
 ul.dropdown-menu-filter {
 width: 160px;
 border-radius: 0;
