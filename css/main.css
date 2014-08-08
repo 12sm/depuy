@@ -47,14 +47,18 @@ p {color: #4D4F53; font-size:14px;}
 .strong {font-weight:bold;}
 .tan {color:#a89968;text-shadow: 0 1px 0 #FFF;}
 .tiny-tan {color:#a89968;margin-bottom:0;text-transform:uppercase;text-shadow: 0 1px 0 #FFF;font-size:10px;font-weight:bold;}
-.bigger-tan {font-size: 16px;color: #a89968;text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:15px;}
+.bigger-tan {font-size: 16px;color: #a89968; text-shadow: 0 1px 0 #FFF;font-weight:normal;line-height: 1.4;margin-top:15px;}
 .left {text-align:left;}
 .right {text-align:right;}
 .no-margin {margin:0!important;}
-.margin-top {margin-top:30px;}
 .little-margin {margin:10px 0px!important;}
 .no-margin-bottom {margin-bottom:0!important;}
 .margin-bottom {margin-bottom:10px!important;}
+
+.nursing-content .upcoming-courses{
+  padding-top: 10px;
+}
+
 .margin-left {margin-left:10px;}
 .margin-right {margin-right:10px;}
 
@@ -941,7 +945,7 @@ padding: 0px;
 margin: 0px 0px 0px -10px;
 font-size:12px;
 }
-.share-like-list a:hover {text-decoration:none;color:#8ca7b6;}
+.share-like-list a:hover, .add-to-calendar:hover, .add-to-calendar:hover > * {text-decoration:none;color:#8ca7b6;}
 ul.share-like-list {list-style:none;padding:0;margin-bottom: 0;}
 ul.share-like-list li:last-child {border:none;}
 ul.share-like-list li {display:inline;padding:0px;}
@@ -1312,7 +1316,7 @@ padding-bottom: 10px;
 	font-weight:bold;
 }
 
-.calendar-heading h2 {margin-bottom:0;}
+.calendar-heading h2 {margin-bottom:0; padding-right: 55px}
 .cal-detail-heading {color:#A7A8AA;text-transform:uppercase;margin-bottom:0px;font-weight:bold;}
 
 .calendar.search-cal {
@@ -1388,7 +1392,7 @@ width: 100%;
 }
 blockquote {
 padding: 0;
-margin: 20px 0px;
+margin: 0px;
 font-size: 18px;
 color: #4D4F53;
 text-shadow: 0px 1px rgba(255,255,255,.8);
@@ -1449,11 +1453,11 @@ border-bottom: 1px solid #d5d6d2;
 display: inline-block;
 width: 100%;
 height: auto;
-padding: 10px;
+padding:10px 10px 10px 0px;
 color:#003c60;
 }
 
-.explore_accordion .panel-title a .glyphicon {color:#A7A8AA;}
+.explore_accordion .panel-title a .glyphicon {color:#A7A8AA;font-size: 12px;}
 
 
 .explore_accordion .panel-title a span {margin-top:3px;}
@@ -1464,6 +1468,10 @@ padding: 0px!important;
 
 .explore_accordion .panel-default:nth-child(even) .panel-heading {
 background:transparent;
+}
+
+.explore_accordion .panel-body {
+padding-left: 0;
 }
 
 .modal-body.no-pad {padding:0px;}
@@ -1746,13 +1754,13 @@ background-image: linear-gradient(#B8AB83, #9c8d5a), linear-gradient(#B8AB83, #9
 
 
 @media only screen and (max-width:600px) and (min-width:300px) {
-	
+
 .content {
 -webkit-box-shadow: 0px 7px 10px -10px rgba(000,000,000,.75) inset;
-box-shadow: 0px 7px 10px -10px rgba(000,000,000,.75) inset;	
+box-shadow: 0px 7px 10px -10px rgba(000,000,000,.75) inset;
 }
 
-	
+
 }
 
 @media only screen and (min-width: 320px) {
@@ -1819,6 +1827,8 @@ h2, .hero_title h2 {font-size: 16px;}
 /* mobile only */
 @media only screen and (max-width: 600px) {
 
+.margin-top {15px;}
+
 .box-text-content {
 min-height: 70px;
 }
@@ -1854,13 +1864,16 @@ padding: 10px 15px 0px 15px;
 padding: 0px 15px 10px 15px;
 }
 
-
+.nursing-content{
+  padding-top: 15px;
+}
 }
 
 
 @media only screen and (min-width: 600px) {
 
 .bigger-tan {margin-top:20px;}
+
 
 div.event_content{
   padding-top: 20px;
@@ -1912,6 +1925,7 @@ h2 {font-size: 18px!important;}
 .nav_list li a {padding: 8px 20px;}
 .content {padding: 20px;}
 .upcoming-courses {padding: 0px;}
+.nursing-content .upcoming-courses{padding-top: 10px;}
 .single-content-box {margin-bottom: 20px;}
 .single-upcoming-course:last-child {margin-bottom: 20px;}
 .single-video-thumb {
@@ -1952,13 +1966,20 @@ h2 {font-size: 18px!important;}
 
 }
 
+
 @media only screen and (max-width: 1023px) and (min-width:600px) {
+
+.margin-top {20px;}
+
+.nursing-content{
+  padding-top: 20px;
+}
 
 .favorites-margin-top {margin-top:10px}
 
 .hero_title h2 {
 font-size: 18px!important;
-padding: 15px 20px 20px 20px;
+padding: 10px 20px 20px 20px;
 }
 .hero_description {
 padding: 0px 20px 10px 20px;
@@ -1978,7 +1999,9 @@ display: none;
 .search-cal .calendar_date {
   font-size: 50px;
 }
-
+.hero-nurse .hero_title {
+height: 57px;
+}
 .box-text-content {
 min-height: 73px;
 }
@@ -1986,6 +2009,7 @@ min-height: 73px;
 }
 
 @media only screen and (max-width: 1024px) {
+
 
 .course_interaction.border-bottom {
 border: 0;
@@ -1998,6 +2022,12 @@ box-shadow: none;
 
 
 @media only screen and (min-width: 1024px) {
+
+.margin-top {30px;}
+
+.hero-nurse .hero_title {
+height: 57px;
+}
 
 .favorites-margin-top {margin-top:20px}
 
@@ -2052,7 +2082,7 @@ padding: 15% 0;
 .nav_list li a {padding: 8px 30px;}
 .content {padding: 30px;}
 .upcoming-courses {padding: 0px;}
-
+.nursing-content .upcoming-courses{padding-top: 10px;}
 /* Content boxes */
 .text-max-height {height: 90px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
@@ -2097,6 +2127,13 @@ h2.vet-heading {padding: 5px 20px 0px 20px;}
 
 @media only screen and (min-width: 1280px) {
 
+<<<<<<< HEAD
+=======
+
+.margin-top {30px;}
+
+h2 {margin-top: 0;}
+>>>>>>> FETCH_HEAD
 
 .right_column {background: #E4E4E2;}
 
@@ -2107,6 +2144,7 @@ h2.vet-heading {padding: 5px 20px 0px 20px;}
 .col-xs-6.col-md-3.single-content-box {height: auto;}
 
 .upcoming-courses {padding:0px;}
+.nursing-content .upcoming-courses{padding-top: 20px;}
 
 .hero_image .play-icon {font-size: 7em;}
 
@@ -2115,7 +2153,9 @@ margin-top:-200px;}
 
 .border-bottom {padding-bottom:10px;margin-bottom:10px;border-bottom:1px solid #D5D6D2;box-shadow:0 1px rgba(255,255,255,.3);}
 
-h2.vet-heading {padding: 5px 20px 0px 20px;}
+h2.vet-heading {
+padding: 17px 30px 0px 20px;
+}
 .resource-detail-banner {margin-bottom:30px;margin-top: 20px;}
 
 .calendar.search-cal {
