@@ -1074,18 +1074,5 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src='js/main.js'></script>
-	<script>
-	  $(window).load(function() {
-		var height = 0;
-		$('.video_feature .img-responsive').each(function() {
-		  var imgHeight = $(this).innerHeight();
-		  if (imgHeight > height) {
-			height = imgHeight
-		  }
-		});
-		height = height + 5;
-		$('.search-cal').css('height', height);
-	  });
-	</script>
   </body>
 </html>

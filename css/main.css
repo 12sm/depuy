@@ -6,7 +6,9 @@ body {
   background: #E4E4E2;
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.modal-link{
+  cursor: pointer;
+}
 .main_wrapper {background: url(../img/nav-tile.jpg) repeat left top;}
 
 .left_column {
@@ -824,7 +826,7 @@ border-bottom: 2px solid #002D48;
 
 .hero_title {
 background: url(../img/hero-gradient-tile.png) repeat-x left top;
-background-size: 100%;
+background-size: contain;
 }
 .no-pad{
   padding-left: 0px;
@@ -1335,7 +1337,14 @@ ul.presentation-navigation li {padding: 15px 10px;}
    $Calendar Detail
    ============================== */
 
-
+.hanging{
+  list-style: disc outside none;
+    margin-left: 0;
+    padding-left: 1em;
+}
+.hanging-li{
+  padding-left: 1em;
+}
 .course_interaction.border-bottom {
 padding-bottom: 10px;
 }

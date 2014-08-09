@@ -51,3 +51,20 @@ $('.selection_accordion .panel-collapse').on('show.bs.collapse', function(e) {
 	var id = $(e.currentTarget).attr('id');
 	$('a[href="#' + id + '"]').children('.glyphicon').removeClass('icon-caret-up').addClass('icon-caret-down');
 });
+<<<<<<< HEAD
+=======
+
+$(window).load(calHeight);
+$(window).resize(calHeight);
+	function calHeight() {
+		var height = 0;
+		$('.video_feature .img-responsive').each(function() {
+		  var imgHeight = $(this).innerHeight();
+		  if (imgHeight > height) {
+			height = imgHeight
+		  }
+		});
+		height = height + 5;
+		$('.search-cal').css('height', height);
+	  };
+>>>>>>> FETCH_HEAD
