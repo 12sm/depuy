@@ -19,9 +19,6 @@ body {
     overflow:hidden;
     padding-left:0!important;
     padding-right:0!important;
-    position:absolute;
-    top:0;
-    left:0;
     height:100%
 }
 
@@ -40,7 +37,8 @@ body {
     max-width:100%
 }
 
-a {
+a, link {
+    cursor: pointer;
     color:#003c60
 }
 
