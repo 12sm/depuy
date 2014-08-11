@@ -37,11 +37,14 @@ body {
     max-width:100%
 }
 
-a, link {
+a, .link{
     cursor: pointer;
     color:#003c60
 }
-
+.link:hover {
+color: #000c14;
+text-decoration: underline;
+}
 .glyphicon {
     font-size:20px
 }
