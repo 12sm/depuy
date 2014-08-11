@@ -54,7 +54,7 @@ $('.selection_accordion .panel-collapse').on('show.bs.collapse', function(e) {
 
 $(window).load(calHeight);
 $(window).resize(calHeight);
-	
+
 	function calHeight() {
 		var height = 0;
 		$('.video_feature .img-responsive').each(function() {
@@ -67,3 +67,4 @@ $(window).resize(calHeight);
 		$('.search-cal').css('height', height);
 	  };
 
+$('.hero_image').imgLiquid({fill:true, verticalAlign:'center'});
